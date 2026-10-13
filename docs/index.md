@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-<div class="project-hero" markdown>
+<div class="project-hero" markdown="1">
 <span class="eyebrow">Qualidade de Software · 2026/2 · FCTE/UnB</span>
 
 # Documentação do Projeto
@@ -17,7 +17,7 @@ Repositório de documentação das atividades, artefatos e resultados desenvolvi
 
 ## Conteúdo do projeto
 
-<div class="grid cards" markdown>
+<div class="project-hero" markdown="1">
 
 -   :material-file-document-outline:{ .lg .middle } **Artigo**
 

@@ -1,7 +1,7 @@
 site_name: Projeto de Qualidade de Software
 site_description: Documentação das entregas da disciplina de Qualidade de Software
 site_author: RUTH LICHTERMAN
-site_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN
+site_url: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/
 
 theme:
   name: material

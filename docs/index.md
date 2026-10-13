@@ -4,54 +4,57 @@ hide:
   - toc
 ---
 
-<div class="project-hero" markdown="1">
+<div class="project-hero">
+  <span class="eyebrow">Qualidade de Software · 2026/2 · FCTE/UnB</span>
 
-<span class="eyebrow">Qualidade de Software · 2026/2 · FCTE/UnB</span>
+  <h1>Documentação do Projeto</h1>
 
-# Documentação do Projeto
+  <p>
+    Repositório de documentação das atividades, dos artefatos e dos resultados
+    desenvolvidos pela equipe ao longo da disciplina de Qualidade de Software I.
+  </p>
 
-Repositório de documentação das atividades, dos artefatos e dos resultados desenvolvidos pela equipe ao longo da disciplina de Qualidade de Software I.
-
-[Conhecer o artigo :material-arrow-right:](artigo/introducao.md){ .md-button .md-button--primary }
-[Explorar a modelagem GQM](fase-2/index.md){ .md-button }
-
+  <div class="hero-actions">
+    <a href="artigo/introducao/" class="md-button md-button--primary">
+      Conhecer o artigo →
+    </a>
+    <a href="fase-2/" class="md-button">
+      Explorar a modelagem GQM
+    </a>
+  </div>
 </div>
 
 ## Conteúdo do projeto
 
-<div class="grid cards" markdown="1">
+<div class="project-cards">
 
--   :material-file-document-outline:{ .lg .middle } **Artigo**
+  <a class="project-card" href="artigo/introducao/">
+    <span class="project-card-icon">01</span>
+    <h3>Artigo</h3>
+    <p>Contextualização do problema, referencial teórico e metodologia adotada no trabalho.</p>
+    <span class="project-card-link">Acessar artigo →</span>
+  </a>
 
-    ---
+  <a class="project-card" href="fase-1/">
+    <span class="project-card-icon">02</span>
+    <h3>Fase 1</h3>
+    <p>Caracterização do produto e características de qualidade selecionadas para avaliação.</p>
+    <span class="project-card-link">Acessar Fase 1 →</span>
+  </a>
 
-    Contextualização do problema, referencial teórico e metodologia adotada no trabalho.
+  <a class="project-card" href="fase-2/">
+    <span class="project-card-icon">03</span>
+    <h3>Fase 2 — GQM</h3>
+    <p>Objetivos de medição, questões, hipóteses, métricas e critérios de avaliação.</p>
+    <span class="project-card-link">Acessar Fase 2 →</span>
+  </a>
 
-    [Acessar artigo](artigo/introducao.md)
-
--   :material-clipboard-check-outline:{ .lg .middle } **Fase 1**
-
-    ---
-
-    Caracterização do produto, características de qualidade selecionadas e documentação da primeira fase da avaliação.
-
-    [Acessar Fase 1](fase-1/index.md)
-
--   :material-chart-box-outline:{ .lg .middle } **Fase 2 — GQM**
-
-    ---
-
-    Objetivos de medição, questões, hipóteses, métricas e critérios de avaliação.
-
-    [Acessar Fase 2](fase-2/index.md)
-
--   :material-robot-outline:{ .lg .middle } **Uso de IA**
-
-    ---
-
-    Registro do uso de ferramentas de inteligência artificial no desenvolvimento do trabalho.
-
-    [Consultar declaração](uso-de-ia.md)
+  <a class="project-card" href="uso-de-ia/">
+    <span class="project-card-icon">04</span>
+    <h3>Uso de IA</h3>
+    <p>Registro transparente do uso de ferramentas de inteligência artificial no trabalho.</p>
+    <span class="project-card-link">Consultar declaração →</span>
+  </a>
 
 </div>
 
@@ -72,9 +75,8 @@ Repositório de documentação das atividades, dos artefatos e dos resultados de
   </div>
 </div>
 
-## Equipe
 
-Integrantes responsáveis pelo desenvolvimento do trabalho.
+## Equipe
 
 <div class="team-list">
   <a class="team-chip" href="https://github.com/arthurfernandesj" target="_blank" rel="noopener noreferrer">Arthur Fernandes ↗</a>
@@ -87,12 +89,7 @@ Integrantes responsáveis pelo desenvolvimento do trabalho.
 
 [Consultar a contribuição individual](contribuicao.md)
 
----
-
-<div class="project-footer" markdown="1">
-
-**Qualidade de Software I · 2026/2**
-
-Faculdade de Ciências e Tecnologias em Engenharia — Universidade de Brasília (FCTE/UnB).
-
+<div class="project-footer">
+  <strong>Qualidade de Software I · 2026/2</strong>
+  <p>Faculdade de Ciências e Tecnologias em Engenharia — Universidade de Brasília.</p>
 </div>

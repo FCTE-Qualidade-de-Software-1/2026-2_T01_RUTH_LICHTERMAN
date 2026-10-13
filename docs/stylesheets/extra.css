@@ -85,3 +85,71 @@
   .md-typeset .project-hero h1 { font-size: 2rem; }
   .phase-strip { grid-template-columns: 1fr; }
 }
+/* Equipe */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin: 1rem 0;
+}
+
+.team-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: .45rem .8rem;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--md-typeset-a-color);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: background-color .18s ease, border-color .18s ease;
+}
+
+.team-chip:hover {
+  background: var(--soft);
+  border-color: var(--teal-bright);
+  color: var(--md-typeset-a-color);
+}
+
+/* Cartões da página inicial */
+.md-typeset .grid.cards > ul > li {
+  height: 100%;
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  border-bottom-color: var(--panel-border);
+}
+
+/* Rodapé da página inicial */
+.project-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--panel-border);
+  color: var(--md-default-fg-color--light);
+  font-size: .85rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .project-hero {
+    padding: 2rem 1.3rem;
+  }
+
+  .md-typeset .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .phase-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .team-list {
+    gap: .5rem;
+  }
+
+  .team-chip {
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "title": "Estrutura inicial do GitPage (MkDocs)",
+    "labels": [
+      "gitpage",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nPremissa 4 (repositório do projeto); C11 (GitPage)\n\n## Critério de pronto\n- [x] Site MkDocs criado com navegação inicial\n\n## Evidências\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/4c2b2e58\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/35bdcd7d\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/0e91cc92\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Publicação automática no GitHub Pages",
+    "labels": [
+      "gitpage",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nC11 (GitPage)\n\n## Critério de pronto\n- [x] Workflow de deploy configurado e site publicado\n\n## Evidências\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/f176baa1\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: apresentação do software",
+    "labels": [
+      "fase-1",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nC3 (tipo de produto e descrição do software)\n\n## Critério de pronto\n- [x] O que é o BRB Mobilidade, objetivo, público-alvo e problema que resolve\n\n## Evidências\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/10471fee\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: levantamento de funcionalidades e serviços",
+    "labels": [
+      "fase-1",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nC3 (tipo de produto e descrição do software)\n\n## Critério de pronto\n- [x] Funcionalidades, recargas, consultas e serviços descritos no rascunho\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: requisitos e necessidades dos usuários",
+    "labels": [
+      "fase-1",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nC3 (tipo de produto e descrição do software)\n\n## Critério de pronto\n- [x] Requisitos funcionais, não funcionais e necessidades dos usuários descritos no rascunho\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: tecnologias e integração",
+    "labels": [
+      "fase-1",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nC3 (tipo de produto e descrição do software)\n\n## Critério de pronto\n- [x] Tecnologias e integrações do aplicativo descritas no rascunho\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: introdução",
+    "labels": [
+      "artigo",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nPremissa 8 (conteúdo do artigo); Entrega 1\n\n## Critério de pronto\n- [x] Primeira versão da introdução\n\n## Evidências\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/6d98bb53\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: metodologia",
+    "labels": [
+      "artigo",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nPremissa 8 (conteúdo do artigo); Entrega 1\n\n## Critério de pronto\n- [x] Primeira versão da metodologia\n\n## Evidências\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/c2225d61\n- https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/commit/16ed9d59\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Slides do Ponto de Controle 1",
+    "labels": [
+      "gestao",
+      "retroativa"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": true,
+    "body": "## Descrição\nTarefa concluída antes da adoção das issues. Registrada agora para rastreabilidade e para a medição PSM/CID.\n\n## Critério da rubrica\nPonto de Controle 1\n\n## Critério de pronto\n- [x] Slides montados no Canva\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: propósito da avaliação, decisões apoiadas e quem as toma",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nExplicar por que avaliar o BRB Mobilidade, para quem, e quais decisões específicas serão tomadas com os resultados e por quem.\n\n## Critério da rubrica\nCritério 1 da Fase 1 (propósito e uso pretendido)\n\n## Critério de pronto\n- [ ] Propósito claro e alinhado ao contexto\n- [ ] Decisões específicas que a avaliação vai apoiar\n- [ ] Quem tomará cada decisão\n- [ ] Página publicada no GitPage\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: requisitante e partes interessadas",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nIdentificar o requisitante e os stakeholders (comprador, fornecedor, desenvolvedor, operador, usuário), com papéis, necessidades e critérios de sucesso.\n\n## Critério da rubrica\nCritério 2 da Fase 1 (requisitante e partes interessadas)\n\n## Critério de pronto\n- [ ] Requisitante identificado\n- [ ] Stakeholders com papéis e necessidades\n- [ ] Critério de sucesso por stakeholder\n- [ ] Como cada um influencia as escolhas da avaliação\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: tipo de produto e descrição estruturada com diagrama de contexto",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nClassificar o tipo de produto e descrever o sistema de forma organizada (módulos, interfaces, dependências, restrições), consolidando o rascunho do grupo.\n\n## Critério da rubrica\nCritério 3 da Fase 1 (tipo de produto e descrição estruturada)\n\n## Critério de pronto\n- [ ] Tipo de produto classificado\n- [ ] Módulos, interfaces e dependências descritos\n- [ ] Diagrama de contexto ou arquitetura\n- [ ] O que dá e o que não dá para medir agora\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: modelo de qualidade adaptado com diagrama",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nAdaptar o modelo da ISO/IEC 25010:2023 ao BRB Mobilidade, justificando as adaptações pelo contexto e pelos stakeholders.\n\n## Critério da rubrica\nCritério 4 da Fase 1 (modelo de qualidade)\n\n## Critério de pronto\n- [ ] Adaptações justificadas (evitar uso de prateleira)\n- [ ] Diagrama ligando características e subcaracterísticas\n- [ ] Figura com legenda e fonte\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: seleção e priorização de 3 a 4 características (sem usabilidade)",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nSelecionar de 3 a 4 características da ISO/IEC 25010 (exceto usabilidade) e priorizar com método explícito.\n\n## Critério da rubrica\nCritério 5 da Fase 1; Premissa 1 (3 a 4 características, norma SQuaRE)\n\n## Critério de pronto\n- [ ] 3 ou 4 características, sem usabilidade\n- [ ] Norma SQuaRE indicada\n- [ ] Método explícito (ex.: matriz impacto x risco, MoSCoW com pesos)\n- [ ] Trade-offs discutidos\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: escopo, profundidade e objetos de avaliação",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDefinir o que será avaliado, em que profundidade, o que fica de fora e por quê.\n\n## Critério da rubrica\nCritério 6 da Fase 1 (escopo e profundidade)\n\n## Critério de pronto\n- [ ] Objetos de avaliação definidos\n- [ ] Nível de profundidade\n- [ ] O que fica fora e justificativa de cada corte\n- [ ] Limites de validade dos resultados\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 1: ODS, metas e indicadores",
+    "labels": [
+      "fase-1"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nRelacionar o projeto a ODS pertinentes, com metas e indicadores, e explicar a pertinência ao software.\n\n## Critério da rubrica\nCritério 7 da Fase 1 (ODS)\n\n## Critério de pronto\n- [ ] ODS identificado(s)\n- [ ] Metas e indicadores citados\n- [ ] Justificativa da pertinência ao BRB Mobilidade\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: objetivos de medição no template GQM",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDefinir os objetivos de medição com o template GQM (analisar / com o propósito de / com respeito a / do ponto de vista de / no contexto de).\n\n## Critério da rubrica\nF2-C1 (objetivos de medição)\n\n## Critério de pronto\n- [ ] Um objetivo por característica priorizada\n- [ ] Todos os campos do template preenchidos\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: questões de avaliação",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDefinir questões que cobrem os atributos do foco de qualidade de cada objetivo.\n\n## Critério da rubrica\nF2-C2 (questões)\n\n## Critério de pronto\n- [ ] Questões ligadas a cada objetivo\n- [ ] Questões não são métricas reescritas como pergunta\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: hipóteses para todas as questões",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nFormular uma hipótese clara para cada questão.\n\n## Critério da rubrica\nF2-C3 (hipóteses)\n\n## Critério de pronto\n- [ ] Uma hipótese por questão\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: métricas com definição, cálculo, fonte, coleta e interpretação",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nSelecionar métricas que respondem diretamente às questões e documentar cada uma.\n\n## Critério da rubrica\nF2-C4 (métricas); Premissa 2\n\n## Critério de pronto\n- [ ] Toda questão tem métrica\n- [ ] Definição\n- [ ] Procedimento de cálculo\n- [ ] Fonte dos dados\n- [ ] Procedimento de coleta\n- [ ] Critério de interpretação\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: níveis de pontuação e critérios de julgamento",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nEstabelecer níveis de pontuação para todas as métricas e critérios explícitos de julgamento.\n\n## Critério da rubrica\nF2-C5 (níveis de pontuação e critérios de julgamento)\n\n## Critério de pronto\n- [ ] Níveis para todas as métricas\n- [ ] Critérios de julgamento explícitos\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: diagrama GQM completo",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nRepresentar a hierarquia Objetivos > Questões > Métricas de todos os objetivos.\n\n## Critério da rubrica\nF2-C6 (representação da hierarquia GQM)\n\n## Critério de pronto\n- [ ] Todos os objetivos no diagrama\n- [ ] Níveis identificados\n- [ ] Diagrama renderizando no GitPage\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 2: consistência entre as Fases 1 e 2",
+    "labels": [
+      "fase-2"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nExplicitar como foco de qualidade e ponto de vista dos objetivos GQM derivam das características priorizadas e dos stakeholders da Fase 1.\n\n## Critério da rubrica\nF2-C11 (consistência entre Fases 1 e 2); F2-C12 (terminologia)\n\n## Critério de pronto\n- [ ] Seção de rastreabilidade Fase 1 > Fase 2\n- [ ] Terminologia revisada\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: migrar para template SBC/ACM/IEEE em LaTeX",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nCriar o artigo em LaTeX com um dos modelos da SBC, ACM ou IEEE, preservando a formatação.\n\n## Critério da rubrica\nPremissa 7 (formato do artigo)\n\n## Critério de pronto\n- [ ] Modelo escolhido e configurado (ex.: Overleaf)\n- [ ] Introdução e metodologia migradas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: referencial teórico",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nEscrever o referencial teórico (SQuaRE/ISO 25010, ISO 25040, GQM, PSM/CID).\n\n## Critério da rubrica\nPremissa 8; Entrega 1\n\n## Critério de pronto\n- [ ] Seção escrita com referências\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: seções da Fase 1 e da Fase 2",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nEscrever no artigo os resultados das Fases 1 e 2.\n\n## Critério da rubrica\nPremissa 8; Entrega 1\n\n## Critério de pronto\n- [ ] Seção Fase 1\n- [ ] Seção Fase 2\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: link do repositório e tabela de contribuição no apêndice",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nIncluir o link direto do repositório e a tabela de contribuição como apêndice.\n\n## Critério da rubrica\nPremissas 12 e 13\n\n## Critério de pronto\n- [ ] Link do repositório no artigo\n- [ ] Tabela de contribuição no apêndice\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: revisão final da E1",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nRevisar português, legendas, referências cruzadas e número de páginas.\n\n## Critério da rubrica\nCritérios 8 e 9 da Fase 1; F2-C7 e F2-C8; Premissa 9\n\n## Critério de pronto\n- [ ] Figuras e tabelas com legenda e fonte\n- [ ] Referências conferidas\n- [ ] Máximo de 15 páginas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "GitPage: versão e data no rodapé, sumário e links entre páginas",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nAjustar o mkdocs.yml e as páginas para atender ao critério de GitPage exemplar.\n\n## Critério da rubrica\nCritério 11 da Fase 1; F2-C10\n\n## Critério de pronto\n- [ ] Versão e data no rodapé\n- [ ] Seções Fase 1 e Fase 2 visíveis no menu\n- [ ] Links entre páginas\n- [ ] Diagramas Mermaid renderizando\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "GitPage: links para repositório, release e evidências",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nAdicionar links funcionais para o repositório, a release e as evidências/dados.\n\n## Critério da rubrica\nCritério 11 da Fase 1; F2-C10\n\n## Critério de pronto\n- [ ] repo_url no mkdocs.yml\n- [ ] Link da release E1\n- [ ] Link para evidências\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "GitPage: remover emojis e ícones",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nRemover emojis, figurinhas e ícones do site e do relatório.\n\n## Critério da rubrica\nCritérios 10 e 11 da Fase 1; F2-C9 e F2-C10\n\n## Critério de pronto\n- [ ] Ícones dos cards removidos\n- [ ] Setas e emojis removidos\n- [ ] Extensão de emoji revisada no mkdocs.yml\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "GitPage: texto alternativo em todas as imagens",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nGarantir acessibilidade básica com alt-text em todas as imagens.\n\n## Critério da rubrica\nCritério 11 da Fase 1; F2-C10\n\n## Critério de pronto\n- [ ] Todas as imagens com alt-text\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Página de uso de IA",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDeclarar ferramenta, tarefa e como a equipe conferiu/ajustou cada uso de IA.\n\n## Critério da rubrica\nCritério 10 da Fase 1; F2-C9\n\n## Critério de pronto\n- [ ] Tabela ferramenta + tarefa + como foi conferido\n- [ ] Citações literais entre aspas com fonte\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Página de referências",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nConsolidar as referências usadas no projeto.\n\n## Critério da rubrica\nCritério 9 da Fase 1; F2-C8\n\n## Critério de pronto\n- [ ] Referências no mesmo padrão\n- [ ] Referências conferidas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "README enxuto e remoção do .venv do repositório",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nEncurtar o README, trocar os links placeholder e parar de versionar o .venv.\n\n## Critério da rubrica\nCritério 11 da Fase 1 (links funcionais)\n\n## Critério de pronto\n- [ ] Links reais do site e do repositório\n- [ ] README com descrição, equipe e como rodar\n- [ ] git rm --cached no .venv\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Template de issue e milestones",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nConfigurar template de issue com campos de horas e milestones das entregas.\n\n## Critério da rubrica\nSeção 2 da especificação (PSM/CID com issues e milestones)\n\n## Critério de pronto\n- [ ] Template de issue criado\n- [ ] Milestones E1 e E2 criados\n- [ ] Issues criadas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Release E1",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nCriar a release da Entrega 1 conforme data/hora do Moodle.\n\n## Critério da rubrica\nEntrega 1; Critério 11 da Fase 1\n\n## Critério de pronto\n- [ ] Tag v1.0 criada\n- [ ] Release com descrição\n- [ ] Link da release no GitPage e no Moodle\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Página PSM/CID com as três categorias",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDocumentar os indicadores de Desempenho dos Processos, Calendário e Progresso e Recursos e Custos.\n\n## Critério da rubrica\nPremissa 3; Seção 2 da especificação\n\n## Critério de pronto\n- [ ] Indicadores com fórmula, fonte e limite\n- [ ] Tabela de registro de medições\n- [ ] Página no menu do GitPage\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Medição PSM nº 1",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nFazer a primeira medição dos indicadores PSM/CID e registrar interpretação e decisão.\n\n## Critério da rubrica\nPremissa 3\n\n## Critério de pronto\n- [ ] Valores registrados\n- [ ] Interpretação\n- [ ] Decisão de gestão registrada\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Medição PSM nº 2",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nFazer a segunda medição antes da entrega e registrar interpretação e decisão.\n\n## Critério da rubrica\nPremissa 3\n\n## Critério de pronto\n- [ ] Valores registrados\n- [ ] Interpretação\n- [ ] Decisão de gestão registrada\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Tabela de contribuição com percentual de esforço",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nDetalhar e quantificar o esforço de cada membro, totalizando 100%.\n\n## Critério da rubrica\nAG-C5; Entrega 1; Premissa 13\n\n## Critério de pronto\n- [ ] Atividades por membro\n- [ ] Percentual de esforço somando 100%\n- [ ] Evidências (issues/commits)\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Atas das reuniões",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E1: Fases 1 e 2",
+    "closed": false,
+    "body": "## Descrição\nRegistrar as atas das reuniões da equipe no repositório.\n\n## Critério da rubrica\nPremissa 4\n\n## Critério de pronto\n- [ ] Modelo de ata\n- [ ] Atas das reuniões realizadas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Correções do Ponto de Controle 1",
+    "labels": [
+      "gestao"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nAplicar as correções indicadas pela professora no Ponto de Controle 1.\n\n## Critério da rubrica\nEntrega 2\n\n## Critério de pronto\n- [ ] Lista de correções registrada\n- [ ] Correções aplicadas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 3: método de avaliação e instruções repetíveis",
+    "labels": [
+      "fase-3"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nDefinir e justificar o método e escrever instruções claras para o avaliador.\n\n## Critério da rubrica\nF3-C1\n\n## Critério de pronto\n- [ ] Método justificado\n- [ ] Passo a passo para obter cada medida\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 3: recursos, ambiente e massa de dados",
+    "labels": [
+      "fase-3"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nEspecificar hardware, software, conhecimento dos avaliadores e massa de dados.\n\n## Critério da rubrica\nF3-C2\n\n## Critério de pronto\n- [ ] Requisitos de hardware e software\n- [ ] Massa de dados definida e justificada\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 3: cronograma da avaliação",
+    "labels": [
+      "fase-3"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nMontar cronograma realista alinhado à execução da Fase 4.\n\n## Critério da rubrica\nF3-C3; F3-C8 (consistência Fases 2 e 3)\n\n## Critério de pronto\n- [ ] Cronograma por atividade\n- [ ] Consistência com a Fase 2 explicitada\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Termo de consentimento dos participantes",
+    "labels": [
+      "fase-3"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nPreparar termo de consentimento caso haja participantes ou entrevistas.\n\n## Critério da rubrica\nPremissas 5 e 6\n\n## Critério de pronto\n- [ ] Termo redigido\n- [ ] Condições de acesso e anonimização dos dados\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 4: coleta das medidas com evidências",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nExecutar a coleta seguindo o plano da Fase 3 e documentar evidências.\n\n## Critério da rubrica\nF4-C1\n\n## Critério de pronto\n- [ ] Coleta conforme o plano\n- [ ] Evidências (logs, prints, formulários)\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 4: dados brutos organizados e rastreáveis",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nDisponibilizar dados brutos, consolidação e procedimentos de cálculo no repositório.\n\n## Critério da rubrica\nF4-C2; Premissa 5\n\n## Critério de pronto\n- [ ] Pasta de dados organizada\n- [ ] Ligação dado bruto > métrica\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 4: análise e respostas às questões GQM",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nCalcular as métricas, comparar com os níveis e responder às questões e objetivos.\n\n## Critério da rubrica\nF4-C3\n\n## Critério de pronto\n- [ ] Métricas calculadas\n- [ ] Comparação com níveis de pontuação\n- [ ] Respostas às questões com gráficos e tabelas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Fase 4: julgamento, conclusões e coerência com o propósito",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nEmitir julgamento final ligado ao propósito da Fase 1 e traduzir em ações.\n\n## Critério da rubrica\nF4-C4 e F4-C5\n\n## Critério de pronto\n- [ ] Julgamento coerente com o propósito\n- [ ] Ações concretas recomendadas\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Discussão das relações entre as características",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nDiscutir as relações entre as características com base nos resultados, evidências e limitações.\n\n## Critério da rubrica\nPremissa 1\n\n## Critério de pronto\n- [ ] Relações com evidências\n- [ ] Limitações e casos sem dados suficientes\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Ação de melhoria obrigatória",
+    "labels": [
+      "fase-4"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nExecutar pelo menos uma ação de melhoria justificada pela avaliação (protótipo, código, template ou processo).\n\n## Critério da rubrica\nSeção 3.2 da especificação (Entrega 2)\n\n## Critério de pronto\n- [ ] Ação escolhida e justificada\n- [ ] Entrega técnica no repositório\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Artigo: versão final",
+    "labels": [
+      "artigo"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nCompletar o artigo com resultados e conclusão.\n\n## Critério da rubrica\nEntrega 2; AG-C1 e AG-C2\n\n## Critério de pronto\n- [ ] Resultados\n- [ ] Conclusão\n- [ ] Revisão final\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  },
+  {
+    "title": "Release E2",
+    "labels": [
+      "gitpage"
+    ],
+    "milestone": "E2: Fases 3 e 4",
+    "closed": false,
+    "body": "## Descrição\nCriar a release da Entrega 2.\n\n## Critério da rubrica\nEntrega 2; AG-C4\n\n## Critério de pronto\n- [ ] Tag v2.0\n- [ ] Release com descrição\n\n## Esforço (PSM)\n- Horas estimadas: \n- Horas reais (preencher ao fechar): "
+  }
+]

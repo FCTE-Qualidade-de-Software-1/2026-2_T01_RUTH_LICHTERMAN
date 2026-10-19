@@ -1,0 +1,39 @@
+name: Tarefa
+description: Tarefa do projeto (Fases, artigo, GitPage ou gestão)
+title: "[Tarefa] "
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que precisa ser feito.
+    validations:
+      required: true
+  - type: input
+    id: criterio
+    attributes:
+      label: Critério da rubrica
+      description: "Qual critério ou premissa esta tarefa atende (ex.: Critério 5 da Fase 1, F2-C4, Premissa 3)."
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Critério de pronto
+      description: Itens que precisam estar concluídos para fechar a issue.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: input
+    id: horas_estimadas
+    attributes:
+      label: Horas estimadas
+      description: Estimativa de esforço em horas (usada no PSM/CID).
+      placeholder: "ex.: 2"
+    validations:
+      required: true
+  - type: input
+    id: horas_reais
+    attributes:
+      label: Horas reais
+      description: Preencha ao fechar a issue, editando-a (usada no PSM/CID).
+      placeholder: "ex.: 3"

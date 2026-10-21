@@ -8,8 +8,8 @@ Nesta fase, a equipe caracteriza o produto avaliado, define o propósito da aval
 | :--- | :--- |
 | **Produto avaliado** | BRB Mobilidade, aplicativo móvel (iOS e Android) de acesso aos serviços do Cartão Mobilidade do Distrito Federal |
 | **Contexto** | Cartão físico, validadores e Sistema de Bilhetagem Eletrônica, considerados apenas quando ajudam a entender a experiência no aplicativo |
-| **Características avaliadas** | Usabilidade, funcionalidade, eficiência e confiabilidade |
-| **Objetivos de avaliação** | O1 a O7, detalhados na Fase 2 |
+| **Características avaliadas** | Usabilidade, adequação funcional, eficiência de desempenho e confiabilidade (ISO/IEC 25010:2023) |
+| **Objetivos de avaliação** | O1 a O8, detalhados na Fase 2 |
  
 ## Conteúdo da fase
  
@@ -17,7 +17,7 @@ Nesta fase, a equipe caracteriza o produto avaliado, define o propósito da aval
 | :--- | :--- |
 | [Descrição do Produto](1-descricao.md) | O que é o aplicativo, suas funcionalidades, público-alvo, tecnologias e integrações, e ODS relacionados |
 | [Propósito, Justificativa e Objetivos](2-proposito.md) | Problema de pesquisa, justificativa, objetivos, características avaliadas com sua ênfase e partes interessadas |
-| [Modelo de Qualidade](3-modelo.md) | Características e subcaracterísticas, objetivos O1 a O7 e escopo da avaliação |
+| [Modelo de Qualidade](3-modelo.md) | Características e subcaracterísticas, objetivos O1 a O8 e escopo da avaliação |
  
 ## Próximos passos
  

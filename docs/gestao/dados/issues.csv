@@ -1,0 +1,56 @@
+numero,titulo,estado,milestone,labels,responsaveis,criada_em,fechada_em,horas_estimadas,horas_reais,reaberta,url
+1,Estrutura inicial do GitPage (MkDocs),fechada,E1: Fases 1 e 2,gitpage;retroativa,,2026-10-19T19:59:55Z,2026-10-19T19:59:58Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/1
+2,Publicação automática no GitHub Pages,fechada,E1: Fases 1 e 2,gitpage;retroativa,,2026-10-19T20:00:01Z,2026-10-19T20:00:03Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/2
+3,Fase 1: apresentação do software,fechada,E1: Fases 1 e 2,fase-1;retroativa,,2026-10-19T20:00:07Z,2026-10-19T20:00:09Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/3
+4,Fase 1: levantamento de funcionalidades e serviços,fechada,E1: Fases 1 e 2,fase-1;retroativa,,2026-10-19T20:00:12Z,2026-10-19T20:00:14Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/4
+5,Fase 1: requisitos e necessidades dos usuários,fechada,E1: Fases 1 e 2,fase-1;retroativa,,2026-10-19T20:00:17Z,2026-10-19T20:00:20Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/5
+6,Fase 1: tecnologias e integração,fechada,E1: Fases 1 e 2,fase-1;retroativa,,2026-10-19T20:00:24Z,2026-10-19T20:00:26Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/6
+7,Artigo: introdução,fechada,E1: Fases 1 e 2,artigo;retroativa,,2026-10-19T20:00:29Z,2026-10-19T20:00:32Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/7
+8,Artigo: metodologia,fechada,E1: Fases 1 e 2,artigo;retroativa,,2026-10-19T20:00:36Z,2026-10-19T20:00:38Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/8
+9,Slides do Ponto de Controle 1,fechada,E1: Fases 1 e 2,gestao;retroativa,,2026-10-19T20:00:41Z,2026-10-19T20:00:43Z,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/9
+10,"Fase 1: propósito da avaliação, decisões apoiadas e quem as toma",aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:00:47Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/10
+11,Fase 1: requisitante e partes interessadas,aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:00:50Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/11
+12,Fase 1: tipo de produto e descrição estruturada com diagrama de contexto,aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:00:53Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/12
+13,Fase 1: modelo de qualidade adaptado com diagrama,aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:00:56Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/13
+14,Fase 1: seleção e priorização de 3 a 4 características (sem usabilidade),aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:01:00Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/14
+15,"Fase 1: escopo, profundidade e objetos de avaliação",aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:01:02Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/15
+16,"Fase 1: ODS, metas e indicadores",aberta,E1: Fases 1 e 2,fase-1,,2026-10-19T20:01:05Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/16
+17,Fase 2: objetivos de medição no template GQM,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:08Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/17
+18,Fase 2: questões de avaliação,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:11Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/18
+19,Fase 2: hipóteses para todas as questões,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:14Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/19
+20,"Fase 2: métricas com definição, cálculo, fonte, coleta e interpretação",aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:18Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/20
+21,Fase 2: níveis de pontuação e critérios de julgamento,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:21Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/21
+22,Fase 2: diagrama GQM completo,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:23Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/22
+23,Fase 2: consistência entre as Fases 1 e 2,aberta,E1: Fases 1 e 2,fase-2,,2026-10-19T20:01:26Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/23
+24,Artigo: migrar para template SBC/ACM/IEEE em LaTeX,aberta,E1: Fases 1 e 2,artigo,,2026-10-19T20:01:29Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/24
+25,Artigo: referencial teórico,aberta,E1: Fases 1 e 2,artigo,,2026-10-19T20:01:32Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/25
+26,Artigo: seções da Fase 1 e da Fase 2,aberta,E1: Fases 1 e 2,artigo,,2026-10-19T20:01:35Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/26
+27,Artigo: link do repositório e tabela de contribuição no apêndice,aberta,E1: Fases 1 e 2,artigo,,2026-10-19T20:01:37Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/27
+28,Artigo: revisão final da E1,aberta,E1: Fases 1 e 2,artigo,,2026-10-19T20:01:40Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28
+29,"GitPage: versão e data no rodapé, sumário e links entre páginas",aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:43Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/29
+30,"GitPage: links para repositório, release e evidências",aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:46Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/30
+31,GitPage: remover emojis e ícones,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:49Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/31
+32,GitPage: texto alternativo em todas as imagens,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:52Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/32
+33,Página de uso de IA,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:54Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/33
+34,Página de referências,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:01:57Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/34
+35,README enxuto e remoção do .venv do repositório,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:02:00Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/35
+36,Template de issue e milestones,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:03Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/36
+37,Release E1,aberta,E1: Fases 1 e 2,gitpage,,2026-10-19T20:02:06Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/37
+38,Página PSM/CID com as três categorias,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:09Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/38
+39,Medição PSM nº 1,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:12Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/39
+40,Medição PSM nº 2,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:15Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/40
+41,Tabela de contribuição com percentual de esforço,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:19Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/41
+42,Atas das reuniões,aberta,E1: Fases 1 e 2,gestao,,2026-10-19T20:02:21Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/42
+43,Correções do Ponto de Controle 1,aberta,E2: Fases 3 e 4,gestao,,2026-10-19T20:02:25Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/43
+44,Fase 3: método de avaliação e instruções repetíveis,aberta,E2: Fases 3 e 4,fase-3,,2026-10-19T20:02:27Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/44
+45,"Fase 3: recursos, ambiente e massa de dados",aberta,E2: Fases 3 e 4,fase-3,,2026-10-19T20:02:32Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/45
+46,Fase 3: cronograma da avaliação,aberta,E2: Fases 3 e 4,fase-3,,2026-10-19T20:02:35Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/46
+47,Termo de consentimento dos participantes,aberta,E2: Fases 3 e 4,fase-3,,2026-10-19T20:02:38Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/47
+48,Fase 4: coleta das medidas com evidências,aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:41Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/48
+49,Fase 4: dados brutos organizados e rastreáveis,aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:44Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/49
+50,Fase 4: análise e respostas às questões GQM,aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:47Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/50
+51,"Fase 4: julgamento, conclusões e coerência com o propósito",aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:51Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/51
+52,Discussão das relações entre as características,aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:54Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/52
+53,Ação de melhoria obrigatória,aberta,E2: Fases 3 e 4,fase-4,,2026-10-19T20:02:57Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/53
+54,Artigo: versão final,aberta,E2: Fases 3 e 4,artigo,,2026-10-19T20:03:00Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/54
+55,Release E2,aberta,E2: Fases 3 e 4,gitpage,,2026-10-19T20:03:03Z,,,,0,https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/55

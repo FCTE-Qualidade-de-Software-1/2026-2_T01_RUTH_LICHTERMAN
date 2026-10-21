@@ -86,6 +86,7 @@ nav:
       - Gráfico GQM: fase-2/grafico-gqm.md
   - Gestão:
       - PSM/CID: gestao/psm.md
+      - Painel PSM (automático): gestao/painel.md
   - Uso de IA: uso-de-ia.md
   - Equipe: contribuicao.md
   - Referências: referencias.md

@@ -13,6 +13,8 @@ Os dados vêm do repositório da equipe no GitHub:
 
 As tarefas concluídas antes da adoção das issues foram registradas como issues retroativas (label `retroativa`).
 
+Os valores atuais dos indicadores, os gráficos e a contribuição de cada integrante são calculados automaticamente a partir dessas fontes e publicados no [Painel PSM](painel.md).
+
 ## Indicadores
 
 | ID | Categoria | Indicador | Cálculo | Fonte | Limite de alerta |

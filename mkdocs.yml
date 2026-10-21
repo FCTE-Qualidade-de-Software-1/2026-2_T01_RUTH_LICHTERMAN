@@ -75,7 +75,11 @@ nav:
       - Introdução: artigo/introducao.md
       - Referencial Teórico: artigo/referencial-teorico.md
       - Metodologia: artigo/metodologia.md
-  - Fase 1: fase-1/index.md
+  - Fase 1:
+      - Visão geral: fase-1/index.md
+      - Descrição do Produto: fase-1/1-descricao.md
+      - Propósito, Justificativa e Objetivos: fase-1/2-proposito.md
+      - Modelo de Qualidade: fase-1/3-modelo.md
   - Fase 2 — GQM:
       - Visão geral: fase-2/index.md
       - Objetivos de Medição: fase-2/objetivos.md

@@ -29,5 +29,5 @@ Os objetivos de avaliação, as questões e as métricas (modelo GQM) estão na 
  
 | Versão | Data       | Descrição                   | Autor       | Revisor     |
 | :----- | :--------- | :-------------------------- | :---------- | :---------- |
-| 1.0    | 18/10/2026 | Criação da página da Fase 1 | [https://github.com/arthurfernandesj] | [https://github.com/GiovanaFontesS] |
-| 1.1    | 20/10/2026 | Edição de conteúdo da página da Fase 1 | [https://github.com/leticialopes20] | [https://github.com/GiovanaFontesS] |
+| 1.0 | 18/10/2026 | Criação da página da Fase 1 | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.1 | 20/10/2026 | Edição do conteúdo da página da Fase 1 | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

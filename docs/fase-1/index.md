@@ -1,28 +1,33 @@
-# Fase 1 — Caracterização do produto
-
-## Objetivos da fase
-
-A Fase 1 tem como objetivo caracterizar o Cartão Mobilidade do Distrito Federal como objeto de estudo do projeto de Qualidade de Software, identificando seu contexto de utilização, suas principais funcionalidades, os usuários envolvidos e os aspectos relevantes para uma futura avaliação de qualidade.
-
-A análise considera o serviço de forma abrangente, incluindo o cartão físico, as operações de utilização e validação de passagens, os canais digitais relacionados, as recargas, as consultas e os processos de atendimento.
-
-Nesta etapa inicial, busca-se estabelecer uma compreensão do produto e delimitar o escopo da avaliação, criando uma base para a definição dos objetivos de medição, das questões de avaliação e das métricas a serem desenvolvidas nas próximas fases.
-
-## Artefatos produzidos
-
-Os artefatos previstos para esta fase são:
-
-- **Caracterização do produto:** descrição do Cartão Mobilidade, seu contexto de utilização e os componentes que integram o serviço.
-- **Delimitação do escopo:** identificação dos aspectos do serviço que serão considerados na avaliação de qualidade.
-- **Levantamento inicial de funcionalidades:** identificação das principais operações disponibilizadas aos usuários, como utilização do cartão, recarga e consulta de informações.
-- **Referências preliminares:** levantamento de fontes oficiais para fundamentar a caracterização do serviço.
-
-Os artefatos serão detalhados e complementados à medida que o levantamento de informações avançar.
-
-## Resultados
-
-Como resultado inicial, foi estabelecido o Cartão Mobilidade do Distrito Federal como objeto de estudo do projeto. A avaliação terá uma perspectiva abrangente, considerando os componentes tecnológicos e operacionais relacionados ao serviço e sua interação com os usuários.
-
-Também foram identificadas características de qualidade potencialmente relevantes para o estudo, como adequação funcional, usabilidade, confiabilidade, desempenho, segurança e compatibilidade.
-
-Essas características constituem uma proposta inicial e deverão ser refinadas conforme o aprofundamento da análise, a disponibilidade de evidências e os requisitos da disciplina. A identificação de possíveis problemas e a elaboração de recomendações dependerão das evidências obtidas durante a avaliação.
+# Fase 1 — Caracterização e Avaliação do Produto
+ 
+Nesta fase, a equipe caracteriza o produto avaliado, define o propósito da avaliação e seleciona as características de qualidade que serão investigadas.
+ 
+## Resumo
+ 
+| | |
+| :--- | :--- |
+| **Produto avaliado** | BRB Mobilidade, aplicativo móvel (iOS e Android) de acesso aos serviços do Cartão Mobilidade do Distrito Federal |
+| **Contexto** | Cartão físico, validadores e Sistema de Bilhetagem Eletrônica, considerados apenas quando ajudam a entender a experiência no aplicativo |
+| **Características avaliadas** | Usabilidade, funcionalidade, eficiência e confiabilidade |
+| **Objetivos de avaliação** | O1 a O7, detalhados na Fase 2 |
+ 
+## Conteúdo da fase
+ 
+| Página | O que apresenta |
+| :--- | :--- |
+| [Descrição do Produto](1-descricao.md) | O que é o aplicativo, suas funcionalidades, público-alvo, tecnologias e integrações, e ODS relacionados |
+| [Propósito, Justificativa e Objetivos](2-proposito.md) | Problema de pesquisa, justificativa, objetivos, características avaliadas com sua ênfase e partes interessadas |
+| [Modelo de Qualidade](3-modelo.md) | Características e subcaracterísticas, objetivos O1 a O7 e escopo da avaliação |
+ 
+## Próximos passos
+ 
+Os objetivos de avaliação, as questões e as métricas (modelo GQM) estão na [Fase 2](../fase-2/index.md). A participação de cada integrante está em [Contribuição](../contribuicao.md).
+ 
+---
+ 
+### Histórico de Versão
+ 
+| Versão | Data       | Descrição                   | Autor       | Revisor     |
+| :----- | :--------- | :-------------------------- | :---------- | :---------- |
+| 1.0    | 18/10/2026 | Criação da página da Fase 1 | [https://github.com/arthurfernandesj] | [https://github.com/GiovanaFontesS] |
+| 1.1    | 20/10/2026 | Edição de conteúdo da página da Fase 1 | [https://github.com/leticialopes20] | [https://github.com/GiovanaFontesS] |

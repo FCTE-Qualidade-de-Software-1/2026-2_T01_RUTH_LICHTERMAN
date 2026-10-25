@@ -39,12 +39,13 @@ Segurança, compatibilidade, portabilidade e manutenibilidade não são o foco d
 
 ## 4. Partes interessadas
 
-| Parte | Interesse na avaliação |
+O requisitante é hipotético: a área gestora do BRB Mobilidade no BRB, que também é o fornecedor e o operador da bilhetagem. Como não há contratante real, a equipe atua como avaliadora independente, com objetivo acadêmico.
+
+| Parte (papel) | Necessidades, critério de sucesso e influência na avaliação |
 | :--- | :--- |
-| Equipe de avaliação (requisitante) | Aplicar na prática a avaliação da qualidade de software e produzir recomendações fundamentadas em evidências. |
-| Usuários (adolescentes, adultos e idosos) | Usar recargas e consultas com facilidade, com informações corretas e aplicativo disponível. |
-| BRB e Semob-DF | Respectivamente, responsáveis pela bilhetagem e pelas regras tarifárias do sistema [1, 7]. Podem aproveitar as recomendações. |
-| Professora e monitores | Verificar a aplicação estruturada de metodologias de qualidade de software. |
+| Passageiro (usuário final) | **Necessita** operar sozinho, com rapidez e sem erros, e confiar no saldo. **Sucesso:** concluir as tarefas sem ajuda, em tempo próximo ao do experiente (M1, M2, M3, M5). **Influência:** é o ponto de vista dos objetivos e define tarefas e perfis (O1). |
+| Área gestora do BRB (requisitante hipotético, fornecedor e operador) | **Necessita** de saldos corretos, serviço disponível e menos atendimento presencial. **Sucesso:** nenhuma métrica crítica Insuficiente e disponibilidade ≥ 95% (M8, M9, M10, M14, M15). **Influência:** define o propósito e justifica as métricas críticas (O2, O4). |
+| Equipe de avaliação (avaliadora independente) | **Necessita** de medições viáveis, rastreáveis e repetíveis. **Sucesso:** resultados reconstruíveis a partir dos dados versionados. **Influência:** impõe as restrições de acesso, escopo e amostra. |
 
 ---
 
@@ -53,3 +54,4 @@ Segurança, compatibilidade, portabilidade e manutenibilidade não são o foco d
 | Versão | Data       | Descrição                                   | Autor       | Revisor     |
 | :----- | :--------- | :------------------------------------------ | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) |  |

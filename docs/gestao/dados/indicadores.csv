@@ -1,5 +1,5 @@
 id,categoria,indicador,valor,situacao,limite
-CP-1,Calendário e Progresso,Progresso do milestone E1: Fases 1 e 2,"9/42 (21,4%)",Em andamento,Abaixo de 80% na véspera da entrega
-RC-1,Recursos e Custos,Razão de esforço (horas reais / estimadas),Sem dados,Sem horas registradas nas issues fechadas,"Fora da faixa 0,8 a 1,2"
-RC-2,Recursos e Custos,Distribuição de esforço por integrante,Sem dados,Sem horas registradas nas issues fechadas,Integrante abaixo de 10% ou acima de 30%
-DP-1,Desempenho dos Processos,Taxa de retrabalho (issues reabertas),"0/9 (0,0%)",Dentro do esperado,Acima de 25%
+CP-1,Calendário e Progresso,Progresso do milestone E1: Fases 1 e 2,"15/43 (34,9%)",Em andamento,Abaixo de 80% na véspera da entrega
+RC-1,Recursos e Custos,Razão de esforço (horas reais / estimadas),"1,24 (24,6 h / 19,8 h, 16 issues)",Alerta,"Fora da faixa 0,8 a 1,2"
+RC-2,Recursos e Custos,Distribuição de esforço por integrante,"Arthur 35%, Daniel 9%, Giovana 22%, Hauedy 8%, Letícia 1%, Lucas 25%","Alerta: Arthur Fernandes, Daniel Sousa, Hauedy Wegner, Letícia Maria",Integrante abaixo de 10% ou acima de 30%
+DP-1,Desempenho dos Processos,Taxa de retrabalho (issues reabertas),"0/16 (0,0%)",Dentro do esperado,Acima de 25%

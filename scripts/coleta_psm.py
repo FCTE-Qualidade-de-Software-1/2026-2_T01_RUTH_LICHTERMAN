@@ -5,6 +5,7 @@ Lê as issues, os eventos e os commits do repositório pela API do GitHub,
 calcula os indicadores definidos em docs/gestao/psm.md e gera:
 
   docs/gestao/painel.md            página do painel (sobrescrita a cada execução)
+  docs/contribuicao.md             tabela de contribuição por entrega (sobrescrita)
   docs/gestao/img/progresso.svg    gráfico de progresso por milestone
   docs/gestao/img/esforco.svg      gráfico de esforço por integrante
   docs/gestao/dados/issues.csv     dados brutos das issues
@@ -42,6 +43,16 @@ EQUIPE = {
     "hauedyws": "Hauedy Wegner",
     "leticialopes20": "Letícia Maria",
     "lucasbbranco": "Lucas Branco",
+}
+
+# Área de cada integrante, conforme a divisão de tarefas da equipe
+AREAS = {
+    "arthurfernandesj": "Artigo e conteúdo das fases",
+    "daniel-de-sousa": "Artigo e conteúdo das fases; responsável pelo GQM (Fase 2)",
+    "giovanafontess": "Artigo e conteúdo das fases; template LaTeX e diagrama GQM",
+    "hauedyws": "Repositório GitHub, GitPage e gestão (PSM/CID)",
+    "leticialopes20": "Repositório GitHub, GitPage e gestão (PSM/CID)",
+    "lucasbbranco": "Artigo e conteúdo das fases",
 }
 
 # Limites de alerta (os mesmos da Tabela 1 de docs/gestao/psm.md)
@@ -163,11 +174,13 @@ def coletar(token):
     issues.sort(key=lambda x: x["numero"])
 
     commits_por_autor = defaultdict(int)
+    commits_lista = []
     for c in commits:
         login = (c.get("author") or {}).get("login")
         chave = login.lower() if login else c["commit"]["author"]["name"]
         commits_por_autor[chave] += 1
-    return issues, commits_por_autor
+        commits_lista.append((chave, c["commit"]["author"]["date"]))
+    return issues, commits_por_autor, commits_lista
 
 
 def calcular(issues, agora):
@@ -510,6 +523,192 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
     (DIR_GESTAO / "painel.md").write_text("\n".join(L), encoding="utf-8")
 
 
+# ----------------------------------------------------------------------------- contribuição
+def maiores_restos(valores, total=100.0, casas=1):
+    """Arredonda os percentuais pelo método dos maiores restos, para a soma dar exatamente 100."""
+    soma = sum(valores.values())
+    if not soma:
+        return {k: None for k in valores}
+    fator = 10 ** casas
+    brutos = {k: v * total * fator / soma for k, v in valores.items()}
+    base = {k: int(b) for k, b in brutos.items()}
+    falta = int(round(total * fator)) - sum(base.values())
+    for k in sorted(brutos, key=lambda k: brutos[k] - base[k], reverse=True)[:falta]:
+        base[k] += 1
+    return {k: b / fator for k, b in base.items()}
+
+
+def fim_do_prazo(prazo_iso):
+    return dt.datetime.combine(dt.date.fromisoformat(prazo_iso[:10]), dt.time(23, 59), tzinfo=FUSO)
+
+
+def gerar_contribuicao(issues, commits_lista, agora):
+    """Gera docs/contribuicao.md: atividades, horas e percentual de esforço de cada integrante por entrega."""
+    L = []
+    a = L.append
+    url_script = f"https://github.com/{REPO}/blob/main/scripts/coleta_psm.py"
+    a("# Contribuição da Equipe")
+    a("")
+    a("Esta página registra as atividades e o percentual de esforço de cada integrante em cada entrega. "
+      "O esforço é medido em **horas-pessoa**, a partir das horas reais informadas nas issues do GitHub, e "
+      "corresponde ao indicador RC-2 da [gestão do projeto com PSM/CID](gestao/psm.md). "
+      f"A página é gerada automaticamente pelo script [`scripts/coleta_psm.py`]({url_script}) a cada "
+      "publicação do site, e a mesma tabela é usada no apêndice do artigo.")
+    a("")
+    a(f"**Última atualização:** {agora.strftime('%d/%m/%Y às %H:%M')} (horário de Brasília).")
+    a("")
+
+    a("## Integrantes")
+    a("")
+    a("| Integrante | GitHub | Área de atuação |")
+    a("| :--- | :--- | :--- |")
+    for login, nm in EQUIPE.items():
+        gh_login = next((r for i in issues for r in i["responsaveis"] if r.lower() == login), login)
+        a(f"| {nm} | [@{gh_login}](https://github.com/{gh_login}) | {AREAS.get(login, '-')} |")
+    a("")
+    a("*Tabela 1: Integrantes da equipe e área de atuação. Fonte: elaborado pela equipe.*")
+    a("")
+
+    # milestones em ordem de prazo
+    ms = {}
+    for i in issues:
+        ms.setdefault(i["milestone"], i["prazo_milestone"])
+    ordem = sorted(ms, key=lambda t: (ms[t] is None, ms[t] or "", t))
+    inicio = None
+    n_tab = 1
+    for titulo in ordem:
+        prazo = ms[titulo]
+        fim = fim_do_prazo(prazo) if prazo else None
+        doms = [i for i in issues if i["milestone"] == titulo]
+        horas, est, concl, abertas_n = ({k: 0.0 for k in EQUIPE}, {k: 0.0 for k in EQUIPE},
+                                        {k: [] for k in EQUIPE}, {k: 0 for k in EQUIPE})
+        sem_horas = []
+        for i in doms:
+            resp = [r.lower() for r in i["responsaveis"] if r.lower() in EQUIPE]
+            if not resp:
+                continue
+            for r in resp:
+                if i["estado"] == "fechada":
+                    concl[r].append(i)
+                    if i["horas_reais"]:
+                        horas[r] += i["horas_reais"] / len(resp)
+                else:
+                    abertas_n[r] += 1
+                    if i["horas_estimadas"]:
+                        est[r] += i["horas_estimadas"] / len(resp)
+            if i["estado"] == "fechada" and not i["horas_reais"]:
+                sem_horas.append(i)
+        commits_periodo = defaultdict(int)
+        for autor, data in commits_lista:
+            d = dt.datetime.fromisoformat(data.replace("Z", "+00:00"))
+            if (inicio is None or d > inicio) and (fim is None or d <= fim):
+                commits_periodo[autor] += 1
+        pct = maiores_restos(horas)
+        total_h = sum(horas.values())
+
+        m_e = re.match(r"E(\d+):\s*(.+)", titulo)
+        rotulo_e = f"Entrega {m_e.group(1)} ({m_e.group(2)})" if m_e else titulo
+        a(f"## {rotulo_e}")
+        a("")
+        if prazo:
+            a(f"Prazo da entrega: {fim.strftime('%d/%m/%Y')}.")
+            a("")
+        n_tab += 1
+        a(f"*Tabela {n_tab}: Contribuição de cada integrante na {rotulo_e}.*")
+        a("")
+        a("| Integrante | Atividades concluídas (issues) | Horas reais | Esforço (%) | Commits no período |")
+        a("| :--- | :--- | :---: | :---: | :---: |")
+        for k in EQUIPE:
+            ativ = "<br>".join(f"[#{i['numero']}]({i['url']}) {celula(i['titulo'])}"
+                               for i in sorted(concl[k], key=lambda x: x["numero"])) or "Nenhuma issue concluída"
+            a(f"| {nome(k)} | {ativ} | {fmt(horas[k])} | {fmt(pct[k]) if pct[k] is not None else '-'} | "
+              f"{commits_periodo.get(k, 0)} |")
+        a(f"| **Total** | | **{fmt(total_h)}** | **{'100,0' if total_h else '-'}** | "
+          f"**{sum(commits_periodo.get(k, 0) for k in EQUIPE)}** |")
+        a("")
+        a(f"*Fonte: issues do GitHub ([issues.csv](gestao/dados/issues.csv)), calculado por "
+          f"`python scripts/coleta_psm.py`. Quando uma issue tem mais de um responsável, as horas são divididas "
+          "igualmente.*")
+        a("")
+        n_fech = sum(1 for i in doms if i["estado"] == "fechada")
+        avaliar = total_h and ((fim is not None and (fim - agora).total_seconds() <= 2 * 86400)
+                               or n_fech >= len(doms) / 2)
+        if total_h and not avaliar:
+            a(f"Entrega em andamento ({n_fech} de {len(doms)} issues concluídas). O critério do RC-2 é aplicado na "
+              "véspera da entrega; até lá, os percentuais acima são parciais.")
+        elif total_h:
+            fora = [f"{nome(k)} ({fmt(pct[k])}%)" for k in EQUIPE
+                    if not (LIMITE_DISTRIBUICAO[0] <= pct[k] <= LIMITE_DISTRIBUICAO[1])]
+            faixa = f"{LIMITE_DISTRIBUICAO[0]:.0f}% a {LIMITE_DISTRIBUICAO[1]:.0f}%"
+            if fora:
+                a(f"Pelo critério do RC-2 (faixa de {faixa} por integrante), estão fora da faixa: "
+                  f"{', '.join(fora)}. A decisão de rebalanceamento é registrada na "
+                  "[página PSM/CID](gestao/psm.md) e aplicada na atribuição das issues em andamento (tabela abaixo).")
+            else:
+                a(f"Pelo critério do RC-2, todos os integrantes estão dentro da faixa de {faixa}.")
+        else:
+            a("Ainda não há horas reais registradas nas issues concluídas desta entrega.")
+        a("")
+        if sem_horas:
+            lista = ", ".join(f"[#{i['numero']}]({i['url']})" for i in sem_horas)
+            a(f"!!! warning \"Issues concluídas sem horas reais\"\n    {lista}: o responsável deve preencher "
+              "o campo *Horas reais* para que o esforço entre na tabela.")
+            a("")
+        if any(abertas_n.values()):
+            prev = {k: horas[k] + est[k] for k in EQUIPE}
+            pct_prev = maiores_restos(prev)
+            n_tab += 1
+            a(f"### Em andamento")
+            a("")
+            a("Issues ainda abertas desta entrega, com a estimativa feita na atribuição. A previsão soma as horas "
+              "reais já registradas com as estimadas e mostra como o esforço deve ficar distribuído ao final.")
+            a("")
+            a(f"*Tabela {n_tab}: Trabalho em andamento e previsão de esforço na {rotulo_e}.*")
+            a("")
+            a("| Integrante | Issues abertas | Horas estimadas | Previsão (reais + estimadas) | Esforço previsto (%) |")
+            a("| :--- | :---: | :---: | :---: | :---: |")
+            for k in EQUIPE:
+                a(f"| {nome(k)} | {abertas_n[k]} | {fmt(est[k])} | {fmt(prev[k])} | "
+                  f"{fmt(pct_prev[k]) if pct_prev[k] is not None else '-'} |")
+            a("")
+            a("*Fonte: issues do GitHub. A lista completa das issues abertas está no [painel PSM](gestao/painel.md).*")
+            a("")
+        inicio = fim
+
+    a("## Metodologia")
+    a("")
+    a("### Por que horas trabalhadas")
+    a("")
+    a("| Medida | Vantagem | Problema | Decisão |")
+    a("| :--- | :--- | :--- | :--- |")
+    a("| Commits | Coleta automática | Mede o hábito de commit, não o trabalho: um artigo inteiro pode entrar em um "
+      "commit, e reuniões, pesquisa e revisão não geram commit | Usada só como evidência complementar |")
+    a("| Issues concluídas | Fácil de contar | Issues têm tamanhos muito diferentes | Usada para o progresso "
+      "(CP-1), não para o esforço |")
+    a("| **Horas reais por issue** | Cobre todo tipo de atividade, inclusive o que não aparece no Git | "
+      "Depende do registro honesto de cada integrante | **Adotada**, com a issue como evidência |")
+    a("")
+    a(f"*Tabela {n_tab + 1}: Alternativas de medida de esforço. Fonte: elaborado pela equipe.*")
+    a("")
+    a("### Registro e cálculo")
+    a("")
+    a("1. **Registro.** Cada tarefa é uma issue criada pelo [template da equipe]"
+      f"(https://github.com/{REPO}/blob/main/.github/ISSUE_TEMPLATE/tarefa.yml), com responsável, milestone e "
+      "*Horas estimadas*. Ao concluir, o responsável preenche *Horas reais* e fecha a issue.")
+    a("2. **Atividades fora do Git.** Reuniões, pesquisa, revisão e apresentação também viram issues (por exemplo, "
+      "slides do ponto de controle e atas), para que o tempo gasto seja contado.")
+    a("3. **Cálculo.** Esforço do integrante (%) = horas reais do integrante na entrega ÷ horas reais da equipe "
+      "na entrega × 100. Só entram issues fechadas. Os percentuais são arredondados pelo método dos maiores restos, "
+      "para a soma dar exatamente 100,0%.")
+    a(f"4. **Critério de decisão.** Integrante abaixo de {LIMITE_DISTRIBUICAO[0]:.0f}% ou acima de "
+      f"{LIMITE_DISTRIBUICAO[1]:.0f}% indica desequilíbrio. A equipe rebalanceia atribuindo as próximas issues a "
+      "quem está abaixo da faixa; as horas reais já registradas não são alteradas.")
+    a("5. **Commits no período.** Commits feitos até o fim do prazo de cada entrega, como evidência complementar. "
+      "Commits feitos com um e-mail que não está vinculado à conta do GitHub do integrante não são contados.")
+    a("")
+    (RAIZ / "docs" / "contribuicao.md").write_text("\n".join(L), encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--registrar", action="store_true", help="grava uma medição oficial em dados/medicoes.csv")
@@ -517,7 +716,7 @@ def main():
 
     agora = dt.datetime.now(FUSO)
     try:
-        issues, commits = coletar(obter_token())
+        issues, commits, commits_lista = coletar(obter_token())
     except (urllib.error.URLError, TimeoutError) as e:
         print(f"Falha ao acessar a API do GitHub: {e}. O painel anterior foi mantido.", file=sys.stderr)
         sys.exit(1)
@@ -536,6 +735,7 @@ def main():
     if args.registrar:
         registrar_medicao(inds, agora)
     gerar_pagina(issues, r, inds, commits, agora, milestone_ativo)
+    gerar_contribuicao(issues, commits_lista, agora)
 
     print(f"Painel atualizado: {len(issues)} issues, milestone ativo: {milestone_ativo}")
     for l in inds:

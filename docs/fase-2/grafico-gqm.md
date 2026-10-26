@@ -83,9 +83,13 @@ flowchart LR
 
 ---
 
+## Visão Geral 
+
+De forma geral, o diagrama GQM permite visualizar como a avaliação da qualidade do BRB Mobilidade foi estruturada, estabelecendo uma relação entre os objetivos definidos, as questões que orientam a investigação e as métricas utilizadas para mensurar os resultados. Essa organização possibilita que cada característica avaliada seja analisada de maneira sistemática, com critérios observáveis e quantificáveis. Assim, as métricas fornecem dados que ajudam a responder às questões propostas e, consequentemente, a verificar o alcance dos objetivos da avaliação. Dessa forma, o modelo contribui para uma análise mais organizada e fundamentada da qualidade do aplicativo, considerando aspectos relacionados à interação, à adequação funcional, à eficiência de desempenho e à confiabilidade.
+
 ### Histórico de Versão
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Gráfico GQM completo e matriz de rastreabilidade | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 2.0 | 25/10/2026 | Gráfico com quatro objetivos, conforme a Figura 2 da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Gráfico GQM completo e matriz de rastreabilidade | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 2.0 | 25/10/2026 | Gráfico com quatro objetivos, conforme a Figura 2 da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

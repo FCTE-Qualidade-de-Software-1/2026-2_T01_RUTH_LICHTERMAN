@@ -29,5 +29,5 @@ O limite de 60 s de H8 foi adotado como critério desta avaliação para a dispo
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Hipóteses H1 a H12 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 2.0 | 25/10/2026 | Hipóteses por perfil e limite de 60 s no aplicativo, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Hipóteses H1 a H12 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 2.0 | 25/10/2026 | Hipóteses por perfil e limite de 60 s no aplicativo, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

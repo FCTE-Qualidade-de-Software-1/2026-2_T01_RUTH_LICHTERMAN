@@ -1,0 +1,12 @@
+registro,metrica,tipo_tempo,participante,operacao,rede,tempo_segundos,n_observacoes,precisao,origem,observacao
+TT01,M2,tarefa,P01,consultar linha,,30,1,valor informado,medição informada por P01,Referência experiente; rede e nomes exatos das telas de início e fim não registrados
+TT02,M2,tarefa,P02,consultar linha,,71,1,valor informado,medição informada por P01,Mesmos marcos da referência e sem dicas segundo confirmação de P01; rede não registrada
+TE01,M11,resposta_operacao,P01,abrir extrato,Wi-Fi,3.1,1,aproximado,inspeção de gravação privada,Transição visual até registros; sem indicador de toque no início
+TE02,M11,resposta_operacao,P01,gerar código Pix,Wi-Fi,3.0,1,aproximado,inspeção de gravação privada,Confirmar até código e instruções utilizáveis; sem pagamento nesta execução
+TE03,M11,resposta_operacao,P01,abrir extrato,dados móveis/4G,3.0,1,aproximado,inspeção de gravação privada,Seleção do extrato até registros; pareado com TE01 para comparação exploratória M12
+TE04,M11,resposta_operacao,P01,gerar código Pix,dados móveis/4G,2.9,1,aproximado,inspeção de gravação privada,Confirmar até código e instruções; pareado com TE02 para comparação exploratória M12
+TE05,M11,resposta_operacao,P01,abrir mapa com paradas,Wi-Fi,5.3,1,aproximado,inspeção de gravação privada,Toque próximo ao início da gravação até mapa e paradas utilizáveis
+TE06,M11,resposta_operacao,P01,abrir detalhes completos da linha,Wi-Fi,2.9,1,aproximado,inspeção de gravação privada,Seleção da linha até traçado e próximos horários completos; exclui escolha anterior
+TE07,M11,resposta_operacao,P01,abrir mapa com paradas,dados móveis,5.3,1,aproximado,relato de P01,Informado como igual a TE05; sem nova gravação analisada e sem limitação controlada de rede
+TE08,M11,resposta_operacao,P01,abrir detalhes completos da linha,dados móveis,2.9,1,aproximado,relato de P01,Informado como igual a TE06; sem nova gravação analisada e sem limitação controlada de rede
+TR01,M10,atualizacao_recarga,P01,disponibilizar crédito no aplicativo após confirmação do Pix,,1,1,1 s conforme medição informada,medição documentada segundo P01,Registro original não enviado para análise; não é estimativa de memória; rede não confirmada; não mede atualização física na catraca

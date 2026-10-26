@@ -2,8 +2,18 @@
 
 A Figura 1 mostra a hierarquia completa da avaliação: quatro [objetivos](objetivos.md) (nível conceitual), doze [questões](questoes.md) (nível operacional) e quinze [métricas](metricas.md) (nível quantitativo). A Tabela 1, logo abaixo, traz a mesma hierarquia em texto.
 
+*Figura 1: Hierarquia GQM da avaliação do BRB Mobilidade.*
+
 ```mermaid
 flowchart LR
+    accTitle: Estrutura GQM da avaliação, de objetivos a métricas
+    accDescr {
+        Fluxograma da esquerda para a direita com três níveis: objetivos (conceitual), questões (operacional) e métricas (quantitativo). Cada objetivo se desdobra em questões, e cada questão em métricas.
+        O1, Capacidade de interação, tem quatro questões. Q1, conclusão e tempo de tarefas, mede M1 taxa de conclusão de tarefas e M2 razão de tempo por tarefa. Q2, facilidade de uso percebida, mede M3 pontuação SUS. Q3, inclusividade e assistência, mede M4 checklist de acessibilidade. Q4, prevenção de erros, mede M5 erros por tarefa e M6 tratamento de entradas inválidas.
+        O2, Adequação funcional, tem quatro questões. Q5, funções previstas presentes, mede M7 completude funcional. Q6, resultados esperados, mede M8 corretude funcional. Q7, coerência das informações, mede M9 divergências entre informações. Q8, saldo atualizado no prazo, mede M10 saldo atualizado em até 60 segundos.
+        O3, Eficiência de desempenho, tem uma questão. Q9, tempo de resposta adequado, mede M11 tempo médio de resposta e M12 degradação em rede limitada.
+        O4, Confiabilidade, tem três questões. Q10, recuperação de interrupções, mede M13 taxa de recuperação após falha. Q11, frequência de falhas, mede M14 taxa de falhas por operação. Q12, disponibilidade dos serviços, mede M15 disponibilidade observada.
+    }
     subgraph C["Nível conceitual (objetivos)"]
         direction TB
         O1["O1 Capacidade de interação"]
@@ -62,7 +72,9 @@ flowchart LR
     Q12 --> M15
 ```
 
-*Figura 1: Hierarquia GQM da avaliação do BRB Mobilidade. Fonte: elaborado pela equipe.*
+*Fonte: elaborado pela equipe.*
+
+*Tabela 1: Matriz de rastreabilidade objetivo, questão e métrica.*
 
 | Objetivo | Questão | Métricas |
 | :--- | :--- | :--- |
@@ -79,7 +91,7 @@ flowchart LR
 | O4 Confiabilidade | Q11 Frequência de falhas | M14 |
 | O4 Confiabilidade | Q12 Disponibilidade dos serviços | M15 |
 
-*Tabela 1: Matriz de rastreabilidade objetivo, questão e métrica. Fonte: elaborado pela equipe.*
+*Fonte: elaborado pela equipe.*
 
 ---
 
@@ -92,4 +104,5 @@ De forma geral, o diagrama GQM permite visualizar como a avaliação da qualidad
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 21/10/2026 | Gráfico GQM completo e matriz de rastreabilidade | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
-| 2.0 | 25/10/2026 | Gráfico com quatro objetivos, conforme a Figura 2 da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.1 | 25/10/2026 | Gráfico com quatro objetivos, conforme a Figura 2 da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.2 | 26/10/2026 |Adiciona texto alternativo no diagrama e faz pequenos ajustes | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

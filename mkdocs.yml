@@ -2,6 +2,9 @@ site_name: Projeto de Qualidade de Software
 site_description: Documentação das entregas da disciplina de Qualidade de Software
 site_author: RUTH LICHTERMAN
 site_url: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN
+repo_name: Repositório da equipe
+copyright: "Versão E1 · atualizado em 25/10/2026 · Equipe Ruth Lichterman · QSW1 2026/2"
 
 theme:
   name: material
@@ -92,6 +95,8 @@ nav:
       - Métricas: fase-2/metricas.md
       - Níveis de Pontuação: fase-2/niveis-pontuacao.md
       - Gráfico GQM: fase-2/grafico-gqm.md
+  - Fase 3 — Projeto: fase-3/index.md
+  - Fase 4 — Resultados: fase-4/index.md
   - Gestão:
       - PSM/CID: gestao/psm.md
       - Painel PSM (automático): gestao/painel.md

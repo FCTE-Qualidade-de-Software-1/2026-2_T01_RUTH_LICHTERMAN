@@ -8,7 +8,7 @@ Aplicativos de transporte público precisam oferecer funcionalidades adequadas �
 
 A avaliação se justifica por permitir analisar recargas e consultas com base em critérios e evidências, identificando limitações e oportunidades de melhoria.
 
-Um exemplo de uso mostra o que está em jogo. O usuário recarrega o cartão por Pix, espera o saldo aparecer no aplicativo (até 1 minuto), embarca e valida o cartão no ônibus (crédito liberado nos validadores em até 5 minutos) e, no fim do dia, confere o extrato. Dificuldade para concluir a recarga, divergência entre saldo e extrato, lentidão, falha ou indisponibilidade afetam diretamente o deslocamento.
+Um exemplo de uso mostra o que está em jogo. O passageiro recarrega o cartão por Pix, espera o crédito aparecer no aplicativo, embarca no ônibus ou no metrô e, no fim do dia, confere o extrato. Nesta avaliação, adotou-se o limite de 60 s para observar a disponibilização do crédito no aplicativo; esse critério não representa uma garantia de atualização nos validadores, e a gravação no cartão físico é uma etapa distinta. Dificuldade para concluir a recarga, divergência entre saldo e extrato, lentidão, falha ou indisponibilidade afetam diretamente o deslocamento.
 
 ## 2. Objetivos
 
@@ -20,7 +20,7 @@ Um exemplo de uso mostra o que está em jogo. O usuário recarrega o cartão por
 - Identificar as características de qualidade relevantes para a avaliação.
 - Considerar as necessidades de adolescentes, adultos e idosos.
 - Definir questões de avaliação e métricas compatíveis com os objetivos.
-- Coletar e analisar evidências sobre o funcionamento, a usabilidade e a utilização do aplicativo.
+- Coletar e analisar evidências sobre o funcionamento, a capacidade de interação e a utilização do aplicativo.
 - Investigar limitações e oportunidades de melhoria com base nas evidências.
 - Elaborar recomendações fundamentadas nos resultados.
 
@@ -30,12 +30,12 @@ A avaliação se concentra em quatro características. A ênfase vai de 1 (nenhu
 
 | Característica | Ênfase | Por que é relevante | Decisão que os resultados apoiam |
 | :--- | :---: | :--- | :--- |
-| Usabilidade | 5 | O público inclui adolescentes, adultos e idosos, o que torna importantes a clareza, a navegação, a legibilidade e a acessibilidade. | Melhorias de interface, navegação e prevenção de erros. |
-| Funcionalidade | 5 | Recarga, saldo, extrato e histórico precisam dar resultados corretos e coerentes entre si. | Correção de resultados incorretos e de divergências de informação. |
+| Capacidade de interação (antiga usabilidade) | 5 | O público inclui adolescentes, adultos e idosos, o que torna importantes a clareza, a navegação, a legibilidade e a acessibilidade. | Melhorias de interface, navegação e prevenção de erros. |
+| Adequação funcional | 5 | Recarga, saldo, extrato e histórico precisam dar resultados corretos e coerentes entre si. | Correção de resultados incorretos e de divergências de informação. |
 | Confiabilidade | 4 | O usuário depende do aplicativo na rotina de deslocamento, então falhas e indisponibilidade impedem o uso. | Correção de falhas recorrentes e melhoria da recuperação após interrupções. |
-| Eficiência | 3 | O acesso aos serviços precisa ser ágil no carregamento de telas, nas consultas e nas recargas. | Priorização de otimizações nas operações mais lentas. |
+| Eficiência de desempenho | 3 | O acesso aos serviços precisa ser ágil no carregamento de telas, nas consultas e nas recargas. | Priorização de otimizações nas operações mais lentas. |
 
-Segurança, compatibilidade, portabilidade e manutenibilidade não são o foco desta avaliação.
+Segurança, compatibilidade, flexibilidade (antiga portabilidade), manutenibilidade e *safety* não são o foco desta avaliação; as justificativas estão no [modelo de qualidade](3-modelo.md).
 
 ## 4. Partes interessadas
 
@@ -55,3 +55,4 @@ O requisitante é hipotético: a área gestora do BRB Mobilidade no BRB, que tam
 | :----- | :--------- | :------------------------------------------ | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) |  |
+| 1.2    | 25/10/2026 | Nomes da ISO/IEC 25010:2023 e limite de 60 s no aplicativo, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |  |

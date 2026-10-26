@@ -19,10 +19,9 @@ A documentação é disponibilizada por meio de um site desenvolvido com MkDocs 
 
 ## Links do projeto
 
-- **GitHub Pages:** [Acessar a documentação](INSERIR_LINK_DO_GITHUB_PAGES)
-- **Repositório GitHub:** [Acessar o código-fonte](INSERIR_LINK_DO_REPOSITORIO)
+- **GitHub Pages:** [Acessar a documentação](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/)
+- **Repositório GitHub:** [Acessar o repositório](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN)
 
-> Substitua os endereços acima pelos links reais do repositório e do site publicado.
 
 ## Objetivo do trabalho
 
@@ -171,15 +170,13 @@ Se algum comando não funcionar, instale o componente correspondente antes de co
 Clone o projeto utilizando o endereço HTTPS do repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN.git
 ```
-
-Substitua `URL_DO_REPOSITORIO` pelo endereço real do repositório.
 
 Entre na pasta criada:
 
 ```bash
-cd NOME_DO_REPOSITORIO
+cd 2026-2_T01_RUTH_LICHTERMAN
 ```
 
 ### 3. Criar um ambiente virtual

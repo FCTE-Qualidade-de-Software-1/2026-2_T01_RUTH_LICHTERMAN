@@ -153,3 +153,12 @@
     font-size: .8rem;
   }
 }
+/* Cartões da página inicial e faixa de etapas (4 fases) */
+.project-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .75rem; margin: 1.5rem 0; }
+.md-typeset .project-card { display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1.1rem; border: 1px solid var(--panel-border); background: var(--panel); border-radius: 6px; color: inherit; transition: border-color .15s; }
+.md-typeset .project-card:hover { border-color: var(--teal-bright); }
+.md-typeset .project-card h3 { margin: 0; font-size: .95rem; }
+.md-typeset .project-card p { margin: 0; font-size: .78rem; color: var(--md-default-fg-color--light); }
+.project-card-icon { font-size: .7rem; font-weight: 700; letter-spacing: .08em; color: var(--teal-bright); }
+.project-card-link { margin-top: auto; font-size: .75rem; font-weight: 600; color: var(--teal-bright); }
+.phase-strip { grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }

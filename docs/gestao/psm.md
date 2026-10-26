@@ -16,16 +16,22 @@ No PSM, cada medida existe para responder a uma **necessidade de informação** 
 
 *Tabela 1: Propósito da medição do projeto. Fonte: elaborado pela equipe, com base no modelo de objetivo da Aula 08.*
 
-## Origem das medidas
+## Métricas implementadas
 
-A especificação pede medidas nas três categorias de informação do PSM. A Tabela 2 liga cada indicador à linha de onde ele foi tirado na Tabela 5 do guia PSM/CID, Parte 1, e à especificação da Parte 2, quando existe.
+A equipe implementou **quatro medidas do guia PSM/CID**, uma ou mais em cada categoria de informação pedida na especificação:
 
-| ID | Categoria de informação | Conceito mensurável | Medida do guia | Origem no guia | Especificação na Parte 2 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| CP-1 | Calendário e Progresso (*Schedule and Progress*) | Progresso das unidades de trabalho (*Work Unit Progress*) | *Committed vs. Completed* | Tabela 5, linha 1 | Seção 8.3, com critérios de decisão de 5% e 10% |
-| RC-1 | Recursos e Custos (*Resources and Cost*) | Desempenho financeiro (*Financial Performance*) | *Estimate vs. Actual Effort* e *Estimation Accuracy* | Tabela 5, linhas 8 e 9 | Não há; o cálculo e o critério foram definidos pela equipe |
-| RC-2 | Recursos e Custos (*Resources and Cost*) | Desempenho financeiro (*Financial Performance*) | *Effort* | Tabela 5, linha 7 | Não há; o cálculo e o critério foram definidos pela equipe |
-| DP-1 | Desempenho dos Processos (*Process Performance*) | Eficiência do processo: velocidade (*Process Efficiency – Speed*) | *Cycle Time* | Tabela 5, linhas 30 e 32 | Seção 8.5, com critério de decisão de 10% da média |
+- **Calendário e Progresso:** *Committed vs. Completed* (planejado vs. concluído), indicador CP-1;
+- **Recursos e Custos:** *Estimate vs. Actual Effort* (horas estimadas vs. reais), indicador RC-1, e *Effort* (esforço por integrante), indicador RC-2;
+- **Desempenho dos Processos:** *Cycle Time* (tempo de ciclo), indicador DP-1.
+
+A Tabela 2 mostra de onde cada uma foi tirada: a linha da Tabela 5 do guia (Parte 1) e a especificação da Parte 2, quando existe. A coluna "Tipo de questão" segue a classificação de McGarry et al. (2002, cap. 2): **problema** (já acontece), **risco** (pode acontecer) ou **falta de informação**.
+
+| ID | Categoria de informação | Conceito mensurável | Medida do guia | Origem no guia | Especificação na Parte 2 | Tipo de questão |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CP-1 | Calendário e Progresso (*Schedule and Progress*) | Progresso das unidades de trabalho (*Work Unit Progress*) | *Committed vs. Completed* | Tabela 5, linha 1 | Seção 8.3, com critérios de decisão de 5% e 10% | Risco de atraso na entrega |
+| RC-1 | Recursos e Custos (*Resources and Cost*) | Desempenho financeiro (*Financial Performance*) | *Estimate vs. Actual Effort* e *Estimation Accuracy* | Tabela 5, linhas 8 e 9 | Não há; o cálculo e o critério foram definidos pela equipe | Falta de informação sobre a precisão das estimativas |
+| RC-2 | Recursos e Custos (*Resources and Cost*) | Desempenho financeiro (*Financial Performance*) | *Effort* | Tabela 5, linha 7 | Não há; o cálculo e o critério foram definidos pela equipe | Problema: desequilíbrio de esforço entre integrantes |
+| DP-1 | Desempenho dos Processos (*Process Performance*) | Eficiência do processo: velocidade (*Process Efficiency – Speed*) | *Cycle Time* | Tabela 5, linhas 30 e 32 | Seção 8.5, com critério de decisão de 10% da média | Risco de tarefas paradas |
 
 *Tabela 2: Origem de cada indicador no PSM/CID. Fonte: PSM/CID Parte 1 (2021), Tabela 5, e Parte 2 (2021), seções 8.3 e 8.5.*
 
@@ -48,7 +54,7 @@ O guia foi escrito para equipes ágeis que medem *story points* e *features*. Ne
 | Medidas derivadas | Percentual concluído; progresso esperado; desvio |
 | Função de medição | Concluído (%) = C × 100 ÷ P. Esperado (%) = fração decorrida × 100. Desvio (p.p.) = esperado − concluído |
 | Indicador | Gráfico de progresso por milestone e Tabela 2 do [Painel PSM](painel.md) |
-| Modelo de análise | Quanto maior o desvio, maior o risco de a entrega não ficar pronta no prazo. Um desvio alto com muitas tarefas já feitas indica registro atrasado nas issues, e não trabalho atrasado |
+| Modelo de análise | Quanto maior o desvio, maior o risco de a entrega não ficar pronta no prazo. Um desvio alto com muitas tarefas já feitas indica registro atrasado nas issues, e não trabalho atrasado. Só conta como concluída a issue fechada, que deve atender ao seu critério de pronto, como recomendam McGarry et al. (2002, cap. 2, exemplo de progresso) |
 | Critérios de decisão | **Guia (Parte 2, seção 8.3):** diferença entre o planejado e o concluído acima de 5%, investigar as causas; acima de 10%, tomar ação corretiva. **Adaptação da equipe:** o guia compara no fim da iteração; aqui a comparação é feita durante o milestone, contra o progresso esperado para a data |
 
 *Tabela 3: Instância do modelo de informação do CP-1. Fonte: elaborado pela equipe, com base na Aula 09 e no PSM/CID.*
@@ -62,14 +68,14 @@ O guia foi escrito para equipes ágeis que medem *story points* e *features*. Ne
 | Entidades relevantes | Issues fechadas com horas estimadas e horas reais preenchidas |
 | Atributos | Esforço estimado e esforço realizado |
 | Medidas básicas | 1. E = soma das horas estimadas. 2. R = soma das horas reais |
-| Método de medição | 1. Leitura do campo *Horas estimadas*, preenchido na criação da issue. 2. Leitura do campo *Horas reais*, preenchido pelo responsável ao fechar |
-| Tipo de método de medição | 1 e 2. Subjetivo (estimativa e registro feitos pelas pessoas); a leitura dos campos é automática |
+| Método de medição | 1. Leitura do campo *Horas estimadas*, preenchido na criação da issue. A partir da E2, a estimativa é feita por *Planning Poker* (Cohn, 2005): cada integrante escolhe uma carta de 0,5, 1, 2, 3, 5 ou 8 horas, usando como referência tarefas já concluídas de tamanho parecido, e a equipe discute até chegar a um consenso. 2. Leitura do campo *Horas reais*, preenchido pelo responsável ao fechar |
+| Tipo de método de medição | 1. Subjetivo (a estimativa é um julgamento). 2. Objetivo (registro do tempo gasto). A leitura dos campos é automática |
 | Escala | 1 e 2. Reais de zero ao infinito |
 | Tipo de escala | 1 e 2. Razão |
 | Unidade de medida | 1 e 2. Hora |
 | Medida derivada | Razão de esforço |
 | Função de medição | Razão = R ÷ E |
-| Indicador | Valor do RC-1 na Tabela 1 e colunas de horas na Tabela 3 do [Painel PSM](painel.md) |
+| Indicador | Razão geral (Tabela 1), gráfico e tabela de horas estimadas vs. reais por integrante e comparação por issue no [Painel PSM](painel.md). Por integrante, o estimado é o das tarefas que a pessoa recebeu e o real é o das tarefas que ela de fato executou |
 | Modelo de análise | Razão acima de 1: a equipe subestimou o esforço; abaixo de 1: superestimou |
 | Critérios de decisão | **Equipe:** razão fora da faixa de 0,8 a 1,2, revisar as estimativas das issues restantes do mesmo tipo |
 
@@ -84,16 +90,16 @@ O guia foi escrito para equipes ágeis que medem *story points* e *features*. Ne
 | Entidades relevantes | Issues fechadas e integrantes da equipe |
 | Atributos | Horas reais e responsáveis de cada issue |
 | Medidas básicas | 1. Hᵢ = horas reais do integrante i. 2. H = horas reais da equipe |
-| Método de medição | 1. Soma das horas reais das issues fechadas em que o integrante é responsável; em issues com mais de um responsável, as horas são divididas igualmente. 2. Soma de todas as horas reais |
-| Tipo de método de medição | 1 e 2. Subjetivo (registro das pessoas); o cálculo é automático |
+| Método de medição | 1. Soma das horas reais das issues fechadas que o integrante realizou. Quem realizou vem do arquivo [execucao.csv](dados/execucao.csv), preenchido pela equipe; sem registro, vale o responsável da issue. Com mais de uma pessoa, as horas são divididas igualmente. 2. Soma de todas as horas reais |
+| Tipo de método de medição | 1 e 2. Objetivo (registro do tempo gasto); o cálculo é automático |
 | Escala | 1 e 2. Reais de zero ao infinito |
 | Tipo de escala | 1 e 2. Razão |
 | Unidade de medida | 1 e 2. Hora-pessoa |
 | Medida derivada | Percentual de esforço do integrante |
 | Função de medição | Esforço (%) = Hᵢ × 100 ÷ H |
-| Indicador | Gráfico de esforço por integrante no [Painel PSM](painel.md) e tabela por entrega na página [Contribuição da Equipe](../contribuicao.md) |
+| Indicador | Gráfico de esforço por integrante no [Painel PSM](painel.md); tabela por entrega e quadro "alocado vs. realizado" na página [Contribuição da Equipe](../contribuicao.md) |
 | Modelo de análise | Percentual muito acima da média indica sobrecarga; muito abaixo indica pouca participação ou trabalho não registrado |
-| Critérios de decisão | **Equipe:** integrante abaixo de 10% ou acima de 30%, rebalancear atribuindo as próximas issues a quem está abaixo da faixa. As horas reais já registradas não são alteradas |
+| Critérios de decisão | **Equipe:** integrante abaixo de 10% ou acima de 30% sinaliza desequilíbrio. A equipe analisa a causa e decide se rebalanceia as próximas atribuições, registrando a justificativa no registro de decisões. As horas reais já registradas não são alteradas |
 
 *Tabela 5: Instância do modelo de informação do RC-2. Fonte: elaborado pela equipe, com base na Aula 09 e no PSM/CID.*
 
@@ -113,13 +119,26 @@ O guia foi escrito para equipes ágeis que medem *story points* e *features*. Ne
 | Unidade de medida | 1 e 2. Dia |
 | Medidas derivadas | Tempo de ciclo de cada issue; média de tempo de ciclo; idade das issues abertas com responsável |
 | Função de medição | Tempo de ciclo = (data de fim − data de início) + 1, em dias, como no guia (Parte 2, seção 8.5). Idade = (hoje − data de início) + 1 |
-| Indicador | Tabela 4 e lista de issues paradas no [Painel PSM](painel.md) |
+| Indicador | Tabela 5 e lista de issues paradas no [Painel PSM](painel.md) |
 | Modelo de análise | Tempos maiores indicam tarefas grandes demais ou paradas; a comparação entre medições mostra se o fluxo está ficando mais previsível |
 | Critérios de decisão | **Guia (Parte 2, seção 8.5):** investigar qualquer issue com tempo de ciclo a mais de 10% da média. Como a unidade é o dia inteiro, a tolerância mínima é de 1 dia. **Equipe:** issue do milestone ativo com responsável há mais de 3 dias sem fechar, cobrar o responsável ou dividir a tarefa (critério revisto na Medição 2) |
 
 *Tabela 6: Instância do modelo de informação do DP-1. Fonte: elaborado pela equipe, com base na Aula 09 e no PSM/CID.*
 
 Os critérios marcados como "Equipe" foram definidos pelo grupo para o prazo curto das entregas e podem ser revistos a cada medição, com a justificativa registrada abaixo.
+
+## Processo de medição
+
+O PSM organiza a medição em quatro atividades que se repetem a cada ciclo (McGarry et al., 2002, cap. 1):
+
+| Atividade | Como a equipe faz |
+| :--- | :--- |
+| Planejar a medição | Necessidades de informação, escolha das medidas no guia e fichas desta página |
+| Executar a medição | Coleta automática pelo script, medições registradas e decisões na Tabela 9 |
+| Avaliar a medição | A cada medição, a equipe revê se as medidas respondem às necessidades. Até agora: a taxa de retrabalho foi trocada pelo tempo de ciclo, por não estar no guia; o critério de issue parada passou a valer só para o milestone ativo (Medição 2); e as horas reais de 15 issues foram registradas iguais à estimativa, o que reduz a confiança no RC-1 da E1. Na E2, cada pessoa registra as horas ao fechar a própria issue |
+| Manter o comprometimento | Hauedy e Letícia mantêm o script, o painel e as medições; cada integrante registra as horas reais e quem realizou cada tarefa; as decisões são discutidas no grupo da equipe |
+
+*Tabela 7: Atividades do processo de medição do PSM aplicadas ao projeto. Fonte: elaborado pela equipe, com base em McGarry et al. (2002).*
 
 ## Coleta automática
 
@@ -136,7 +155,7 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | 3 | A definir | Metade do prazo da Entrega 2 |
 | 4 | A definir | Véspera da Entrega 2 |
 
-*Tabela 7: Calendário das medições. Fonte: elaborado pela equipe.*
+*Tabela 8: Calendário das medições. Fonte: elaborado pela equipe.*
 
 ## Registro de medições e decisões
 
@@ -151,7 +170,13 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | 2 (26/10) | RC-2 | Lucas 24%, Giovana 23%, Daniel 21%, Arthur 19%, Hauedy 8%, Letícia 5% | Fora da faixa | O rebalanceamento resolveu a sobrecarga de Arthur e a baixa participação de Daniel. Hauedy e Letícia continuam abaixo de 10% porque #38 a #41 e o trabalho de repositório ainda não têm horas reais registradas | Fechar #38 a #41 e abrir issues com as horas reais do trabalho de repositório e GitPage ainda não registrado. Responsáveis: Hauedy e Letícia. Prazo: 26/10 |
 | 2 (26/10) | DP-1 | Média de 2,0 dias (22 issues); #10 e #26 com 4 dias; 5 issues com responsável há mais de 3 dias (#28, #48, #49, #51 e #52) | Investigar e alerta | #10 e #26 já estavam feitas e só foram fechadas agora, então o tempo de ciclo delas mede o atraso de registro. #28 está prevista para o dia da entrega. #48 a #52 são da E2, que ainda não começou | Revisão do critério da equipe: a partir desta medição, só contam como paradas as issues do milestone ativo. Fechar cada issue no mesmo dia em que for concluída. Responsáveis: todos. Prazo: E2 |
 
-*Tabela 8: Registro das medições, interpretações e decisões de gestão. Fonte: [medicoes.csv](dados/medicoes.csv) e decisões da equipe.*
+*Tabela 9: Registro das medições, interpretações e decisões de gestão. Fonte: [medicoes.csv](dados/medicoes.csv) e decisões da equipe.*
+
+### Decisões de planejamento da E2 (26/10)
+
+1. **Reestimativa por Planning Poker.** Seguindo a decisão do RC-1 na Medição 1, as issues abertas foram reestimadas com as cartas de 0,5 a 8 horas, tendo as tarefas concluídas como referência. O total estimado passou de 38 h para 48,5 h, principalmente em coleta e análise da Fase 4, ação de melhoria e versão final do artigo. As estimativas das issues já fechadas não foram alteradas, para não comprometer a comparação entre estimado e real.
+2. **Atribuição conforme a participação.** As tarefas da E2 foram distribuídas considerando a participação de cada integrante até aqui. Quem mais contribuiu na E1 recebe as tarefas de maior peso, e a carga prevista de Letícia fica abaixo da faixa do RC-2. Por isso, o RC-2 continua sendo acompanhado a cada medição, sem rebalanceamento automático. A previsão por integrante está na página [Contribuição da Equipe](../contribuicao.md).
+3. **Registro de quem realizou cada tarefa.** Quando quem fez a tarefa não é quem estava alocado, isso é registrado em [execucao.csv](dados/execucao.csv), e as horas reais passam a contar para quem realizou.
 
 ---
 
@@ -162,3 +187,5 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | 0.1 | 19/10/2026 | Criação da página com indicadores e procedimento de medição | Hauedy |
 | 1.0 | 26/10/2026 | Indicadores ligados à Tabela 5 do PSM/CID, fichas no template da Aula 09, troca da taxa de retrabalho pelo tempo de ciclo e registro da Medição 1 | Hauedy |
 | 1.1 | 26/10/2026 | Registro da Medição 2 e revisão do critério de issues paradas | Hauedy |
+| 1.2 | 26/10/2026 | Métricas implementadas, horas estimadas vs. reais, alocado vs. realizado e processo de medição (McGarry et al., 2002) | Hauedy |
+| 1.3 | 26/10/2026 | Planning Poker nas estimativas e decisões de planejamento da E2 | Hauedy |

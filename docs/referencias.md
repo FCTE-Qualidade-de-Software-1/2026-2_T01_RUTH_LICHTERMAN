@@ -14,6 +14,8 @@ Referências usadas no artigo e nesta página do projeto, em ordem alfabética.
 
 > CLUBE DO ÔNIBUS. *Cartão Mobilidade DF: guia de informações úteis em 2025*. 2025. Disponível em: <https://clubedoonibus.com.br/cartao-mobilidade-df/>. Acesso em: 21 out. 2026.
 
+> COHN, M. *Agile Estimating and Planning*. Upper Saddle River: Prentice Hall, 2005.
+
 > ISO/IEC. *ISO/IEC 25000:2014 – Systems and software engineering – SQuaRE – Guide to SQuaRE*. Geneva: International Organization for Standardization, 2014.
 
 > ISO/IEC. *ISO/IEC 25010:2023 – Systems and software engineering – SQuaRE – Product quality model*. Geneva: International Organization for Standardization, 2023.

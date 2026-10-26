@@ -124,6 +124,36 @@ def extrair_horas(corpo, rotulo):
     return float(m.group(1).replace(",", ".")) if m else None
 
 
+def resolver_login(texto):
+    """Aceita login do GitHub, @login, nome completo ou primeiro nome de um integrante."""
+    x = texto.strip().lstrip("@").lower()
+    if x in EQUIPE:
+        return x
+    for login, nm in EQUIPE.items():
+        if x in (nm.lower(), nm.split()[0].lower()):
+            return login
+    return x
+
+
+def ler_execucao():
+    """docs/gestao/dados/execucao.csv: quem de fato realizou cada issue (coluna realizado_por)."""
+    arq = DIR_DADOS / "execucao.csv"
+    if not arq.exists():
+        return {}
+    feitos = {}
+    with open(arq, encoding="utf-8") as f:
+        for linha in csv.DictReader(f):
+            nomes = [resolver_login(x) for x in re.split(r"[;,]", linha.get("realizado_por") or "") if x.strip()]
+            if nomes and (linha.get("numero") or "").strip().isdigit():
+                feitos[int(linha["numero"])] = nomes
+    return feitos
+
+
+def executores(issue):
+    """Quem realizou a issue: o registrado em execucao.csv ou, se não houver registro, os responsáveis."""
+    return issue.get("realizado_por") or [r.lower() for r in issue["responsaveis"]]
+
+
 def dias_corridos(ini_iso, fim_iso):
     """Tempo decorrido em dias, como no PSM/CID Parte 2, 8.5: (data de fim - data de início) + 1."""
     ini = dt.datetime.fromisoformat(ini_iso.replace("Z", "+00:00")).astimezone(FUSO).date()
@@ -188,6 +218,9 @@ def coletar(token):
             "reaberta": i["number"] in reabertas,
         })
     issues.sort(key=lambda x: x["numero"])
+    feitos = ler_execucao()
+    for i in issues:
+        i["realizado_por"] = feitos.get(i["numero"], [])
 
     commits_por_autor = defaultdict(int)
     commits_lista = []
@@ -244,18 +277,23 @@ def calcular(issues, agora):
     razao = soma_real / soma_est if soma_est else None
 
     # RC-2 contribuição por integrante (horas divididas igualmente entre os responsáveis)
-    pessoas = {login: {"atribuidas": 0, "fechadas": 0, "abertas": 0, "h_est": 0.0, "h_real": 0.0}
-               for login in EQUIPE}
+    def novo():
+        return {"atribuidas": 0, "fechadas": 0, "abertas": 0, "h_est": 0.0, "h_real": 0.0, "h_est_f": 0.0}
+    pessoas = {login: novo() for login in EQUIPE}
     for i in issues:
         resp = [r.lower() for r in i["responsaveis"]] or ["(sem responsável)"]
         for r in resp:
-            p = pessoas.setdefault(r, {"atribuidas": 0, "fechadas": 0, "abertas": 0, "h_est": 0.0, "h_real": 0.0})
+            p = pessoas.setdefault(r, novo())
             p["atribuidas"] += 1
             p["fechadas" if i["estado"] == "fechada" else "abertas"] += 1
             if i["horas_estimadas"]:
                 p["h_est"] += i["horas_estimadas"] / len(resp)
-            if i["estado"] == "fechada" and i["horas_reais"]:
-                p["h_real"] += i["horas_reais"] / len(resp)
+            if i["estado"] == "fechada" and i["horas_estimadas"]:
+                p["h_est_f"] += i["horas_estimadas"] / len(resp)
+        if i["estado"] == "fechada" and i["horas_reais"]:
+            ex = executores(i) or ["(sem responsável)"]
+            for r in ex:
+                pessoas.setdefault(r, novo())["h_real"] += i["horas_reais"] / len(ex)
     total_h = sum(p["h_real"] for k, p in pessoas.items() if k != "(sem responsável)")
     total_f = sum(p["fechadas"] for k, p in pessoas.items() if k != "(sem responsável)")
     for k, p in pessoas.items():
@@ -406,19 +444,51 @@ def grafico_esforco(r, caminho):
     plt.close(fig)
 
 
+def grafico_planejado_real(r, caminho):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    membros = list(EQUIPE)
+    est = [r["pessoas"][k]["h_est_f"] for k in membros]
+    real = [r["pessoas"][k]["h_real"] for k in membros]
+    y = list(range(len(membros)))[::-1]
+    fig, ax = plt.subplots(figsize=(8, 0.75 * len(membros) + 1.4), facecolor=COR_SUPERFICIE)
+    ax.set_facecolor(COR_SUPERFICIE)
+    alt = 0.36
+    ax.barh([v + alt / 2 for v in y], est, height=alt, color="#9ec3ef", edgecolor=COR_SUPERFICIE, label="Estimadas (alocadas)")
+    ax.barh([v - alt / 2 for v in y], real, height=alt, color=COR_SERIE, edgecolor=COR_SUPERFICIE, label="Reais (realizadas)")
+    topo = max(est + real + [1])
+    for v, e, rr in zip(y, est, real):
+        ax.text(e + topo * 0.01, v + alt / 2, f"{fmt(e)} h", va="center", color=COR_TEXTO_2, fontsize=9)
+        ax.text(rr + topo * 0.01, v - alt / 2, f"{fmt(rr)} h", va="center", color=COR_TEXTO, fontsize=9)
+    ax.set_yticks(y)
+    ax.set_yticklabels([nome(k) for k in membros])
+    ax.set_xlim(0, topo * 1.2)
+    ax.set_xlabel("Horas nas issues concluídas", color=COR_TEXTO_2)
+    ax.set_title("Horas estimadas vs. reais por integrante", loc="left", color=COR_TEXTO, fontsize=12)
+    ax.legend(loc="lower right", bbox_to_anchor=(1.0, 1.0), frameon=False, labelcolor=COR_TEXTO_2, ncol=2)
+    _eixo_limpo(ax)
+    ax.tick_params(axis="y", colors=COR_TEXTO)
+    fig.tight_layout()
+    fig.savefig(caminho, format="svg", facecolor=COR_SUPERFICIE)
+    plt.close(fig)
+
+
 # ----------------------------------------------------------------------------- saída
 def gravar_csvs(issues, r, inds):
     DIR_DADOS.mkdir(parents=True, exist_ok=True)
     with open(DIR_DADOS / "issues.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["numero", "titulo", "estado", "milestone", "labels", "responsaveis", "criada_em",
-                    "fechada_em", "horas_estimadas", "horas_reais", "reaberta", "atribuida_em", "ciclo_dias", "url"])
+                    "fechada_em", "horas_estimadas", "horas_reais", "reaberta", "atribuida_em", "ciclo_dias", "realizado_por", "url"])
         for i in issues:
             w.writerow([i["numero"], i["titulo"], i["estado"], i["milestone"], ";".join(i["labels"]),
                         ";".join(i["responsaveis"]), i["criada_em"], i["fechada_em"] or "",
                         "" if i["horas_estimadas"] is None else i["horas_estimadas"],
                         "" if i["horas_reais"] is None else i["horas_reais"], int(i["reaberta"]),
-                        i["atribuida_em"] or "", "" if i["ciclo"] is None else i["ciclo"], i["url"]])
+                        i["atribuida_em"] or "", "" if i["ciclo"] is None else i["ciclo"],
+                        ";".join(i["realizado_por"]), i["url"]])
     with open(DIR_DADOS / "contribuicao.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["login", "nome", "issues_atribuidas", "issues_fechadas", "issues_abertas",
@@ -523,9 +593,40 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
         a(f"| {celula(rotulo)} | {p['atribuidas']} | {p['fechadas']} | {p['abertas']} | {fmt(p['h_est'])} | "
           f"{fmt(p['h_real'])} | {pct_h} | {pct_f} | {n_commits} |")
     a("")
-    a("*Tabela 3: Contribuição por integrante. Quando uma issue tem mais de um responsável, as horas são "
-      "divididas igualmente. Fonte: [contribuicao.csv](dados/contribuicao.csv).*")
+    a("*Tabela 3: Contribuição por integrante. Horas estimadas ficam com quem foi alocado; horas reais, com quem "
+      "realizou a tarefa. Quando há mais de uma pessoa, as horas são divididas igualmente. "
+      "Fonte: [contribuicao.csv](dados/contribuicao.csv).*")
     a("")
+
+    a("## Recursos e Custos: horas estimadas vs. reais")
+    a("")
+    a("Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual Effort* do PSM/CID). "
+      "O planejado é a soma das horas estimadas das tarefas concluídas que cada pessoa recebeu; o realizado é a "
+      "soma das horas reais das tarefas que cada pessoa de fato executou.")
+    a("")
+    a("![Gráfico de barras agrupadas com horas estimadas e horas reais por integrante](img/planejado-real.svg)")
+    a("")
+    a("*Figura 3: Horas estimadas (alocadas) e horas reais (realizadas) por integrante, nas issues concluídas. "
+      "Fonte: issues do GitHub e execucao.csv.*")
+    a("")
+    a("| Integrante | Horas estimadas (alocadas) | Horas reais (realizadas) | Diferença |")
+    a("|---|---|---|---|")
+    for k in EQUIPE:
+        p = r["pessoas"][k]
+        a(f"| {nome(k)} | {fmt(p['h_est_f'])} | {fmt(p['h_real'])} | {fmt(p['h_real'] - p['h_est_f'])} |")
+    a("")
+    a("*Tabela 4: Horas estimadas vs. reais por integrante. Diferença positiva: a pessoa trabalhou mais do que o "
+      "alocado; negativa: menos. Fonte: issues do GitHub.*")
+    a("")
+    fech = [i for i in issues if i["estado"] == "fechada" and i["horas_estimadas"] and i["horas_reais"] is not None]
+    if fech:
+        a('??? note "Estimado vs. real por issue"')
+        a("    | Issue | Estimado (h) | Real (h) | Real ÷ estimado |")
+        a("    |---|---|---|---|")
+        for i in fech:
+            a(f"    | [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {fmt(i['horas_estimadas'])} | "
+              f"{fmt(i['horas_reais'])} | {fmt(i['horas_reais'] / i['horas_estimadas'], 2)} |")
+        a("")
 
     a("## Desempenho dos Processos: tempo de ciclo")
     a("")
@@ -542,7 +643,7 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
             a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {data_br(i['atribuida_em'])} | "
               f"{data_br(i['fechada_em'])} | {i['ciclo']} | {sit} |")
         a("")
-        a("*Tabela 4: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, "
+        a("*Tabela 5: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, "
           "como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*")
     else:
         a("Ainda não há issues atribuídas e fechadas fora das retroativas.")
@@ -565,9 +666,9 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
         for h in hist:
             a(f"| {h['data']} | {h['id']} | {celula(h['indicador'])} | {celula(h['valor'])} | {celula(h['situacao'])} |")
         a("")
-        a("*Tabela 5: Medições registradas com `python scripts/coleta_psm.py --registrar`. "
+        a("*Tabela 6: Medições registradas com `python scripts/coleta_psm.py --registrar`. "
           "Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na "
-          "[Tabela 8 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*")
+          "[Tabela 9 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*")
     else:
         a("Nenhuma medição oficial registrada ainda. Para registrar, rode "
           "`python scripts/coleta_psm.py --registrar` e faça commit dos arquivos gerados.")
@@ -646,13 +747,17 @@ def gerar_contribuicao(issues, commits_lista, agora):
         sem_horas = []
         for i in doms:
             resp = [r.lower() for r in i["responsaveis"] if r.lower() in EQUIPE]
+            if i["estado"] == "fechada":
+                ex = [r for r in executores(i) if r in EQUIPE]
+                for r in ex:
+                    concl[r].append(i)
+                    if i["horas_reais"]:
+                        horas[r] += i["horas_reais"] / len(ex)
             if not resp:
                 continue
             for r in resp:
                 if i["estado"] == "fechada":
-                    concl[r].append(i)
-                    if i["horas_reais"]:
-                        horas[r] += i["horas_reais"] / len(resp)
+                    continue
                 else:
                     abertas_n[r] += 1
                     if i["horas_estimadas"]:
@@ -703,8 +808,8 @@ def gerar_contribuicao(issues, commits_lista, agora):
             faixa = f"{LIMITE_DISTRIBUICAO[0]:.0f}% a {LIMITE_DISTRIBUICAO[1]:.0f}%"
             if fora:
                 a(f"Pelo critério do RC-2 (faixa de {faixa} por integrante), estão fora da faixa: "
-                  f"{', '.join(fora)}. A decisão de rebalanceamento é registrada na "
-                  "[página PSM/CID](gestao/psm.md) e aplicada na atribuição das issues em andamento (tabela abaixo).")
+                  f"{', '.join(fora)}. A análise e a decisão da equipe ficam no "
+                  "[registro de decisões da página PSM](gestao/psm.md#registro-de-medicoes-e-decisoes).")
             else:
                 a(f"Pelo critério do RC-2, todos os integrantes estão dentro da faixa de {faixa}.")
         else:
@@ -736,6 +841,27 @@ def gerar_contribuicao(issues, commits_lista, agora):
             a("")
         inicio = fim
 
+    divergentes = [i for i in issues if i["estado"] == "fechada" and i["realizado_por"]
+                   and sorted(i["realizado_por"]) != sorted(r.lower() for r in i["responsaveis"])]
+    a("## Alocado vs. realizado")
+    a("")
+    a("Tarefas em que quem fez não foi exatamente quem estava alocado na issue. Nessas tarefas, as horas reais "
+      "contam para quem realizou o trabalho.")
+    a("")
+    if divergentes:
+        a("| Issue | Alocada para | Realizada por | Horas reais |")
+        a("| :--- | :--- | :--- | :---: |")
+        for i in divergentes:
+            aloc = ", ".join(nome(x) for x in i["responsaveis"]) or "Ninguém"
+            real = ", ".join(nome(x) for x in i["realizado_por"])
+            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {aloc} | {real} | {fmt(i['horas_reais'])} |")
+        a("")
+        a("*Fonte: [execucao.csv](gestao/dados/execucao.csv), preenchido pela equipe com quem de fato realizou "
+          "cada tarefa, inclusive as feitas fora do repositório, como as seções do artigo.*")
+    else:
+        a("Nenhuma divergência registrada.")
+    a("")
+
     a("## Como o esforço é medido")
     a("")
     a("- **Unidade:** hora-pessoa. Horas cobrem todo tipo de atividade, inclusive reuniões, pesquisa e revisão, "
@@ -746,7 +872,8 @@ def gerar_contribuicao(issues, commits_lista, agora):
     a("- **Cálculo:** esforço (%) = horas reais do integrante na entrega ÷ horas reais da equipe na entrega × 100, "
       "arredondado pelo método dos maiores restos para somar 100,0%.")
     a(f"- **Critério (RC-2):** abaixo de {LIMITE_DISTRIBUICAO[0]:.0f}% ou acima de {LIMITE_DISTRIBUICAO[1]:.0f}% "
-      "indica desequilíbrio; a equipe rebalanceia nas próximas atribuições, sem alterar horas já registradas.")
+      "indica desequilíbrio; a equipe analisa a causa e registra a decisão na [página PSM](gestao/psm.md), "
+      "sem alterar horas já registradas.")
     a("")
     (RAIZ / "docs" / "contribuicao.md").write_text("\n".join(L), encoding="utf-8")
 
@@ -775,6 +902,7 @@ def main():
     DIR_IMG.mkdir(parents=True, exist_ok=True)
     grafico_progresso(r, DIR_IMG / "progresso.svg")
     grafico_esforco(r, DIR_IMG / "esforco.svg")
+    grafico_planejado_real(r, DIR_IMG / "planejado-real.svg")
     gravar_csvs(issues, r, inds)
     if args.registrar:
         registrar_medicao(inds, agora)

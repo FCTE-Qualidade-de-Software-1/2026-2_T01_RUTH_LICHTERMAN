@@ -2,16 +2,16 @@
 
 Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) a partir das issues, eventos e commits do [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN). Ela é atualizada a cada publicação do site. A definição dos indicadores, os limites e o registro das decisões de gestão estão em [Gestão do projeto com PSM/CID](psm.md).
 
-**Última coleta:** 25/10/2026 às 23:56 (horário de Brasília). **Issues analisadas:** 56.
+**Última coleta:** 26/10/2026 às 00:11 (horário de Brasília). **Issues analisadas:** 56.
 
 ## Indicadores
 
 | ID | Categoria | Indicador | Valor atual | Situação | Limite de alerta |
 |---|---|---|---|---|---|
-| CP-1 | Calendário e Progresso | Progresso do milestone E1: Fases 1 e 2 | 15/43 (34,9%) | Em andamento | Abaixo de 80% na véspera da entrega |
-| RC-1 | Recursos e Custos | Razão de esforço (horas reais / estimadas) | 1,24 (24,6 h / 19,8 h, 16 issues) | Alerta | Fora da faixa 0,8 a 1,2 |
-| RC-2 | Recursos e Custos | Distribuição de esforço por integrante | Arthur 35%, Daniel 9%, Giovana 22%, Hauedy 8%, Letícia 1%, Lucas 25% | Alerta: Arthur Fernandes, Daniel Sousa, Hauedy Wegner, Letícia Maria | Integrante abaixo de 10% ou acima de 30% |
-| DP-1 | Desempenho dos Processos | Taxa de retrabalho (issues reabertas) | 0/16 (0,0%) | Dentro do esperado | Acima de 25% |
+| CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 15/43 concluídas (34,9%); esperado 86,4%; desvio 51,5 p.p. | Ação corretiva | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
+| RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,24 (24,6 h / 19,8 h, 16 issues) | Alerta | Fora da faixa 0,8 a 1,2 |
+| RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 35%, Daniel 9%, Giovana 22%, Hauedy 8%, Letícia 1%, Lucas 25% | Alerta: Arthur Fernandes, Daniel Sousa, Hauedy Wegner, Letícia Maria | Integrante abaixo de 10% ou acima de 30% |
+| DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 1,6 dias (7 issues) | Investigar 2 issues a mais de 10% da média; Alerta: 7 issues com responsável há mais de 3 dias | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
 
 *Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv), gerado pelo script de coleta.*
 
@@ -21,12 +21,12 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 *Figura 1: Progresso das issues por milestone. Fonte: issues do GitHub.*
 
-| Milestone | Prazo | Issues | Fechadas | Abertas | Progresso | Situação |
-|---|---|---|---|---|---|---|
-| E1: Fases 1 e 2 | 26/10/2026 | 43 | 15 | 28 | 34,9% | Em andamento |
-| E2: Fases 3 e 4 | - | 13 | 1 | 12 | 7,7% | Sem prazo definido |
+| Milestone | Prazo | Issues | Fechadas | Abertas | Concluído | Esperado | Desvio | Situação |
+|---|---|---|---|---|---|---|---|---|
+| E1: Fases 1 e 2 | 26/10/2026 | 43 | 15 | 28 | 34,9% | 86,4% | 51,5 p.p. | Ação corretiva |
+| E2: Fases 3 e 4 | - | 13 | 1 | 12 | 7,7% | - | - | Sem prazo definido |
 
-*Tabela 2: Progresso por milestone. Fonte: issues do GitHub.*
+*Tabela 2: Planejado vs. concluído por milestone. Esperado = fração do prazo do milestone já decorrida; desvio = esperado - concluído. Fonte: issues do GitHub.*
 
 ## Recursos e Custos: contribuição por integrante
 
@@ -39,11 +39,29 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 | Arthur Fernandes | 14 | 10 | 4 | 13,6 | 8,5 | 34,7% | 35,7% | 5 |
 | Daniel Sousa | 12 | 2 | 10 | 15,8 | 2,2 | 9,2% | 7,1% | 2 |
 | Giovana Fontes | 14 | 7 | 7 | 15,6 | 5,5 | 22,5% | 25,0% | 4 |
-| Hauedy Wegner | 9 | 2 | 7 | 12,0 | 2,0 | 8,1% | 7,1% | 6 |
+| Hauedy Wegner | 9 | 2 | 7 | 12,0 | 2,0 | 8,1% | 7,1% | 7 |
 | Letícia Maria | 11 | 1 | 10 | 12,8 | 0,2 | 1,0% | 3,6% | 6 |
 | Lucas Branco | 11 | 6 | 5 | 17,1 | 6,0 | 24,5% | 21,4% | 0 |
 
 *Tabela 3: Contribuição por integrante. Quando uma issue tem mais de um responsável, as horas são divididas igualmente. Fonte: [contribuicao.csv](dados/contribuicao.csv).*
+
+## Desempenho dos Processos: tempo de ciclo
+
+Média: **1,6 dias** em 7 issues. Faixa sem investigação: 0,6 a 2,6 dias (média ± o maior valor entre 10% da média e 1 dia).
+
+| Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |
+|---|---|---|---|---|---|
+| [#31](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/31) GitPage: remover emojis e ícones | Letícia Maria | 20/10/2026 | 20/10/2026 | 1 | Dentro da faixa |
+| [#57](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/57) Padronizar nomenclatura da ISO/IEC 25010 (2011 x 2023) no artigo e no GitPage | Arthur Fernandes, Hauedy Wegner | 21/10/2026 | 23/10/2026 | 3 | Investigar |
+| [#20](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/20) Fase 2: métricas com definição, cálculo, fonte, coleta e interpretação | Arthur Fernandes, Giovana Fontes | 21/10/2026 | 23/10/2026 | 3 | Investigar |
+| [#15](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/15) Fase 1: escopo, profundidade e objetos de avaliação | Arthur Fernandes, Giovana Fontes | 23/10/2026 | 23/10/2026 | 1 | Dentro da faixa |
+| [#50](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/50) Fase 4: análise e respostas às questões GQM | Lucas Branco | 23/10/2026 | 23/10/2026 | 1 | Dentro da faixa |
+| [#25](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/25) Artigo: referencial teórico | Arthur Fernandes, Giovana Fontes, Lucas Branco | 23/10/2026 | 23/10/2026 | 1 | Dentro da faixa |
+| [#11](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/11) Fase 1: requisitante e partes interessadas | Daniel Sousa | 25/10/2026 | 25/10/2026 | 1 | Dentro da faixa |
+
+*Tabela 4: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*
+
+**Issues com responsável há mais de 3 dias sem fechar:** [#10](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/10) (4 dias), [#26](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/26) (4 dias), [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) (4 dias), [#48](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/48) (4 dias), [#49](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/49) (4 dias), [#51](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/51) (4 dias), [#52](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/52) (4 dias)
 
 ## Quem fez o quê
 
@@ -115,10 +133,18 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 ## Histórico de medições registradas
 
-Nenhuma medição oficial registrada ainda. Para registrar, rode `python scripts/coleta_psm.py --registrar` e faça commit dos arquivos gerados.
+| Data | ID | Indicador | Valor | Situação |
+|---|---|---|---|---|
+| 26/10/2026 00:10 | CP-1 | Planejado vs. concluído (E1: Fases 1 e 2) | 15/43 concluídas (34,9%); esperado 86,4%; desvio 51,5 p.p. | Ação corretiva |
+| 26/10/2026 00:10 | RC-1 | Estimado vs. realizado (horas reais / estimadas) | 1,24 (24,6 h / 19,8 h, 16 issues) | Alerta |
+| 26/10/2026 00:10 | RC-2 | Esforço por integrante (% das horas reais) | Arthur 35%, Daniel 9%, Giovana 22%, Hauedy 8%, Letícia 1%, Lucas 25% | Alerta: Arthur Fernandes, Daniel Sousa, Hauedy Wegner, Letícia Maria |
+| 26/10/2026 00:10 | DP-1 | Tempo de ciclo (atribuição até fechamento) | média 1,6 dias (7 issues) | Investigar 2 issues a mais de 10% da média; Alerta: 7 issues com responsável há mais de 3 dias |
+
+*Tabela 5: Medições registradas com `python scripts/coleta_psm.py --registrar`. Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na [Tabela 8 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*
 
 ## Dados brutos
 
 - [issues.csv](dados/issues.csv): todas as issues com responsáveis, datas e horas.
 - [contribuicao.csv](dados/contribuicao.csv): totais por integrante.
 - [indicadores.csv](dados/indicadores.csv): valores atuais dos indicadores.
+- [medicoes.csv](dados/medicoes.csv): histórico de medições registradas.

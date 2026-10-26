@@ -26,6 +26,12 @@ Referências usadas no artigo e nesta página do projeto, em ordem alfabética.
 
 > NIELSEN, J. *Usability Engineering*. San Diego: Academic Press, 1993.
 
+> PRACTICAL SOFTWARE AND SYSTEMS MEASUREMENT (PSM); NATIONAL DEFENSE INDUSTRIAL ASSOCIATION (NDIA); INTERNATIONAL COUNCIL ON SYSTEMS ENGINEERING (INCOSE). *Continuous Iterative Development Measurement Framework: Part 1 – Concepts, Definitions, Principles, and Measures*. Versão 2.1. 2021. Disponível em: <https://www.ndia.org/-/media/sites/ndia/divisions/systems-engineering/studies-and-reports/cid-measurement-framework-part-1---v2-1.ashx>. Acesso em: 26 out. 2026.
+
+> PRACTICAL SOFTWARE AND SYSTEMS MEASUREMENT (PSM); NATIONAL DEFENSE INDUSTRIAL ASSOCIATION (NDIA); INTERNATIONAL COUNCIL ON SYSTEMS ENGINEERING (INCOSE). *Continuous Iterative Development Measurement Framework: Part 2 – Measurement Specifications and Enterprise Measures*. Versão 2.1. 2021. Disponível em: <https://www.psmsc.com/Downloads/CIDProducts/CID%20Measurement%20Framework%20Part%202%20-%20v2-1.pdf>. Acesso em: 26 out. 2026.
+
+> RAMOS, C. S. *Medição prática de software e sistemas: PSM – Practical Software and Systems Measurement*. Slides da Aula 09 da disciplina Qualidade de Software 1. Brasília: Universidade de Brasília, 2026.
+
 > SAURO, J.; LEWIS, J. R. *Quantifying the User Experience: Practical Statistics for User Research*. 2. ed. Cambridge: Morgan Kaufmann, 2016.
 
 > SECRETARIA DE ESTADO DE TRANSPORTE E MOBILIDADE DO DISTRITO FEDERAL (SEMOB-DF). *Bilhetagem eletrônica e Cartão Mobilidade*. 2025. Disponível em: <https://www.semob.df.gov.br/bilhete-unico>. Acesso em: 21 out. 2026.

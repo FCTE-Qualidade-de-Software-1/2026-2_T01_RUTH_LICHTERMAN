@@ -56,10 +56,11 @@ AREAS = {
 }
 
 # Limites de alerta (os mesmos da Tabela 1 de docs/gestao/psm.md)
-LIMITE_PROGRESSO = 80.0          # CP-1: % mínima na véspera da entrega
+LIMITE_DESVIO = (5.0, 10.0)      # CP-1: desvio (p.p.) para investigar / ação corretiva (CID Parte 2, 8.3)
 LIMITE_RAZAO = (0.8, 1.2)        # RC-1: faixa aceitável de horas reais / estimadas
 LIMITE_DISTRIBUICAO = (10.0, 30.0)  # RC-2: % de esforço por integrante
-LIMITE_RETRABALHO = 25.0         # DP-1: % máxima de issues reabertas
+LIMITE_OUTLIER = 10.0            # DP-1: % de afastamento da média que pede investigação (CID Parte 2, 8.5)
+LIMITE_PARADA = 3                # DP-1: dias com responsável sem fechar (critério da equipe)
 
 COR_SERIE = "#2a78d6"
 COR_RESTANTE = "#d9d8d4"
@@ -123,6 +124,13 @@ def extrair_horas(corpo, rotulo):
     return float(m.group(1).replace(",", ".")) if m else None
 
 
+def dias_corridos(ini_iso, fim_iso):
+    """Tempo decorrido em dias, como no PSM/CID Parte 2, 8.5: (data de fim - data de início) + 1."""
+    ini = dt.datetime.fromisoformat(ini_iso.replace("Z", "+00:00")).astimezone(FUSO).date()
+    fim = dt.datetime.fromisoformat(fim_iso.replace("Z", "+00:00")).astimezone(FUSO).date()
+    return (fim - ini).days + 1
+
+
 def nome(login):
     return EQUIPE.get(login.lower(), login) if login else "Sem responsável"
 
@@ -153,6 +161,12 @@ def coletar(token):
     commits = api_paginada("commits", token)
 
     reabertas = {e["issue"]["number"] for e in eventos if e.get("event") == "reopened" and e.get("issue")}
+    atribuicao = {}
+    for e in eventos:
+        if e.get("event") == "assigned" and e.get("issue"):
+            n = e["issue"]["number"]
+            if n not in atribuicao or e["created_at"] < atribuicao[n]:
+                atribuicao[n] = e["created_at"]
 
     issues = []
     for i in issues_api:
@@ -163,6 +177,8 @@ def coletar(token):
             "estado": "fechada" if i["state"] == "closed" else "aberta",
             "milestone": (i.get("milestone") or {}).get("title", "Sem milestone"),
             "prazo_milestone": (i.get("milestone") or {}).get("due_on"),
+            "criacao_milestone": (i.get("milestone") or {}).get("created_at"),
+            "atribuida_em": atribuicao.get(i["number"]),
             "labels": [l["name"] for l in i.get("labels", [])],
             "responsaveis": [a["login"] for a in i.get("assignees", [])],
             "criada_em": i["created_at"],
@@ -187,12 +203,13 @@ def calcular(issues, agora):
     fechadas = [i for i in issues if i["estado"] == "fechada"]
 
     # CP-1 por milestone
-    milestones = defaultdict(lambda: {"total": 0, "fechadas": 0, "prazo": None})
+    milestones = defaultdict(lambda: {"total": 0, "fechadas": 0, "prazo": None, "criacao": None})
     for i in issues:
         m = milestones[i["milestone"]]
         m["total"] += 1
         m["fechadas"] += i["estado"] == "fechada"
         m["prazo"] = i["prazo_milestone"]
+        m["criacao"] = i["criacao_milestone"]
     for titulo, m in milestones.items():
         m["progresso"] = 100 * m["fechadas"] / m["total"] if m["total"] else 0.0
         if m["prazo"]:
@@ -200,10 +217,24 @@ def calcular(issues, agora):
             prazo = dt.datetime.combine(dt.date.fromisoformat(m["prazo"][:10]), dt.time(23, 59), tzinfo=FUSO)
             dias = (prazo - agora).total_seconds() / 86400
             m["dias_restantes"] = dias
-            m["situacao"] = "Alerta" if (dias <= 1 and m["progresso"] < LIMITE_PROGRESSO) else (
-                "Prazo encerrado" if dias < 0 else "Em andamento")
+            m["esperado"] = None
+            if m["criacao"]:
+                ini = dt.datetime.fromisoformat(m["criacao"].replace("Z", "+00:00"))
+                duracao = (prazo - ini).total_seconds()
+                frac = (agora - ini).total_seconds() / duracao if duracao > 0 else 1.0
+                m["esperado"] = 100 * min(max(frac, 0.0), 1.0)
+            m["desvio"] = None if m["esperado"] is None else max(m["esperado"] - m["progresso"], 0.0)
+            if m["desvio"] is None:
+                m["situacao"] = "Sem data de início"
+            elif m["desvio"] > LIMITE_DESVIO[1]:
+                m["situacao"] = "Ação corretiva"
+            elif m["desvio"] > LIMITE_DESVIO[0]:
+                m["situacao"] = "Investigar"
+            else:
+                m["situacao"] = "Dentro do esperado"
         else:
             m["dias_restantes"] = None
+            m["esperado"] = m["desvio"] = None
             m["situacao"] = "Sem prazo definido"
 
     # RC-1 razão de esforço (issues fechadas com as duas horas preenchidas)
@@ -231,13 +262,29 @@ def calcular(issues, agora):
         p["pct_horas"] = 100 * p["h_real"] / total_h if total_h and k != "(sem responsável)" else None
         p["pct_fechadas"] = 100 * p["fechadas"] / total_f if total_f and k != "(sem responsável)" else None
 
-    # DP-1 retrabalho
+    # DP-1 tempo de ciclo: da primeira atribuição ao fechamento (issues retroativas ficam de fora)
+    for i in issues:
+        i["ciclo"] = None
+        if (i["estado"] == "fechada" and "retroativa" not in i["labels"] and i["atribuida_em"]
+                and i["atribuida_em"] <= i["fechada_em"]):
+            i["ciclo"] = dias_corridos(i["atribuida_em"], i["fechada_em"])
+        i["idade"] = None
+        if i["estado"] == "aberta" and i["atribuida_em"]:
+            i["idade"] = dias_corridos(i["atribuida_em"], agora.isoformat())
+    com_ciclo = [i for i in issues if i["ciclo"] is not None]
+    media_ciclo = sum(i["ciclo"] for i in com_ciclo) / len(com_ciclo) if com_ciclo else None
+    # O guia investiga valores a mais de 10% da média. Como a unidade é o dia inteiro, diferenças menores que
+    # 1 dia não são distinguíveis; por isso a tolerância é o maior valor entre 10% da média e 1 dia.
+    tolerancia = max(media_ciclo * LIMITE_OUTLIER / 100, 1.0) if media_ciclo else None
+    outliers = [i for i in com_ciclo if abs(i["ciclo"] - media_ciclo) > tolerancia]
+    paradas = [i for i in issues if i["idade"] is not None and i["idade"] > LIMITE_PARADA]
     retrabalho = 100 * sum(i["reaberta"] for i in fechadas) / len(fechadas) if fechadas else None
 
     return {
         "milestones": dict(milestones),
         "razao": razao, "soma_est": soma_est, "soma_real": soma_real, "n_com_horas": len(com_horas),
         "pessoas": pessoas, "total_horas": total_h,
+        "com_ciclo": com_ciclo, "media_ciclo": media_ciclo, "tolerancia": tolerancia, "outliers": outliers, "paradas": paradas,
         "retrabalho": retrabalho, "n_fechadas": len(fechadas), "n_reabertas": sum(i["reaberta"] for i in fechadas),
         "n_sem_responsavel": sum(1 for i in issues if not i["responsaveis"]),
     }
@@ -247,15 +294,19 @@ def indicadores(r, milestone_ativo):
     m = r["milestones"].get(milestone_ativo)
     linhas = []
     if m:
-        linhas.append(("CP-1", "Calendário e Progresso", f"Progresso do milestone {milestone_ativo}",
-                       f"{m['fechadas']}/{m['total']} ({fmt(m['progresso'])}%)", m["situacao"],
-                       f"Abaixo de {LIMITE_PROGRESSO:.0f}% na véspera da entrega"))
+        valor = f"{m['fechadas']}/{m['total']} concluídas ({fmt(m['progresso'])}%)"
+        if m["esperado"] is not None:
+            valor += f"; esperado {fmt(m['esperado'])}%; desvio {fmt(m['desvio'])} p.p."
+        linhas.append(("CP-1", "Calendário e Progresso", f"Planejado vs. concluído ({milestone_ativo})",
+                       valor, m["situacao"],
+                       f"Desvio acima de {LIMITE_DESVIO[0]:.0f} p.p.: investigar; acima de "
+                       f"{LIMITE_DESVIO[1]:.0f} p.p.: ação corretiva"))
     if r["razao"] is None:
         rc1_val, rc1_sit = "Sem dados", "Sem horas registradas nas issues fechadas"
     else:
         rc1_val = f"{fmt(r['razao'], 2)} ({fmt(r['soma_real'])} h / {fmt(r['soma_est'])} h, {r['n_com_horas']} issues)"
         rc1_sit = "Dentro do esperado" if LIMITE_RAZAO[0] <= r["razao"] <= LIMITE_RAZAO[1] else "Alerta"
-    linhas.append(("RC-1", "Recursos e Custos", "Razão de esforço (horas reais / estimadas)", rc1_val, rc1_sit,
+    linhas.append(("RC-1", "Recursos e Custos", "Estimado vs. realizado (horas reais / estimadas)", rc1_val, rc1_sit,
                    f"Fora da faixa {fmt(LIMITE_RAZAO[0])} a {fmt(LIMITE_RAZAO[1])}"))
     membros = {k: v for k, v in r["pessoas"].items() if k in EQUIPE}
     if r["total_horas"]:
@@ -265,15 +316,21 @@ def indicadores(r, milestone_ativo):
         rc2_sit = "Alerta: " + ", ".join(fora) if fora else "Dentro do esperado"
     else:
         rc2_val, rc2_sit = "Sem dados", "Sem horas registradas nas issues fechadas"
-    linhas.append(("RC-2", "Recursos e Custos", "Distribuição de esforço por integrante", rc2_val, rc2_sit,
+    linhas.append(("RC-2", "Recursos e Custos", "Esforço por integrante (% das horas reais)", rc2_val, rc2_sit,
                    f"Integrante abaixo de {LIMITE_DISTRIBUICAO[0]:.0f}% ou acima de {LIMITE_DISTRIBUICAO[1]:.0f}%"))
-    if r["retrabalho"] is None:
-        dp_val, dp_sit = "Sem dados", "Nenhuma issue fechada"
+    avisos = []
+    if r["media_ciclo"] is None:
+        dp_val = "Sem dados (nenhuma issue atribuída e fechada fora das retroativas)"
     else:
-        dp_val = f"{r['n_reabertas']}/{r['n_fechadas']} ({fmt(r['retrabalho'])}%)"
-        dp_sit = "Alerta" if r["retrabalho"] > LIMITE_RETRABALHO else "Dentro do esperado"
-    linhas.append(("DP-1", "Desempenho dos Processos", "Taxa de retrabalho (issues reabertas)", dp_val, dp_sit,
-                   f"Acima de {LIMITE_RETRABALHO:.0f}%"))
+        dp_val = f"média {fmt(r['media_ciclo'])} dias ({len(r['com_ciclo'])} issues)"
+        if r["outliers"]:
+            avisos.append(f"Investigar {len(r['outliers'])} issues a mais de {LIMITE_OUTLIER:.0f}% da média")
+    if r["paradas"]:
+        avisos.append(f"Alerta: {len(r['paradas'])} issues com responsável há mais de {LIMITE_PARADA} dias")
+    dp_sit = "; ".join(avisos) if avisos else ("Dentro do esperado" if r["media_ciclo"] is not None else "Sem dados")
+    linhas.append(("DP-1", "Desempenho dos Processos", "Tempo de ciclo (atribuição até fechamento)", dp_val, dp_sit,
+                   f"Issue a mais de {LIMITE_OUTLIER:.0f}% da média (mínimo 1 dia): investigar; aberta com responsável há mais de "
+                   f"{LIMITE_PARADA} dias: cobrar ou dividir"))
     return linhas
 
 
@@ -355,12 +412,13 @@ def gravar_csvs(issues, r, inds):
     with open(DIR_DADOS / "issues.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["numero", "titulo", "estado", "milestone", "labels", "responsaveis", "criada_em",
-                    "fechada_em", "horas_estimadas", "horas_reais", "reaberta", "url"])
+                    "fechada_em", "horas_estimadas", "horas_reais", "reaberta", "atribuida_em", "ciclo_dias", "url"])
         for i in issues:
             w.writerow([i["numero"], i["titulo"], i["estado"], i["milestone"], ";".join(i["labels"]),
                         ";".join(i["responsaveis"]), i["criada_em"], i["fechada_em"] or "",
                         "" if i["horas_estimadas"] is None else i["horas_estimadas"],
-                        "" if i["horas_reais"] is None else i["horas_reais"], int(i["reaberta"]), i["url"]])
+                        "" if i["horas_reais"] is None else i["horas_reais"], int(i["reaberta"]),
+                        i["atribuida_em"] or "", "" if i["ciclo"] is None else i["ciclo"], i["url"]])
     with open(DIR_DADOS / "contribuicao.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["login", "nome", "issues_atribuidas", "issues_fechadas", "issues_abertas",
@@ -432,13 +490,16 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
     a("")
     a("*Figura 1: Progresso das issues por milestone. Fonte: issues do GitHub.*")
     a("")
-    a("| Milestone | Prazo | Issues | Fechadas | Abertas | Progresso | Situação |")
-    a("|---|---|---|---|---|---|---|")
+    a("| Milestone | Prazo | Issues | Fechadas | Abertas | Concluído | Esperado | Desvio | Situação |")
+    a("|---|---|---|---|---|---|---|---|---|")
     for t, m in sorted(r["milestones"].items()):
         a(f"| {celula(t)} | {dt.date.fromisoformat(m['prazo'][:10]).strftime('%d/%m/%Y') if m['prazo'] else '-'} | {m['total']} | {m['fechadas']} | "
-          f"{m['total'] - m['fechadas']} | {fmt(m['progresso'])}% | {m['situacao']} |")
+          f"{m['total'] - m['fechadas']} | {fmt(m['progresso'])}% | "
+          f"{'-' if m['esperado'] is None else fmt(m['esperado']) + '%'} | "
+          f"{'-' if m['desvio'] is None else fmt(m['desvio']) + ' p.p.'} | {m['situacao']} |")
     a("")
-    a("*Tabela 2: Progresso por milestone. Fonte: issues do GitHub.*")
+    a("*Tabela 2: Planejado vs. concluído por milestone. Esperado = fração do prazo do milestone já decorrida; "
+      "desvio = esperado - concluído. Fonte: issues do GitHub.*")
     a("")
 
     a("## Recursos e Custos: contribuição por integrante")
@@ -464,6 +525,31 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
     a("")
     a("*Tabela 3: Contribuição por integrante. Quando uma issue tem mais de um responsável, as horas são "
       "divididas igualmente. Fonte: [contribuicao.csv](dados/contribuicao.csv).*")
+    a("")
+
+    a("## Desempenho dos Processos: tempo de ciclo")
+    a("")
+    if r["com_ciclo"]:
+        a(f"Média: **{fmt(r['media_ciclo'])} dias** em {len(r['com_ciclo'])} issues. Faixa sem investigação: "
+          f"{fmt(max(r['media_ciclo'] - r['tolerancia'], 0))} a {fmt(r['media_ciclo'] + r['tolerancia'])} dias "
+          f"(média ± o maior valor entre {LIMITE_OUTLIER:.0f}% da média e 1 dia).")
+        a("")
+        a("| Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |")
+        a("|---|---|---|---|---|---|")
+        for i in sorted(r["com_ciclo"], key=lambda x: x["fechada_em"]):
+            resp = ", ".join(nome(x) for x in i["responsaveis"]) or "Sem responsável"
+            sit = "Investigar" if i in r["outliers"] else "Dentro da faixa"
+            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {data_br(i['atribuida_em'])} | "
+              f"{data_br(i['fechada_em'])} | {i['ciclo']} | {sit} |")
+        a("")
+        a("*Tabela 4: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, "
+          "como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*")
+    else:
+        a("Ainda não há issues atribuídas e fechadas fora das retroativas.")
+    a("")
+    a(f"**Issues com responsável há mais de {LIMITE_PARADA} dias sem fechar:** " + (
+        ", ".join(f"[#{i['numero']}]({i['url']}) ({i['idade']} dias)" for i in r["paradas"]) if r["paradas"]
+        else "nenhuma."))
     a("")
 
     a("## Quem fez o quê")
@@ -504,9 +590,9 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
         for h in hist:
             a(f"| {h['data']} | {h['id']} | {celula(h['indicador'])} | {celula(h['valor'])} | {celula(h['situacao'])} |")
         a("")
-        a("*Tabela 4: Medições registradas com `python scripts/coleta_psm.py --registrar`. "
+        a("*Tabela 5: Medições registradas com `python scripts/coleta_psm.py --registrar`. "
           "Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na "
-          "[Tabela 2 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*")
+          "[Tabela 8 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*")
     else:
         a("Nenhuma medição oficial registrada ainda. Para registrar, rode "
           "`python scripts/coleta_psm.py --registrar` e faça commit dos arquivos gerados.")

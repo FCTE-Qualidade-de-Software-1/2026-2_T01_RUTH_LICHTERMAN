@@ -66,8 +66,18 @@ O guia foi escrito para equipes ágeis que medem *story points*; aqui, a unidade
 
 Seguindo McGarry et al. (2002, cap. 2), a equipe padronizou poucas **medidas básicas**, coletadas automaticamente do GitHub, e combinou essas medidas em indicadores diferentes. A Figura 1 mostra o caminho do dado até a decisão.
 
+*Figura 1: Das fontes de dados às decisões. O script [`coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) faz a coleta e o cálculo a cada publicação do site, quando uma issue é fechada e a cada 3 horas.*
+
 ```mermaid
 flowchart LR
+  accTitle: Das fontes de dados às decisões da equipe
+  accDescr {
+    Fluxograma da esquerda para a direita com quatro etapas: dados do GitHub, medidas básicas, indicadores e decisão da equipe.
+    Os dados do GitHub são as issues e milestones, os eventos das issues e o arquivo execucao.csv, que registra quem realizou cada tarefa.
+    Das issues e milestones saem quatro medidas básicas: issues planejadas e fechadas, prazo e criação do milestone, horas estimadas e horas reais. Dos eventos das issues saem as datas de atribuição e de fechamento.
+    Os indicadores combinam essas medidas. O CP-1, planejado vs. concluído, usa as issues planejadas e fechadas e o prazo do milestone. O RC-1, estimado vs. real, usa as horas estimadas e as horas reais. O RC-2, esforço por integrante, usa as horas reais e o arquivo execucao.csv. O DP-1, tempo de ciclo, usa as datas de atribuição e de fechamento.
+    Os quatro indicadores alimentam a decisão da equipe, com registro de medições.
+  }
   subgraph G["Dados do GitHub"]
     I["Issues e milestones"]
     E["Eventos das issues"]
@@ -98,7 +108,7 @@ flowchart LR
   CP & R1 & R2 & DP --> D
 ```
 
-*Figura 1: Das fontes de dados às decisões. O script [`coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) faz a coleta e o cálculo a cada publicação do site, quando uma issue é fechada e a cada 3 horas. Fonte: elaborado pela equipe.*
+*Fonte: elaborado pela equipe.*
 
 ## Fichas do modelo de informação
 
@@ -190,15 +200,24 @@ Cada medida é descrita no template de instância do modelo de informação da A
 
 O PSM organiza a medição em quatro atividades que se repetem a cada ciclo (McGarry et al., 2002, cap. 1).
 
+*Figura 2: Ciclo de medição do PSM aplicado ao projeto.*
+
 ```mermaid
 flowchart LR
+  accTitle: Ciclo de medição do PSM aplicado ao projeto
+  accDescr {
+    Fluxograma da esquerda para a direita com o ciclo de medição em três etapas e um bloco de apoio.
+    A etapa 1, planejar, define necessidades, medidas e critérios, e leva à etapa 2, executar, que faz a coleta automática e as medições.
+    A etapa 2 leva à etapa 3, avaliar, que verifica se as medidas ainda respondem às necessidades. Da etapa 3, uma seta rotulada ajustes volta à etapa 1, fechando o ciclo.
+    Um bloco de comprometimento, com papéis e registro de horas, se liga por linhas tracejadas às três etapas.
+  }
   P["1. Planejar<br/>necessidades, medidas<br/>e critérios"] --> X["2. Executar<br/>coleta automática<br/>e medições"]
   X --> A["3. Avaliar<br/>as medidas ainda<br/>respondem?"]
   A -->|"ajustes"| P
   C["Comprometimento<br/>papéis e registro de horas"] -.-> P & X & A
 ```
 
-*Figura 2: Ciclo de medição do PSM aplicado ao projeto. Fonte: elaborado pela equipe, com base em McGarry et al. (2002).*
+*Fonte: elaborado pela equipe, com base em McGarry et al. (2002).*
 
 ??? info "O que a equipe faz em cada atividade"
     | Atividade | Como a equipe faz |

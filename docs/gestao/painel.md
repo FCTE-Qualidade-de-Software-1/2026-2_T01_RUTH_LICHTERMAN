@@ -2,7 +2,7 @@
 
 Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) a partir das issues, eventos e commits do [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN). Ela é atualizada a cada publicação do site. A definição dos indicadores, os limites e o registro das decisões de gestão estão em [Gestão do projeto com PSM/CID](psm.md).
 
-**Última coleta:** 26/10/2026 às 00:48 (horário de Brasília). **Issues analisadas:** 56.
+**Última coleta:** 26/10/2026 às 00:50 (horário de Brasília). **Issues analisadas:** 56.
 
 ## Indicadores
 
@@ -11,7 +11,7 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 | CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 30/43 concluídas (69,8%); esperado 86,8%; desvio 17,0 p.p. | Ação corretiva | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
 | RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,12 (45,5 h / 40,8 h, 31 issues) | Dentro do esperado | Fora da faixa 0,8 a 1,2 |
 | RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 19%, Daniel 21%, Giovana 23%, Hauedy 8%, Letícia 5%, Lucas 24% | Alerta: Hauedy Wegner, Letícia Maria | Integrante abaixo de 10% ou acima de 30% |
-| DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (22 issues) | Investigar 7 issues a mais de 10% da média; Alerta: 5 issues com responsável há mais de 3 dias | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
+| DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (22 issues) | Investigar 7 issues a mais de 10% da média; Alerta: 1 issues com responsável há mais de 3 dias | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
 
 *Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv), gerado pelo script de coleta.*
 
@@ -39,7 +39,7 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 | Arthur Fernandes | 14 | 10 | 4 | 13,6 | 8,5 | 18,7% | 22,7% | 5 |
 | Daniel Sousa | 12 | 8 | 4 | 15,8 | 9,8 | 21,4% | 18,2% | 2 |
 | Giovana Fontes | 14 | 10 | 4 | 15,6 | 10,5 | 23,1% | 22,7% | 4 |
-| Hauedy Wegner | 9 | 4 | 5 | 12,5 | 3,5 | 7,7% | 9,1% | 8 |
+| Hauedy Wegner | 9 | 4 | 5 | 12,5 | 3,5 | 7,7% | 9,1% | 9 |
 | Letícia Maria | 11 | 4 | 7 | 12,8 | 2,2 | 4,9% | 9,1% | 6 |
 | Lucas Branco | 11 | 8 | 3 | 17,1 | 11,0 | 24,2% | 18,2% | 0 |
 
@@ -76,7 +76,7 @@ Média: **2,0 dias** em 22 issues. Faixa sem investigação: 1,0 a 3,0 dias (mé
 
 *Tabela 4: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*
 
-**Issues com responsável há mais de 3 dias sem fechar:** [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) (4 dias), [#48](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/48) (4 dias), [#49](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/49) (4 dias), [#51](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/51) (4 dias), [#52](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/52) (4 dias)
+**Issues do milestone ativo com responsável há mais de 3 dias sem fechar:** [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) (4 dias)
 
 ## Quem fez o quê
 

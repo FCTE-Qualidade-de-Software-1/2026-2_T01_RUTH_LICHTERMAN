@@ -115,7 +115,7 @@ O guia foi escrito para equipes ágeis que medem *story points* e *features*. Ne
 | Função de medição | Tempo de ciclo = (data de fim − data de início) + 1, em dias, como no guia (Parte 2, seção 8.5). Idade = (hoje − data de início) + 1 |
 | Indicador | Tabela 4 e lista de issues paradas no [Painel PSM](painel.md) |
 | Modelo de análise | Tempos maiores indicam tarefas grandes demais ou paradas; a comparação entre medições mostra se o fluxo está ficando mais previsível |
-| Critérios de decisão | **Guia (Parte 2, seção 8.5):** investigar qualquer issue com tempo de ciclo a mais de 10% da média. Como a unidade é o dia inteiro, a tolerância mínima é de 1 dia. **Equipe:** issue com responsável há mais de 3 dias sem fechar, cobrar o responsável ou dividir a tarefa |
+| Critérios de decisão | **Guia (Parte 2, seção 8.5):** investigar qualquer issue com tempo de ciclo a mais de 10% da média. Como a unidade é o dia inteiro, a tolerância mínima é de 1 dia. **Equipe:** issue do milestone ativo com responsável há mais de 3 dias sem fechar, cobrar o responsável ou dividir a tarefa (critério revisto na Medição 2) |
 
 *Tabela 6: Instância do modelo de informação do DP-1. Fonte: elaborado pela equipe, com base na Aula 09 e no PSM/CID.*
 
@@ -132,7 +132,7 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | Medição | Data | Momento |
 | :--- | :--- | :--- |
 | 1 | 26/10/2026, 00h10 | Início do dia da Entrega 1 |
-| 2 | 26/10/2026 | Antes do envio da Entrega 1, para verificar o efeito das decisões da Medição 1 |
+| 2 | 26/10/2026, 00h48 | Depois das decisões da Medição 1, para verificar o efeito delas |
 | 3 | A definir | Metade do prazo da Entrega 2 |
 | 4 | A definir | Véspera da Entrega 2 |
 
@@ -146,6 +146,10 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | 1 (26/10) | RC-1 | 1,24 (24,6 h reais ÷ 19,8 h estimadas, 16 issues) | Fora da faixa | A equipe subestimou tarefas de apresentação e de redação: #9 (3 h estimadas, 5 h reais), #20 (2 h e 4 h) e #8 (1 h e 2 h) | Nas issues de redação e de apresentação da E2, estimar com margem de 25%. Responsável: quem cria a issue. Prazo: criação das issues da E2 |
 | 1 (26/10) | RC-2 | Arthur 35%, Lucas 25%, Giovana 22%, Daniel 9%, Hauedy 8%, Letícia 1% | Fora da faixa | Arthur concentrou as primeiras tarefas. O trabalho de repositório e GitPage de Hauedy e Letícia ainda não tinha issue com horas registradas | Em 25/10, as issues abertas foram atribuídas para equilibrar o esforço previsto, sem novas issues para Arthur (previsão na página [Contribuição da Equipe](../contribuicao.md)). Hauedy e Letícia abrem issues com as horas reais do trabalho ainda não registrado. Prazo: 26/10 |
 | 1 (26/10) | DP-1 | Média de 1,6 dia (7 issues); #20 e #57 com 3 dias; 7 issues com responsável desde 23/10 (#10, #26, #28, #48, #49, #51 e #52) | Investigar e alerta | #20 e #57 foram tarefas grandes (todas as métricas e a padronização da norma). Entre as paradas, #10 e #26 já estão feitas, #28 é a revisão final, prevista para o dia da entrega, e #48 a #52 são da E2 | Fechar #10 e #26 junto com a decisão do CP-1. Na E2, dividir tarefas grandes em issues menores. Responsável: Hauedy. Prazo: criação das issues da E2 |
+| 2 (26/10) | CP-1 | 30 de 43 issues da E1 concluídas (69,8%); esperado 86,8%; desvio de 17,0 p.p. | Ação corretiva | A decisão da Medição 1 reduziu o desvio de 51,5 para 17,0 p.p. Das 13 issues abertas, #38 a #41 foram concluídas nesta noite e ainda não fechadas; #12, #13, #14 e #16 dependem de confirmação dos responsáveis; #27, #28, #32, #37 e #42 estão pendentes | Fechar #38 a #41 com as horas reais (Hauedy). Responsáveis por #12, #13, #14 e #16 confirmam se o conteúdo já está no artigo. Giovana conclui #27 e #28, Letícia conclui #32 e #42, e Hauedy faz a release (#37) por último. Prazo: envio da E1 |
+| 2 (26/10) | RC-1 | 1,12 (45,5 h reais ÷ 40,8 h estimadas, 31 issues) | Dentro da faixa | A razão entrou na faixa porque as 15 issues fechadas após a Medição 1 tiveram as horas reais registradas iguais à estimativa, por decisão da equipe. A subestimação observada na Medição 1 continua valendo para as tarefas de redação e de apresentação | Manter a margem de 25% decidida na Medição 1. Quem gastou um tempo diferente do estimado corrige o campo *Horas reais* da issue. Prazo: E2 |
+| 2 (26/10) | RC-2 | Lucas 24%, Giovana 23%, Daniel 21%, Arthur 19%, Hauedy 8%, Letícia 5% | Fora da faixa | O rebalanceamento resolveu a sobrecarga de Arthur e a baixa participação de Daniel. Hauedy e Letícia continuam abaixo de 10% porque #38 a #41 e o trabalho de repositório ainda não têm horas reais registradas | Fechar #38 a #41 e abrir issues com as horas reais do trabalho de repositório e GitPage ainda não registrado. Responsáveis: Hauedy e Letícia. Prazo: 26/10 |
+| 2 (26/10) | DP-1 | Média de 2,0 dias (22 issues); #10 e #26 com 4 dias; 5 issues com responsável há mais de 3 dias (#28, #48, #49, #51 e #52) | Investigar e alerta | #10 e #26 já estavam feitas e só foram fechadas agora, então o tempo de ciclo delas mede o atraso de registro. #28 está prevista para o dia da entrega. #48 a #52 são da E2, que ainda não começou | Revisão do critério da equipe: a partir desta medição, só contam como paradas as issues do milestone ativo. Fechar cada issue no mesmo dia em que for concluída. Responsáveis: todos. Prazo: E2 |
 
 *Tabela 8: Registro das medições, interpretações e decisões de gestão. Fonte: [medicoes.csv](dados/medicoes.csv) e decisões da equipe.*
 
@@ -157,3 +161,4 @@ O script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software
 | :--- | :--- | :--- | :--- |
 | 0.1 | 19/10/2026 | Criação da página com indicadores e procedimento de medição | Hauedy |
 | 1.0 | 26/10/2026 | Indicadores ligados à Tabela 5 do PSM/CID, fichas no template da Aula 09, troca da taxa de retrabalho pelo tempo de ciclo e registro da Medição 1 | Hauedy |
+| 1.1 | 26/10/2026 | Registro da Medição 2 e revisão do critério de issues paradas | Hauedy |

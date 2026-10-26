@@ -547,7 +547,7 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
     else:
         a("Ainda não há issues atribuídas e fechadas fora das retroativas.")
     a("")
-    a(f"**Issues com responsável há mais de {LIMITE_PARADA} dias sem fechar:** " + (
+    a(f"**Issues do milestone ativo com responsável há mais de {LIMITE_PARADA} dias sem fechar:** " + (
         ", ".join(f"[#{i['numero']}]({i['url']}) ({i['idade']} dias)" for i in r["paradas"]) if r["paradas"]
         else "nenhuma."))
     a("")
@@ -812,6 +812,8 @@ def main():
                and m["dias_restantes"] >= -1]
     milestone_ativo = min(abertos, key=lambda kv: kv[1]["dias_restantes"])[0] if abertos else \
         next(iter(sorted(r["milestones"])), None)
+    # Critério revisto na Medição 2: só contam como paradas as issues do milestone ativo
+    r["paradas"] = [i for i in r["paradas"] if i["milestone"] == milestone_ativo]
     inds = indicadores(r, milestone_ativo)
 
     DIR_IMG.mkdir(parents=True, exist_ok=True)

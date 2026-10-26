@@ -43,4 +43,4 @@ As referências completas estão na página [Referências](../referencias.md): [
 
 | Versão | Data | Descrição | Autor(es) | Revisor(es) |
 | :----: | :--------: | :--- | :---: | :---: |
-| 1.0 | 25/10/2026 | Referencial teórico conforme a Seção II da versão atual do artigo | Hauedy Wegner | |
+| 1.0 | 25/10/2026 | Referencial teórico conforme a Seção II da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

@@ -22,6 +22,6 @@ O trabalho apresenta o [referencial teórico](referencial-teorico.md), a [metodo
 
 | Versão | Data | Descrição | Autor(es) | Revisor(es) |
 | :----: | :--------: | :---------------------------------------------------- | :-------------: | :---------: |
-| 1.1 | 13/10/2026 | Criação da página Introdução do Artigo | Arthur Fernandes | Giovana Fontes |
-| 1.2 | 17/10/2026 | Adição de informações iniciais da introdução do artigo | Giovana Fontes | Arthur Fernandes |
-| 2.0 | 25/10/2026 | Atualização conforme a Seção I da versão atual do artigo | Hauedy Wegner | |
+| 1.1 | 13/10/2026 | Criação da página Introdução do Artigo | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.2 | 17/10/2026 | Adição de informações iniciais da introdução do artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.3 | 25/10/2026 | Atualização conforme a Seção I da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

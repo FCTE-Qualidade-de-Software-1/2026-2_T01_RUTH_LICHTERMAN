@@ -37,6 +37,6 @@ A avaliação tem as seguintes restrições:
 | Versão | Data       | Descrição                             | Autor       | Revisor     |
 | :----- | :--------- | :------------------------------------ | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
-| 1.1    | 21/10/2026 | Objetivos O1 a O8 e nomes da ISO/IEC 25010:2023, alinhados ao artigo e à Fase 2 | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 1.2    | 25/10/2026 | Prioridade, quatro objetivos (O1 a O4), características não selecionadas e restrições, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.1    | 21/10/2026 | Objetivos O1 a O8 e nomes da ISO/IEC 25010:2023, alinhados ao artigo e à Fase 2 | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.2    | 25/10/2026 | Prioridade, quatro objetivos (O1 a O4), características não selecionadas e restrições, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 

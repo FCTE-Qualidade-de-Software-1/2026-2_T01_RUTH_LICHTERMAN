@@ -47,6 +47,6 @@ Todo resultado apresentado deve poder ser reconstruído a partir dos dados bruto
 
 | Versão | Data | Descrição | Autor(es) | Revisor(es) |
 | :----: | :--------: | :--- | :---: | :---: |
-| 1.0 | 13/10/2026 | Criação da página | Arthur Fernandes | Giovana Fontes |
-| 1.1 | 17/10/2026 | Adição de Metodologia Artigo | Giovana Fontes | Arthur Fernandes |
-| 2.0 | 25/10/2026 | Atualização conforme a Seção III da versão atual do artigo | Hauedy Wegner | |
+| 1.0 | 13/10/2026 | Criação da página | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.1 | 17/10/2026 | Adição de Metodologia Artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.2 | 25/10/2026 | Atualização conforme a Seção III da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

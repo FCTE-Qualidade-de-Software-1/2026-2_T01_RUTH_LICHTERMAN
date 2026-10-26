@@ -6,6 +6,8 @@ A família ISO/IEC 25000 (SQuaRE) reúne normas para especificar requisitos e av
 
 Em relação à edição de 2011, a norma fez as seguintes mudanças, por isso todos os nomes usados no trabalho seguem a edição de 2023:
 
+*Tabela 1: Principais mudanças entre as edições de 2011 e 2023 da ISO/IEC 25010.*
+
 | ISO/IEC 25010:2011 | ISO/IEC 25010:2023 |
 | :--- | :--- |
 | Usabilidade | Capacidade de interação (*interaction capability*) |
@@ -15,7 +17,7 @@ Em relação à edição de 2011, a norma fez as seguintes mudanças, por isso t
 | Maturidade | Ausência de falhas (*faultlessness*) |
 | (não existia) | Autodescritividade (*self-descriptiveness*) |
 
-*Tabela 1: Principais mudanças entre as edições de 2011 e 2023 da ISO/IEC 25010. Fonte: elaborado pela equipe com base em [2].*
+*Fonte: elaborado pela equipe com base em [2].*
 
 ## Processo de avaliação de produto
 

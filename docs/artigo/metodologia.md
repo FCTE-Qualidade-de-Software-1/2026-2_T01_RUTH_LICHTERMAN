@@ -4,6 +4,8 @@
 
 O projeto segue as atividades da ISO/IEC 25040, agrupadas em quatro fases. As características priorizadas na Fase 1 originam os objetivos da Fase 2; as métricas da Fase 2 determinam o que é coletado e como na Fase 3; e os dados coletados são analisados e julgados na Fase 4, que termina em ao menos uma ação de melhoria justificada pelas evidências.
 
+*Figura 1: Fluxo da avaliação e acompanhamento do projeto.*
+
 ```mermaid
 flowchart LR
     accTitle: Fases do processo de medição baseado em GQM
@@ -20,8 +22,9 @@ flowchart LR
     F3 --> F4["Fase 4: execução e conclusão<br/>coleta, análise, julgamento<br/>e ação de melhoria"]
     PSM["Medição do projeto (PSM/CID)<br/>decisões de gestão nos pontos de controle"] -.-> F1 & F2 & F3 & F4
 ```
+*Fonte: adaptado da Figura 1 do artigo.*
 
-*Figura 1: Fluxo da avaliação e acompanhamento do projeto. Fonte: adaptado da Figura 1 do artigo.*
+*Tabela 1: Fases do projeto.*
 
 | Fase | Atividade (ISO/IEC 25040) | Principais produtos | Entrega |
 | :---: | :--- | :--- | :---: |
@@ -30,7 +33,7 @@ flowchart LR
 | 3 | Projetar a avaliação | Perfis de passageiro, roteiros, ambiente, amostra, método de coleta e cronograma | E2 |
 | 4 | Executar e concluir a avaliação | Coleta, análise, julgamento, melhorias e ação de melhoria | E2 |
 
-*Tabela 1: Fases do projeto. Fonte: elaborado pela equipe.*
+*Fonte: elaborado pela equipe.*
 
 Cada entrega inclui o artigo, esta página do projeto (GitPage) e uma release no repositório.
 
@@ -59,3 +62,4 @@ Todo resultado apresentado deve poder ser reconstruído a partir dos dados bruto
 | 1.0 | 13/10/2026 | Criação da página | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 | 1.1 | 17/10/2026 | Adição de Metodologia Artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 25/10/2026 | Atualização conforme a Seção III da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.3 | 26/10/2026 | Adiciona texto alternativo ao diagrama e faz pequenos ajustes | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

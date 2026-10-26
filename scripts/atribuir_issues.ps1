@@ -21,21 +21,21 @@ $repo = "FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN"
 # Reais: deixe "" até a pessoa confirmar quanto tempo gastou.
 $tabela = @(
     # Já feitas no artigo/site (fecham quando a pessoa informar as horas reais)
-    @{ N = 10; Responsaveis = "GiovanaFontesS"; Estimadas = "1,5"; Reais = "" }
-    @{ N = 17; Responsaveis = "daniel-de-sousa"; Estimadas = "1,5"; Reais = "" }
-    @{ N = 18; Responsaveis = "daniel-de-sousa"; Estimadas = "1,5"; Reais = "" }
-    @{ N = 19; Responsaveis = "daniel-de-sousa"; Estimadas = "1"; Reais = "" }
-    @{ N = 21; Responsaveis = "daniel-de-sousa"; Estimadas = "2"; Reais = "" }
-    @{ N = 22; Responsaveis = "daniel-de-sousa,GiovanaFontesS"; Estimadas = "1"; Reais = "" }
-    @{ N = 23; Responsaveis = "daniel-de-sousa"; Estimadas = "1"; Reais = "" }
-    @{ N = 24; Responsaveis = "GiovanaFontesS"; Estimadas = "3"; Reais = "" }
-    @{ N = 26; Responsaveis = "lucasbbranco"; Estimadas = "4"; Reais = "" }
-    @{ N = 34; Responsaveis = "lucasbbranco"; Estimadas = "1"; Reais = "" }
-    @{ N = 29; Responsaveis = "leticialopes20"; Estimadas = "1"; Reais = "" }
-    @{ N = 30; Responsaveis = "leticialopes20"; Estimadas = "0,5"; Reais = "" }
-    @{ N = 33; Responsaveis = "leticialopes20"; Estimadas = "0,5"; Reais = "" }
-    @{ N = 35; Responsaveis = "HauedyWS"; Estimadas = "0,5"; Reais = "" }
-    @{ N = 36; Responsaveis = "HauedyWS"; Estimadas = "1"; Reais = "" }
+    @{ N = 10; Responsaveis = "GiovanaFontesS"; Estimadas = "1,5"; Reais = "1,5" }
+    @{ N = 17; Responsaveis = "daniel-de-sousa"; Estimadas = "1,5"; Reais = "1,5" }
+    @{ N = 18; Responsaveis = "daniel-de-sousa"; Estimadas = "1,5"; Reais = "1,5" }
+    @{ N = 19; Responsaveis = "daniel-de-sousa"; Estimadas = "1"; Reais = "1" }
+    @{ N = 21; Responsaveis = "daniel-de-sousa"; Estimadas = "2"; Reais = "2" }
+    @{ N = 22; Responsaveis = "daniel-de-sousa,GiovanaFontesS"; Estimadas = "1"; Reais = "1" }
+    @{ N = 23; Responsaveis = "daniel-de-sousa"; Estimadas = "1"; Reais = "1" }
+    @{ N = 24; Responsaveis = "GiovanaFontesS"; Estimadas = "3"; Reais = "3" }
+    @{ N = 26; Responsaveis = "lucasbbranco"; Estimadas = "4"; Reais = "4" }
+    @{ N = 34; Responsaveis = "lucasbbranco"; Estimadas = "1"; Reais = "1" }
+    @{ N = 29; Responsaveis = "leticialopes20"; Estimadas = "1"; Reais = "1" }
+    @{ N = 30; Responsaveis = "leticialopes20"; Estimadas = "0,5"; Reais = "0,5" }
+    @{ N = 33; Responsaveis = "leticialopes20"; Estimadas = "0,5"; Reais = "0,5" }
+    @{ N = 35; Responsaveis = "HauedyWS"; Estimadas = "0,5"; Reais = "0,5" }
+    @{ N = 36; Responsaveis = "HauedyWS"; Estimadas = "1"; Reais = "1" }
     # A fazer: artigo e conteúdo (Arthur, Giovana, Lucas, Daniel)
     @{ N = 12; Responsaveis = "arthurfernandesj"; Estimadas = "2"; Reais = "" }
     @{ N = 13; Responsaveis = "GiovanaFontesS"; Estimadas = "2"; Reais = "" }

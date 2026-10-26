@@ -6,6 +6,15 @@ O projeto segue as atividades da ISO/IEC 25040, agrupadas em quatro fases. As ca
 
 ```mermaid
 flowchart LR
+    accTitle: Fases do processo de medição baseado em GQM
+    accDescr {
+        Fluxograma da esquerda para a direita com quatro fases em sequência.
+        A Fase 1 define requisitos: propósito, escopo, restrições, partes interessadas e características.
+        A Fase 2 define a especificação: objetivos, questões, hipóteses, métricas, níveis e julgamento (GQM).
+        A Fase 3 define o projeto: perfis, roteiros, ambiente, amostra e método de coleta.
+        A Fase 4 trata da execução e conclusão: coleta, análise, julgamento e ação de melhoria.
+        Um bloco de medição do projeto (PSM/CID), com decisões de gestão nos pontos de controle, se liga por linhas tracejadas a todas as quatro fases.
+    }
     F1["Fase 1: requisitos<br/>propósito, escopo, restrições,<br/>partes interessadas e características"] --> F2["Fase 2: especificação<br/>objetivos, questões, hipóteses,<br/>métricas, níveis e julgamento (GQM)"]
     F2 --> F3["Fase 3: projeto<br/>perfis, roteiros, ambiente,<br/>amostra e método de coleta"]
     F3 --> F4["Fase 4: execução e conclusão<br/>coleta, análise, julgamento<br/>e ação de melhoria"]

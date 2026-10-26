@@ -101,5 +101,9 @@ nav:
       - PSM/CID: gestao/psm.md
       - Painel PSM (automático): gestao/painel.md
   - Uso de IA: uso-de-ia.md
-  - Equipe: contribuicao.md
+  - Equipe:
+      - Contribuição: contribuicao.md
+      - Atas: 
+          - 11/10/2026: atas/2026-10-11.md
+          - 26/10/2026: atas/2026-10-26.md
   - Referências: referencias.md

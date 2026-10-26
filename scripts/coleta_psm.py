@@ -41,7 +41,7 @@ EQUIPE = {
     "daniel-de-sousa": "Daniel Sousa",
     "giovanafontess": "Giovana Fontes",
     "hauedyws": "Hauedy Wegner",
-    "leticialopes20": "Letícia Maria",
+    "leticialopes20": "Letícia Lopes",
     "lucasbbranco": "Lucas Branco",
 }
 
@@ -552,33 +552,8 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
         else "nenhuma."))
     a("")
 
-    a("## Quem fez o quê")
-    a("")
-    a("### Issues concluídas")
-    a("")
-    concl = [i for i in issues if i["estado"] == "fechada"]
-    if concl:
-        a("| Issue | Responsável | Milestone | Horas reais | Concluída em |")
-        a("|---|---|---|---|---|")
-        for i in sorted(concl, key=lambda x: x["fechada_em"] or ""):
-            resp = ", ".join(nome(x) for x in i["responsaveis"]) or "Sem responsável"
-            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {celula(i['milestone'])} | "
-              f"{fmt(i['horas_reais'])} | {data_br(i['fechada_em'])} |")
-    else:
-        a("Nenhuma issue concluída até o momento.")
-    a("")
-    a("### Issues em andamento")
-    a("")
-    abertas = [i for i in issues if i["estado"] == "aberta"]
-    if abertas:
-        a("| Issue | Responsável | Milestone | Horas estimadas |")
-        a("|---|---|---|---|")
-        for i in abertas:
-            resp = ", ".join(nome(x) for x in i["responsaveis"]) or "Sem responsável"
-            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {celula(i['milestone'])} | "
-              f"{fmt(i['horas_estimadas'])} |")
-    else:
-        a("Nenhuma issue aberta.")
+    a("A lista de atividades de cada integrante está em [Contribuição da Equipe](../contribuicao.md), e as issues, "
+      f"no [GitHub](https://github.com/{REPO}/issues?q=is%3Aissue).")
     a("")
 
     a("## Histórico de medições registradas")
@@ -761,36 +736,17 @@ def gerar_contribuicao(issues, commits_lista, agora):
             a("")
         inicio = fim
 
-    a("## Metodologia")
+    a("## Como o esforço é medido")
     a("")
-    a("### Por que horas trabalhadas")
-    a("")
-    a("| Medida | Vantagem | Problema | Decisão |")
-    a("| :--- | :--- | :--- | :--- |")
-    a("| Commits | Coleta automática | Mede o hábito de commit, não o trabalho: um artigo inteiro pode entrar em um "
-      "commit, e reuniões, pesquisa e revisão não geram commit | Usada só como evidência complementar |")
-    a("| Issues concluídas | Fácil de contar | Issues têm tamanhos muito diferentes | Usada para o progresso "
-      "(CP-1), não para o esforço |")
-    a("| **Horas reais por issue** | Cobre todo tipo de atividade, inclusive o que não aparece no Git | "
-      "Depende do registro honesto de cada integrante | **Adotada**, com a issue como evidência |")
-    a("")
-    a(f"*Tabela {n_tab + 1}: Alternativas de medida de esforço. Fonte: elaborado pela equipe.*")
-    a("")
-    a("### Registro e cálculo")
-    a("")
-    a("1. **Registro.** Cada tarefa é uma issue criada pelo [template da equipe]"
-      f"(https://github.com/{REPO}/blob/main/.github/ISSUE_TEMPLATE/tarefa.yml), com responsável, milestone e "
-      "*Horas estimadas*. Ao concluir, o responsável preenche *Horas reais* e fecha a issue.")
-    a("2. **Atividades fora do Git.** Reuniões, pesquisa, revisão e apresentação também viram issues (por exemplo, "
-      "slides do ponto de controle e atas), para que o tempo gasto seja contado.")
-    a("3. **Cálculo.** Esforço do integrante (%) = horas reais do integrante na entrega ÷ horas reais da equipe "
-      "na entrega × 100. Só entram issues fechadas. Os percentuais são arredondados pelo método dos maiores restos, "
-      "para a soma dar exatamente 100,0%.")
-    a(f"4. **Critério de decisão.** Integrante abaixo de {LIMITE_DISTRIBUICAO[0]:.0f}% ou acima de "
-      f"{LIMITE_DISTRIBUICAO[1]:.0f}% indica desequilíbrio. A equipe rebalanceia atribuindo as próximas issues a "
-      "quem está abaixo da faixa; as horas reais já registradas não são alteradas.")
-    a("5. **Commits no período.** Commits feitos até o fim do prazo de cada entrega, como evidência complementar. "
-      "Commits feitos com um e-mail que não está vinculado à conta do GitHub do integrante não são contados.")
+    a("- **Unidade:** hora-pessoa. Horas cobrem todo tipo de atividade, inclusive reuniões, pesquisa e revisão, "
+      "que não aparecem em commits; por isso os commits entram só como evidência complementar.")
+    a(f"- **Registro:** cada tarefa é uma issue do [template da equipe](https://github.com/{REPO}/blob/main/"
+      ".github/ISSUE_TEMPLATE/tarefa.yml) com *Horas estimadas*; ao concluir, o responsável preenche *Horas reais* "
+      "e fecha a issue. Em issues com mais de um responsável, as horas são divididas igualmente.")
+    a("- **Cálculo:** esforço (%) = horas reais do integrante na entrega ÷ horas reais da equipe na entrega × 100, "
+      "arredondado pelo método dos maiores restos para somar 100,0%.")
+    a(f"- **Critério (RC-2):** abaixo de {LIMITE_DISTRIBUICAO[0]:.0f}% ou acima de {LIMITE_DISTRIBUICAO[1]:.0f}% "
+      "indica desequilíbrio; a equipe rebalanceia nas próximas atribuições, sem alterar horas já registradas.")
     a("")
     (RAIZ / "docs" / "contribuicao.md").write_text("\n".join(L), encoding="utf-8")
 

@@ -20,10 +20,6 @@ Nesta fase, a equipe caracteriza o produto avaliado, define o propósito da aval
 | [Propósito, Justificativa e Objetivos](2-proposito.md) | Problema de pesquisa, justificativa, objetivos, características avaliadas com sua ênfase e partes interessadas |
 | [Modelo de Qualidade](3-modelo.md) | Características e subcaracterísticas, objetivos O1 a O4, escopo e restrições da avaliação |
  
-## Próximos passos
- 
-Os objetivos de avaliação, as questões e as métricas (modelo GQM) estão na [Fase 2](../fase-2/index.md). A participação de cada integrante está em [Contribuição](../contribuicao.md).
- 
 ---
  
 ### Histórico de Versão

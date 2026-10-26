@@ -21,6 +21,9 @@ hide:
     <a href="fase-2/" class="md-button">
       Explorar a especificação GQM
     </a>
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases" class="md-button">
+      Releases e PDF do artigo
+    </a>
   </div>
 </div>
 
@@ -65,36 +68,14 @@ hide:
   </a>
 </div>
 
-## Etapas de trabalho
-
-<div class="phase-strip">
-  <div class="phase-item">
-    <strong>01 · Requisitos</strong>
-    <span>Produto, propósito, escopo e características.</span>
-  </div>
-  <div class="phase-item">
-    <strong>02 · Especificação</strong>
-    <span>Objetivos, questões, hipóteses e métricas (GQM).</span>
-  </div>
-  <div class="phase-item">
-    <strong>03 · Projeto</strong>
-    <span>Ambiente, participantes e procedimentos.</span>
-  </div>
-  <div class="phase-item">
-    <strong>04 · Execução</strong>
-    <span>Resultados, julgamento e melhorias.</span>
-  </div>
-</div>
-
-
 ## Equipe
 
 <div class="team-list">
   <a class="team-chip" href="https://github.com/arthurfernandesj" target="_blank" rel="noopener noreferrer">Arthur Fernandes</a>
   <a class="team-chip" href="https://github.com/daniel-de-sousa" target="_blank" rel="noopener noreferrer">Daniel Sousa</a>
   <a class="team-chip" href="https://github.com/GiovanaFontesS" target="_blank" rel="noopener noreferrer">Giovana Fontes</a>
-  <a class="team-chip" href="https://github.com/HauedyWS" target="_blank" rel="noopener noreferrer">Hauedy</a>
-  <a class="team-chip" href="https://github.com/leticialopes20" target="_blank" rel="noopener noreferrer">Letícia</a>
+  <a class="team-chip" href="https://github.com/HauedyWS" target="_blank" rel="noopener noreferrer">Hauedy Wegner</a>
+  <a class="team-chip" href="https://github.com/leticialopes20" target="_blank" rel="noopener noreferrer">Letícia Lopes</a>
   <a class="team-chip" href="https://github.com/lucasbbranco" target="_blank" rel="noopener noreferrer">Lucas Branco</a>
 </div>
 

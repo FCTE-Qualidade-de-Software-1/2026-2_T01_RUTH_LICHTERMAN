@@ -544,13 +544,42 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
 
     a("## Indicadores")
     a("")
-    a("| ID | Categoria | Indicador | Valor atual | Situação | Limite de alerta |")
-    a("|---|---|---|---|---|---|")
-    for l in inds:
-        a("| " + " | ".join(celula(x) for x in l) + " |")
+    sit = {l[0]: l[4] for l in inds}
+
+    def classe(t):
+        return "ok" if t.startswith("Dentro") else ("bad" if t.startswith("Ação") else "warn")
+
+    def cartao(ident, titulo, valor, detalhe):
+        t = sit.get(ident, "Sem dados")
+        return (f'<div class="psm-kpi {classe(t)}"><span>{ident} · {titulo}</span><strong>{valor}</strong>'
+                f'<em class="flat">{detalhe}</em><span class="psm-badge {classe(t)}">{celula(t)}</span></div>')
+
+    cards = []
+    m = r["milestones"].get(milestone_ativo)
+    if m:
+        det = f"concluído em {celula(milestone_ativo)}"
+        if m["esperado"] is not None:
+            det += f" · esperado {fmt(m['esperado'])}% · desvio {fmt(m['desvio'])} p.p."
+        cards.append(cartao("CP-1", "Planejado vs. concluído", f"{fmt(m['progresso'])}%", det))
+    cards.append(cartao("RC-1", "Estimado vs. real", fmt(r["razao"], 2) if r["razao"] is not None else "-",
+                        f"{fmt(r['soma_real'])} h reais ÷ {fmt(r['soma_est'])} h estimadas"))
+    membros = [p for k, p in r["pessoas"].items() if k in EQUIPE and p["pct_horas"] is not None]
+    if membros:
+        cards.append(cartao("RC-2", "Esforço por integrante",
+                            f"{fmt(min(p['pct_horas'] for p in membros), 0)}% a {fmt(max(p['pct_horas'] for p in membros), 0)}%",
+                            "menor e maior participação nas horas reais"))
+    cards.append(cartao("DP-1", "Tempo de ciclo",
+                        f"{fmt(r['media_ciclo'])} dias" if r["media_ciclo"] is not None else "-",
+                        f"média em {len(r['com_ciclo'])} issues · {len(r['paradas'])} paradas"))
+    a('<div class="psm-kpis">' + "".join(cards) + "</div>")
     a("")
-    a(f"*Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv), "
-      "gerado pelo script de coleta.*")
+    a('??? info "Valores e limites de todos os indicadores (tabela)"')
+    a("    | ID | Categoria | Indicador | Valor atual | Situação | Limite de alerta |")
+    a("    |---|---|---|---|---|---|")
+    for l in inds:
+        a("    | " + " | ".join(celula(x) for x in l) + " |")
+    a("")
+    a(f"    *Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv).*")
     a("")
 
     a("## Calendário e Progresso")
@@ -635,15 +664,16 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
           f"{fmt(max(r['media_ciclo'] - r['tolerancia'], 0))} a {fmt(r['media_ciclo'] + r['tolerancia'])} dias "
           f"(média ± o maior valor entre {LIMITE_OUTLIER:.0f}% da média e 1 dia).")
         a("")
-        a("| Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |")
-        a("|---|---|---|---|---|---|")
+        a('??? note "Tempo de ciclo por issue"')
+        a("    | Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |")
+        a("    |---|---|---|---|---|---|")
         for i in sorted(r["com_ciclo"], key=lambda x: x["fechada_em"]):
             resp = ", ".join(nome(x) for x in i["responsaveis"]) or "Sem responsável"
             sit = "Investigar" if i in r["outliers"] else "Dentro da faixa"
-            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {data_br(i['atribuida_em'])} | "
+            a(f"    | [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {celula(resp)} | {data_br(i['atribuida_em'])} | "
               f"{data_br(i['fechada_em'])} | {i['ciclo']} | {sit} |")
         a("")
-        a("*Tabela 5: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, "
+        a("    *Tabela 5: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, "
           "como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*")
     else:
         a("Ainda não há issues atribuídas e fechadas fora das retroativas.")
@@ -668,7 +698,7 @@ def gerar_pagina(issues, r, inds, commits, agora, milestone_ativo):
         a("")
         a("*Tabela 6: Medições registradas com `python scripts/coleta_psm.py --registrar`. "
           "Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na "
-          "[Tabela 9 da página PSM/CID](psm.md#registro-de-medicoes-e-decisoes).*")
+          "[Tabela 3 da página PSM/CID](psm.md#medicoes-e-decisoes).*")
     else:
         a("Nenhuma medição oficial registrada ainda. Para registrar, rode "
           "`python scripts/coleta_psm.py --registrar` e faça commit dos arquivos gerados.")
@@ -809,7 +839,7 @@ def gerar_contribuicao(issues, commits_lista, agora):
             if fora:
                 a(f"Pelo critério do RC-2 (faixa de {faixa} por integrante), estão fora da faixa: "
                   f"{', '.join(fora)}. A análise e a decisão da equipe ficam no "
-                  "[registro de decisões da página PSM](gestao/psm.md#registro-de-medicoes-e-decisoes).")
+                  "[registro de decisões da página PSM](gestao/psm.md#medicoes-e-decisoes).")
             else:
                 a(f"Pelo critério do RC-2, todos os integrantes estão dentro da faixa de {faixa}.")
         else:

@@ -20,10 +20,10 @@ $repo = "FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN"
 # ---------------------------------------------------------------- EDITE AQUI
 $tabela = @(
     # E1: Hauedy realizou #38 a #41. Preencha Reais com as suas horas reais para fechar.
-    @{ N = 38; Responsaveis = "HauedyWS"; Estimadas = "3"; Reais = "" }
+    @{ N = 38; Responsaveis = "HauedyWS"; Estimadas = "3"; Reais = "4" }
     @{ N = 39; Responsaveis = "leticialopes20"; Estimadas = "1"; Reais = "" }
     @{ N = 40; Responsaveis = "HauedyWS"; Estimadas = "1"; Reais = "" }
-    @{ N = 41; Responsaveis = "leticialopes20"; Estimadas = "1,5"; Reais = "" }
+    @{ N = 41; Responsaveis = "leticialopes20"; Estimadas = "1,5"; Reais = "1" }
     # E1: a fazer
     @{ N = 12; Responsaveis = "arthurfernandesj"; Estimadas = "2"; Reais = "" }
     @{ N = 13; Responsaveis = "GiovanaFontesS"; Estimadas = "2"; Reais = "" }
@@ -71,6 +71,29 @@ Fases 3 e 4; Premissa 13
 - Horas reais (preencher ao fechar): 
 "@
     }
+    @{
+        Titulo = "GitPage: páginas da Fase 1"
+        Responsaveis = "leticialopes20"
+        Milestone = "E1: Fases 1 e 2"
+        Labels = "gitpage,fase-1,retroativa"
+        Fechar = $true
+        Corpo = @"
+## Descrição
+Issue retroativa. Criação das páginas da Fase 1 no GitPage a partir do conteúdo do artigo: descrição do produto, propósito, modelo de qualidade e página inicial da fase.
+
+## Evidência
+Commits de 20/10/2026, entre 23h00 e 23h22: a008b40a, 3580e99d, 51332811, 3030fd40 e 2893f21d.
+
+## Critério de pronto
+- [x] Páginas da Fase 1 publicadas no GitPage
+
+## Esforço (PSM)
+- Horas estimadas: 1
+- Horas reais (preencher ao fechar): 1
+
+Horas registradas a partir do histórico de commits; a responsável pode corrigir o valor se tiver gastado tempo diferente.
+"@
+    }
 )
 # ---------------------------------------------------------------------------
 
@@ -113,7 +136,13 @@ foreach ($nv in $novas) {
     Write-Host ("NOVA [{0}]: {1}" -f $nv.Responsaveis, $nv.Titulo)
     if ($DryRun) { continue }
     [System.IO.File]::WriteAllText($tmp, $nv.Corpo, $utf8)
-    gh issue create --repo $repo --title $nv.Titulo --body-file $tmp --assignee $nv.Responsaveis --milestone $nv.Milestone --label $nv.Labels
+    $url = gh issue create --repo $repo --title $nv.Titulo --body-file $tmp --assignee $nv.Responsaveis --milestone $nv.Milestone --label $nv.Labels
+    Write-Host ("  criada: " + $url)
+    if ($nv.Fechar -and $url) {
+        $num = ($url -split "/")[-1]
+        gh issue close $num --repo $repo --reason completed *> $null
+        Write-Host ("  fechada: #" + $num)
+    }
 }
 
 Remove-Item $tmp -ErrorAction SilentlyContinue

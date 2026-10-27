@@ -274,8 +274,6 @@ Efeito das decisões da Medição 1, medido na Medição 2:
 
 ### Histórico de versão
 
-### Histórico de versão
-
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 19/10/2026 | Criação da página com indicadores e procedimento de medição | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |

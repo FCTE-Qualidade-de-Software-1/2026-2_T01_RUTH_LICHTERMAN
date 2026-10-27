@@ -2,13 +2,13 @@
 
 Trabalho final de Qualidade de Software 1 (FCTE/UnB, 2026/2, turma T01). A equipe avalia a qualidade do aplicativo **BRB Mobilidade** com base na ISO/IEC 25010:2023, no método GQM e no processo de avaliação da ISO/IEC 25040.
 
-**[Acessar a documentação](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/)** · [Releases](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases) · [Painel PSM](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/gestao/painel/)
+**[Acessar a documentação](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/)** · [Artigo no Overleaf](https://www.overleaf.com/project/6ac3b3985adcbcca9197389d) · [Releases](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases) · [Painel PSM](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/gestao/painel/)
 
 ## Entregas
 
 | Entrega | Conteúdo | Prazo | Release |
 | :--- | :--- | :--- | :--- |
-| E1 | Fases 1 e 2 e primeira versão do artigo | 26/10/2026 | [v1.0](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases/tag/v1.0) |
+| E1 | Fases 1 e 2 e [primeira versão do artigo](https://www.overleaf.com/project/6ac3b3985adcbcca9197389d) | 26/10/2026 | [v1.0](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases/tag/v1.0) |
 | E2 | Fases 3 e 4 e versão final do artigo | A definir | - |
 
 ## Equipe

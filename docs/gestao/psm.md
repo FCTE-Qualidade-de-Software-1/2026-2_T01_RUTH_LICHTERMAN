@@ -274,11 +274,13 @@ Efeito das decisões da Medição 1, medido na Medição 2:
 
 ### Histórico de versão
 
-| Versão | Data | Descrição | Autor(a) |
-| :--- | :--- | :--- | :--- |
-| 0.1 | 19/10/2026 | Criação da página com indicadores e procedimento de medição | Hauedy |
-| 1.0 | 26/10/2026 | Indicadores ligados à Tabela 5 do PSM/CID, fichas no template da Aula 09, troca da taxa de retrabalho pelo tempo de ciclo e registro da Medição 1 | Hauedy |
-| 1.1 | 26/10/2026 | Registro da Medição 2 e revisão do critério de issues paradas | Hauedy |
-| 1.2 | 26/10/2026 | Métricas implementadas, horas estimadas vs. reais, alocado vs. realizado e processo de medição (McGarry et al., 2002) | Hauedy |
-| 1.3 | 26/10/2026 | Planning Poker nas estimativas e decisões de planejamento da E2 | Hauedy |
-| 1.4 | 26/10/2026 | Página reorganizada de forma visual: visão geral em cartões, diagramas, fichas em abas e medições por aba | Hauedy |
+### Histórico de versão
+
+| Versão | Data | Descrição | Autor(a) | Revisor(a) |
+| :--- | :--- | :--- | :--- | :--- |
+| 1.0 | 19/10/2026 | Criação da página com indicadores e procedimento de medição | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.1 | 26/10/2026 | Indicadores ligados à Tabela 5 do PSM/CID, fichas no template da Aula 09, troca da taxa de retrabalho pelo tempo de ciclo e registro da Medição 1 | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.2 | 26/10/2026 | Registro da Medição 2 e revisão do critério de issues paradas | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.3 | 26/10/2026 | Métricas implementadas, horas estimadas vs. reais, alocado vs. realizado e processo de medição (McGarry et al., 2002) | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.4 | 26/10/2026 | Planning Poker nas estimativas e decisões de planejamento da E2 | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.5 | 26/10/2026 | Página reorganizada de forma visual: visão geral em cartões, diagramas, fichas em abas e medições por aba | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |

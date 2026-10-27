@@ -67,4 +67,4 @@ O projeto contribui de forma indireta para dois Objetivos de Desenvolvimento Sus
 | Versão | Data       | Descrição                | Autor       | Revisor     |
 | :----- | :--------- | :----------------------- | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
-| 1.1    | 26/10/2026 | ODS 11 e 16 com metas, indicadores e justificativa de pertinência | [Daniel Sousa](https://github.com/daniel-de-sousa) | [revisor] |
+| 1.1    | 26/10/2026 | ODS 11 e 16 com metas, indicadores e justificativa de pertinência | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Letícia Lopes](https://github.com/leticialopes20) |

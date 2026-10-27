@@ -52,4 +52,4 @@ A equipe acessa o aplicativo apenas como usuário final, sem código-fonte nem r
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 21/10/2026 | Visão geral da Fase 2 e rastreabilidade com a Fase 1, a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
-| 2.0 | 25/10/2026 | Atualização para quatro objetivos (O1 a O4) e nomenclatura da ISO/IEC 25010:2023, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.1| 25/10/2026 | Atualização para quatro objetivos (O1 a O4) e nomenclatura da ISO/IEC 25010:2023, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

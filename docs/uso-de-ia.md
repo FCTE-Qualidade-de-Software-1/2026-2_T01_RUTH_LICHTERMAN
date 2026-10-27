@@ -22,4 +22,4 @@ As ferramentas aceleraram a formatação e a organização do material, mas não
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 25/10/2026 | Declaração de uso de IA a partir da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 25/10/2026 | Declaração de uso de IA a partir da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |

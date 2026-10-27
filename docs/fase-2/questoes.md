@@ -27,5 +27,5 @@ O planejamento de Q1 a Q4 prevê resultados por perfil de experiência (passagei
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Questões Q1 a Q12 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 2.0 | 25/10/2026 | Questões reorganizadas nos objetivos O1 a O4, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Questões Q1 a Q12 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |  [Arthur Fernandes](https://github.com/arthurfernandesj)|
+| 1.1 | 25/10/2026 | Questões reorganizadas nos objetivos O1 a O4, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20)|

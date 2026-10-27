@@ -63,5 +63,5 @@ Como não foram fixados mínimos de observação antes da coleta e a cobertura f
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Níveis de pontuação e critérios de julgamento a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 2.0 | 25/10/2026 | Julgamento da característica pelo seu objetivo e regras para métricas inconclusivas, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Níveis de pontuação e critérios de julgamento a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |  [Arthur Fernandes](https://github.com/arthurfernandesj)|
+| 1.1 | 25/10/2026 | Julgamento da característica pelo seu objetivo e regras para métricas inconclusivas, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |

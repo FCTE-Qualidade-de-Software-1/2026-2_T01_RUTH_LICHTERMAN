@@ -28,4 +28,4 @@ Nesta fase, a equipe caracteriza o produto avaliado, define o propósito da aval
 | :----- | :--------- | :-------------------------- | :---------- | :---------- |
 | 1.0 | 18/10/2026 | Criação da página da Fase 1 | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 | 1.1 | 20/10/2026 | Edição do conteúdo da página da Fase 1 | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
-| 1.2 | 25/10/2026 | Contexto de uso, tipo de produto e objetivos O1 a O4, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.2 | 25/10/2026 | Contexto de uso, tipo de produto e objetivos O1 a O4, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|

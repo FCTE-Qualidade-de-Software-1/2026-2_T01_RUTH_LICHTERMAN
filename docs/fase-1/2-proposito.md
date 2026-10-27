@@ -56,7 +56,7 @@ O requisitante é hipotético: a área gestora do BRB Mobilidade no BRB, que tam
 | Versão | Data       | Descrição                                   | Autor       | Revisor     |
 | :----- | :--------- | :------------------------------------------ | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
-| 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) |  |
+| 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj)  |
 | 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2    | 25/10/2026 | Nomes da ISO/IEC 25010:2023 e limite de 60 s no aplicativo, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS)  |
-| 1.3    | 26/10/2026 | Priorização das características por matriz ponderada e trade-offs | [Daniel Sousa](https://github.com/daniel-de-sousa) | [revisor] |
+| 1.3    | 26/10/2026 | Priorização das características por matriz ponderada e trade-offs | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Letícia Lopes](https://github.com/leticialopes20) |

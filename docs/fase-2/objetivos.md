@@ -40,5 +40,5 @@ O que diferencia cada caso dentro de um objetivo (tipo de passageiro, cenário e
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Objetivos O1 a O8 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
-| 2.0 | 25/10/2026 | Quatro objetivos (O1 a O4), um por característica, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Objetivos O1 a O8 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |  [Arthur Fernandes](https://github.com/arthurfernandesj)|
+| 1.1 | 25/10/2026 | Quatro objetivos (O1 a O4), um por característica, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |

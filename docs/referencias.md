@@ -50,4 +50,4 @@ As páginas da [Fase 1](fase-1/1-descricao.md) trazem também as fontes usadas n
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 25/10/2026 | Referências consolidadas a partir da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 25/10/2026 | Referências consolidadas a partir da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |

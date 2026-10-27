@@ -7,3 +7,7 @@ data,id,indicador,valor,situacao
 26/10/2026 00:48,RC-1,Estimado vs. realizado (horas reais / estimadas),"1,12 (45,5 h / 40,8 h, 31 issues)",Dentro do esperado
 26/10/2026 00:48,RC-2,Esforço por integrante (% das horas reais),"Arthur 19%, Daniel 21%, Giovana 23%, Hauedy 8%, Letícia 5%, Lucas 24%","Alerta: Hauedy Wegner, Letícia Lopes"
 26/10/2026 00:48,DP-1,Tempo de ciclo (atribuição até fechamento),"média 2,0 dias (22 issues)",Investigar 7 issues a mais de 10% da média; Alerta: 5 issues com responsável há mais de 3 dias
+26/10/2026 23:10,CP-1,Planejado vs. concluído (E1: Fases 1 e 2),"40/45 concluídas (88,9%); esperado 99,5%; desvio 10,6 p.p.",Ação corretiva
+26/10/2026 23:10,RC-1,Estimado vs. realizado (horas reais / estimadas),"1,13 (63,0 h / 55,8 h, 41 issues)",Dentro do esperado
+26/10/2026 23:10,RC-2,Esforço por integrante (% das horas reais),"Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17%",Dentro do esperado
+26/10/2026 23:10,DP-1,Tempo de ciclo (atribuição até fechamento),"média 2,0 dias (32 issues)",Investigar 10 issues a mais de 10% da média

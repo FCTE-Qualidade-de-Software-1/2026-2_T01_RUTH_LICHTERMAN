@@ -1,5 +1,5 @@
 id,categoria,indicador,valor,situacao,limite
-CP-1,Calendário e Progresso,Planejado vs. concluído (E1: Fases 1 e 2),"34/43 concluídas (79,1%); esperado 95,7%; desvio 16,6 p.p.",Ação corretiva,Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva
-RC-1,Recursos e Custos,Estimado vs. realizado (horas reais / estimadas),"1,08 (53,0 h / 49,2 h, 35 issues)",Dentro do esperado,"Fora da faixa 0,8 a 1,2"
-RC-2,Recursos e Custos,Esforço por integrante (% das horas reais),"Arthur 22%, Daniel 18%, Giovana 19%, Hauedy 17%, Letícia 3%, Lucas 21%",Alerta: Letícia Lopes,Integrante abaixo de 10% ou acima de 30%
-DP-1,Desempenho dos Processos,Tempo de ciclo (atribuição até fechamento),"média 2,1 dias (26 issues)",Investigar 8 issues a mais de 10% da média,Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir
+CP-1,Calendário e Progresso,Planejado vs. concluído (E1: Fases 1 e 2),"40/45 concluídas (88,9%); esperado 99,5%; desvio 10,6 p.p.",Ação corretiva,Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva
+RC-1,Recursos e Custos,Estimado vs. realizado (horas reais / estimadas),"1,13 (63,0 h / 55,8 h, 41 issues)",Dentro do esperado,"Fora da faixa 0,8 a 1,2"
+RC-2,Recursos e Custos,Esforço por integrante (% das horas reais),"Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17%",Dentro do esperado,Integrante abaixo de 10% ou acima de 30%
+DP-1,Desempenho dos Processos,Tempo de ciclo (atribuição até fechamento),"média 2,0 dias (32 issues)",Investigar 10 issues a mais de 10% da média,Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir

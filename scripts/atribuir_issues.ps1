@@ -131,7 +131,7 @@ foreach ($l in $tabela) {
 }
 
 foreach ($nv in $novas) {
-    $existe = gh issue list --repo $repo --state all --search ("in:title `"" + $nv.Titulo + "`"") --json title | ConvertFrom-Json
+    $existe = gh issue list --repo $repo --state all --limit 500 --json title | ConvertFrom-Json
     if (@($existe | Where-Object { $_.title -eq $nv.Titulo }).Count -gt 0) { Write-Host ("Já existe: " + $nv.Titulo); continue }
     Write-Host ("NOVA [{0}]: {1}" -f $nv.Responsaveis, $nv.Titulo)
     if ($DryRun) { continue }

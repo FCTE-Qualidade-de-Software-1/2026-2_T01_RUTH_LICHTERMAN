@@ -2,19 +2,19 @@
 
 Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) a partir das issues, eventos e commits do [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN). Ela é atualizada a cada publicação do site. A definição dos indicadores, os limites e o registro das decisões de gestão estão em [Gestão do projeto com PSM/CID](psm.md).
 
-**Última coleta:** 26/10/2026 às 16:26 (horário de Brasília). **Issues analisadas:** 58.
+**Última coleta:** 26/10/2026 às 23:10 (horário de Brasília). **Issues analisadas:** 60.
 
 ## Indicadores
 
-<div class="psm-kpis"><div class="psm-kpi bad"><span>CP-1 · Planejado vs. concluído</span><strong>79,1%</strong><em class="flat">concluído em E1: Fases 1 e 2 · esperado 95,7% · desvio 16,6 p.p.</em><span class="psm-badge bad">Ação corretiva</span></div><div class="psm-kpi ok"><span>RC-1 · Estimado vs. real</span><strong>1,08</strong><em class="flat">53,0 h reais ÷ 49,2 h estimadas</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi warn"><span>RC-2 · Esforço por integrante</span><strong>3% a 22%</strong><em class="flat">menor e maior participação nas horas reais</em><span class="psm-badge warn">Alerta: Letícia Lopes</span></div><div class="psm-kpi warn"><span>DP-1 · Tempo de ciclo</span><strong>2,1 dias</strong><em class="flat">média em 26 issues · 0 paradas</em><span class="psm-badge warn">Investigar 8 issues a mais de 10% da média</span></div></div>
+<div class="psm-kpis"><div class="psm-kpi bad"><span>CP-1 · Planejado vs. concluído</span><strong>88,9%</strong><em class="flat">concluído em E1: Fases 1 e 2 · esperado 99,5% · desvio 10,6 p.p.</em><span class="psm-badge bad">Ação corretiva</span></div><div class="psm-kpi ok"><span>RC-1 · Estimado vs. real</span><strong>1,13</strong><em class="flat">63,0 h reais ÷ 55,8 h estimadas</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi ok"><span>RC-2 · Esforço por integrante</span><strong>14% a 19%</strong><em class="flat">menor e maior participação nas horas reais</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi warn"><span>DP-1 · Tempo de ciclo</span><strong>2,0 dias</strong><em class="flat">média em 32 issues · 0 paradas</em><span class="psm-badge warn">Investigar 10 issues a mais de 10% da média</span></div></div>
 
 ??? info "Valores e limites de todos os indicadores (tabela)"
     | ID | Categoria | Indicador | Valor atual | Situação | Limite de alerta |
     |---|---|---|---|---|---|
-    | CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 34/43 concluídas (79,1%); esperado 95,7%; desvio 16,6 p.p. | Ação corretiva | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
-    | RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,08 (53,0 h / 49,2 h, 35 issues) | Dentro do esperado | Fora da faixa 0,8 a 1,2 |
-    | RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 22%, Daniel 18%, Giovana 19%, Hauedy 17%, Letícia 3%, Lucas 21% | Alerta: Letícia Lopes | Integrante abaixo de 10% ou acima de 30% |
-    | DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 2,1 dias (26 issues) | Investigar 8 issues a mais de 10% da média | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
+    | CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 40/45 concluídas (88,9%); esperado 99,5%; desvio 10,6 p.p. | Ação corretiva | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
+    | RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,13 (63,0 h / 55,8 h, 41 issues) | Dentro do esperado | Fora da faixa 0,8 a 1,2 |
+    | RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17% | Dentro do esperado | Integrante abaixo de 10% ou acima de 30% |
+    | DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (32 issues) | Investigar 10 issues a mais de 10% da média | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
 
     *Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv).*
 
@@ -26,8 +26,8 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 | Milestone | Prazo | Issues | Fechadas | Abertas | Concluído | Esperado | Desvio | Situação |
 |---|---|---|---|---|---|---|---|---|
-| E1: Fases 1 e 2 | 26/10/2026 | 43 | 34 | 9 | 79,1% | 95,7% | 16,6 p.p. | Ação corretiva |
-| E2: Fases 3 e 4 | - | 15 | 1 | 14 | 6,7% | - | - | Sem prazo definido |
+| E1: Fases 1 e 2 | 26/10/2026 | 45 | 40 | 5 | 88,9% | 99,5% | 10,6 p.p. | Ação corretiva |
+| E2: Fases 3 e 4 | - | 15 | 2 | 13 | 13,3% | - | - | Sem prazo definido |
 
 *Tabela 2: Planejado vs. concluído por milestone. Esperado = fração do prazo do milestone já decorrida; desvio = esperado - concluído. Fonte: issues do GitHub.*
 
@@ -39,12 +39,12 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 | Integrante | Issues atribuídas | Fechadas | Abertas | Horas estimadas | Horas reais | % das horas reais | % das issues fechadas | Commits |
 |---|---|---|---|---|---|---|---|---|
-| Arthur Fernandes | 16 | 10 | 6 | 19,1 | 11,5 | 21,7% | 20,8% | 5 |
-| Daniel Sousa | 12 | 8 | 4 | 17,2 | 9,8 | 18,4% | 16,7% | 2 |
-| Giovana Fontes | 15 | 12 | 3 | 20,6 | 10,0 | 18,9% | 25,0% | 6 |
-| Hauedy Wegner | 10 | 5 | 5 | 18,0 | 9,0 | 17,0% | 10,4% | 12 |
-| Letícia Lopes | 10 | 5 | 5 | 10,8 | 1,8 | 3,3% | 10,4% | 6 |
-| Lucas Branco | 10 | 8 | 2 | 15,1 | 11,0 | 20,8% | 16,7% | 1 |
+| Arthur Fernandes | 16 | 10 | 6 | 19,1 | 11,5 | 18,3% | 18,2% | 5 |
+| Daniel Sousa | 12 | 10 | 2 | 17,2 | 11,8 | 18,6% | 18,2% | 5 |
+| Giovana Fontes | 15 | 12 | 3 | 20,6 | 10,0 | 15,9% | 21,8% | 6 |
+| Hauedy Wegner | 10 | 6 | 4 | 18,0 | 9,0 | 14,3% | 10,9% | 13 |
+| Letícia Lopes | 12 | 9 | 3 | 12,8 | 9,8 | 15,5% | 16,4% | 13 |
+| Lucas Branco | 10 | 8 | 2 | 15,1 | 11,0 | 17,5% | 14,5% | 1 |
 
 *Tabela 3: Contribuição por integrante. Horas estimadas ficam com quem foi alocado; horas reais, com quem realizou a tarefa. Quando há mais de uma pessoa, as horas são divididas igualmente. Fonte: [contribuicao.csv](dados/contribuicao.csv).*
 
@@ -59,10 +59,10 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
 | Integrante | Horas estimadas (alocadas) | Horas reais (realizadas) | Diferença |
 |---|---|---|---|
 | Arthur Fernandes | 6,1 | 11,5 | 5,4 |
-| Daniel Sousa | 9,8 | 9,8 | 0,0 |
+| Daniel Sousa | 12,8 | 11,8 | -1,0 |
 | Giovana Fontes | 12,6 | 10,0 | -2,6 |
-| Hauedy Wegner | 6,5 | 9,0 | 2,5 |
-| Letícia Lopes | 3,8 | 1,8 | -2,0 |
+| Hauedy Wegner | 9,5 | 9,0 | -0,5 |
+| Letícia Lopes | 7,2 | 9,8 | 2,5 |
 | Lucas Branco | 10,6 | 11,0 | 0,4 |
 
 *Tabela 4: Horas estimadas vs. reais por integrante. Diferença positiva: a pessoa trabalhou mais do que o alocado; negativa: menos. Fonte: issues do GitHub.*
@@ -82,7 +82,9 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
     | [#10](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/10) Fase 1: propósito da avaliação, decisões apoiadas e quem as toma | 1,5 | 1,5 | 1,00 |
     | [#11](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/11) Fase 1: requisitante e partes interessadas | 1,5 | 1,0 | 0,67 |
     | [#13](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/13) Fase 1: modelo de qualidade adaptado com diagrama | 2,0 | 1,0 | 0,50 |
+    | [#14](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/14) Fase 1: seleção e priorização de 3 a 4 características (sem usabilidade) | 2,0 | 1,0 | 0,50 |
     | [#15](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/15) Fase 1: escopo, profundidade e objetos de avaliação | 0,5 | 0,5 | 1,00 |
+    | [#16](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/16) Fase 1: ODS, metas e indicadores | 1,0 | 1,0 | 1,00 |
     | [#17](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/17) Fase 2: objetivos de medição no template GQM | 1,5 | 1,5 | 1,00 |
     | [#18](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/18) Fase 2: questões de avaliação | 1,5 | 1,5 | 1,00 |
     | [#19](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/19) Fase 2: hipóteses para todas as questões | 1,0 | 1,0 | 1,00 |
@@ -97,18 +99,22 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
     | [#29](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/29) GitPage: versão e data no rodapé, sumário e links entre páginas | 1,0 | 1,0 | 1,00 |
     | [#30](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/30) GitPage: links para repositório, release e evidências | 0,5 | 0,5 | 1,00 |
     | [#31](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/31) GitPage: remover emojis e ícones | 0,2 | 0,2 | 1,00 |
+    | [#32](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/32) GitPage: texto alternativo em todas as imagens | 0,5 | 0,5 | 1,00 |
     | [#33](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/33) Página de uso de IA | 0,5 | 0,5 | 1,00 |
     | [#34](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/34) Página de referências | 1,0 | 1,0 | 1,00 |
     | [#35](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/35) README enxuto e remoção do .venv do repositório | 0,5 | 0,5 | 1,00 |
     | [#36](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/36) Template de issue e milestones | 1,0 | 1,0 | 1,00 |
     | [#38](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/38) Página PSM/CID com as três categorias | 3,0 | 4,0 | 1,33 |
     | [#41](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/41) Tabela de contribuição com percentual de esforço | 1,5 | 1,0 | 0,67 |
+    | [#42](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/42) Atas das reuniões | 1,0 | 1,0 | 1,00 |
     | [#50](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/50) Fase 4: análise e respostas às questões GQM | 2,0 | 2,0 | 1,00 |
     | [#57](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/57) Padronizar nomenclatura da ISO/IEC 25010 (2011 x 2023) no artigo e no GitPage | 2,0 | 3,0 | 1,50 |
+    | [#61](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/61) GitPage: páginas da Fase 1 | 1,0 | 4,5 | 4,50 |
+    | [#63](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/63) Artigo: substituir tabela de características por parágrafo e corrigir erros de digitação | 1,0 | 2,0 | 2,00 |
 
 ## Desempenho dos Processos: tempo de ciclo
 
-Média: **2,1 dias** em 26 issues. Faixa sem investigação: 1,1 a 3,1 dias (média ± o maior valor entre 10% da média e 1 dia).
+Média: **2,0 dias** em 32 issues. Faixa sem investigação: 1,0 a 3,0 dias (média ± o maior valor entre 10% da média e 1 dia).
 
 ??? note "Tempo de ciclo por issue"
     | Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |
@@ -139,6 +145,12 @@ Média: **2,1 dias** em 26 issues. Faixa sem investigação: 1,1 a 3,1 dias (mé
     | [#13](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/13) Fase 1: modelo de qualidade adaptado com diagrama | Giovana Fontes | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
     | [#38](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/38) Página PSM/CID com as três categorias | Hauedy Wegner | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
     | [#41](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/41) Tabela de contribuição com percentual de esforço | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
+    | [#32](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/32) GitPage: texto alternativo em todas as imagens | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
+    | [#42](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/42) Atas das reuniões | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
+    | [#14](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/14) Fase 1: seleção e priorização de 3 a 4 características (sem usabilidade) | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
+    | [#16](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/16) Fase 1: ODS, metas e indicadores | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Dentro da faixa |
+    | [#63](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/63) Artigo: substituir tabela de características por parágrafo e corrigir erros de digitação | Letícia Lopes | 26/10/2026 | 26/10/2026 | 1 | Investigar |
+    | [#60](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/60) GitPage: Fases 3 e 4 conforme a versão final do artigo | Hauedy Wegner | 26/10/2026 | 26/10/2026 | 1 | Investigar |
 
     *Tabela 5: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*
 
@@ -158,6 +170,10 @@ A lista de atividades de cada integrante está em [Contribuição da Equipe](../
 | 26/10/2026 00:48 | RC-1 | Estimado vs. realizado (horas reais / estimadas) | 1,12 (45,5 h / 40,8 h, 31 issues) | Dentro do esperado |
 | 26/10/2026 00:48 | RC-2 | Esforço por integrante (% das horas reais) | Arthur 19%, Daniel 21%, Giovana 23%, Hauedy 8%, Letícia 5%, Lucas 24% | Alerta: Hauedy Wegner, Letícia Lopes |
 | 26/10/2026 00:48 | DP-1 | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (22 issues) | Investigar 7 issues a mais de 10% da média; Alerta: 5 issues com responsável há mais de 3 dias |
+| 26/10/2026 23:10 | CP-1 | Planejado vs. concluído (E1: Fases 1 e 2) | 40/45 concluídas (88,9%); esperado 99,5%; desvio 10,6 p.p. | Ação corretiva |
+| 26/10/2026 23:10 | RC-1 | Estimado vs. realizado (horas reais / estimadas) | 1,13 (63,0 h / 55,8 h, 41 issues) | Dentro do esperado |
+| 26/10/2026 23:10 | RC-2 | Esforço por integrante (% das horas reais) | Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17% | Dentro do esperado |
+| 26/10/2026 23:10 | DP-1 | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (32 issues) | Investigar 10 issues a mais de 10% da média |
 
 *Tabela 6: Medições registradas com `python scripts/coleta_psm.py --registrar`. Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na [Tabela 3 da página PSM/CID](psm.md#medicoes-e-decisoes).*
 

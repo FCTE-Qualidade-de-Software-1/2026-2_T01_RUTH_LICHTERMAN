@@ -21,6 +21,7 @@ Autenticação (opcional para repositório público, mas evita limite de requisi
 variável GITHUB_TOKEN ou GH_TOKEN, ou o login do GitHub CLI (gh auth login).
 """
 import argparse
+import html
 import csv
 import datetime as dt
 import json
@@ -734,6 +735,71 @@ def fim_do_prazo(prazo_iso):
     return dt.datetime.combine(dt.date.fromisoformat(prazo_iso[:10]), dt.time(23, 59), tzinfo=FUSO)
 
 
+# ----------------------------------------------------------------------------- quadro "quem fez o quê"
+QD_TIPOS = [  # (classe, rótulo, teste nas labels); a primeira regra que casar define a cor
+    ("gh", "GitHub e GitPage", lambda ls: "gitpage" in ls),
+    ("ge", "Gestão e apresentações", lambda ls: "gestao" in ls),
+    ("ar", "Artigo", lambda ls: "artigo" in ls),
+    ("fa", "Conteúdo das fases", lambda ls: any(l.startswith("fase-") for l in ls)),
+]
+
+
+def qd_tipo(issue):
+    for chave, _, teste in QD_TIPOS:
+        if teste(issue["labels"]):
+            return chave
+    return "ou"
+
+
+def qd_foto(login, cls="qd-av"):
+    nm = html.escape(EQUIPE.get(login, login))
+    return (f'<img class="{cls}" src="https://github.com/{login}.png?size=64" alt="{nm}" title="{nm}" '
+            'loading="lazy">')
+
+
+def qd_chip(i, extra=""):
+    t = html.escape(f"#{i['numero']} {i['titulo']}")
+    return f'<a class="qd-chip qd-{qd_tipo(i)}{extra}" href="{i["url"]}" title="{t}">#{i["numero"]}</a>'
+
+
+def qd_quadro(issues):
+    aloc = lambda i: [r.lower() for r in i["responsaveis"]]
+    L = ['<div class="qd-legenda">' + "".join(f'<span class="qd-chip qd-{c}">{r}</span>' for c, r, _ in QD_TIPOS) +
+         '<span class="qd-chip qd-ar qd-aberta">a fazer</span>'
+         '<span class="qd-chip qd-ar qd-troca">feita por outra pessoa</span></div>', '<div class="qd-quadro">']
+    for login, nm in EQUIPE.items():
+        feitas = [i for i in issues if i["estado"] == "fechada" and login in executores(i)]
+        afazer = [i for i in issues if i["estado"] == "aberta" and login in aloc(i)]
+        horas = sum((i["horas_reais"] or 0) / len(executores(i)) for i in feitas)
+        chips = []
+        for i in feitas:
+            if login in aloc(i):
+                chips.append(qd_chip(i))
+            else:  # tarefa feita por quem não estava alocado: mostra a foto de quem estava
+                c = qd_chip(i, " qd-troca")
+                chips.append(c.replace("</a>", "".join(qd_foto(o, "qd-av-mini") for o in aloc(i)) + "</a>"))
+        chips += [qd_chip(i, " qd-aberta") for i in afazer]
+        L.append(f'<div class="qd-linha"><div class="qd-pessoa">{qd_foto(login)}<span><strong>{nm}</strong>'
+                 f'<em>{len(feitas)} concluídas · {fmt(horas)} h</em></span></div>'
+                 f'<div class="qd-chips">{"".join(chips)}</div></div>')
+    L.append("</div>")
+    return "\n".join(L)
+
+
+def qd_fluxos(divergentes):
+    L = ['<div class="qd-fluxos">']
+    for i in divergentes:
+        de = "".join(qd_foto(r.lower()) for r in i["responsaveis"]) or '<span class="qd-ninguem">ninguém</span>'
+        para = "".join(qd_foto(r) for r in i["realizado_por"])
+        L.append(f'<div class="qd-fluxo qd-b-{qd_tipo(i)}">'
+                 f'<div class="qd-lado qd-de">{de}<small>alocada</small></div><span class="qd-seta">→</span>'
+                 f'<div class="qd-meio">{qd_chip(i)}<span class="qd-tit">{html.escape(i["titulo"])}</span>'
+                 f'<small>{fmt(i["horas_reais"] or 0)} h</small></div><span class="qd-seta">→</span>'
+                 f'<div class="qd-lado qd-para">{para}<small>realizou</small></div></div>')
+    L.append("</div>")
+    return "\n".join(L)
+
+
 def gerar_contribuicao(issues, commits_lista, agora):
     """Gera docs/contribuicao.md: atividades, horas e percentual de esforço de cada integrante por entrega."""
     L = []
@@ -873,21 +939,26 @@ def gerar_contribuicao(issues, commits_lista, agora):
 
     divergentes = [i for i in issues if i["estado"] == "fechada" and i["realizado_por"]
                    and sorted(i["realizado_por"]) != sorted(r.lower() for r in i["responsaveis"])]
+    a("## Quem fez o quê")
+    a("")
+    a("Cada linha é um integrante e cada etiqueta é uma issue, com a cor do tipo de atividade. Etiqueta cheia é "
+      "tarefa concluída; tracejada, tarefa a fazer; com contorno laranja, tarefa feita por quem não estava alocado, "
+      "com a foto de quem estava. Passe o mouse sobre a etiqueta para ver o título.")
+    a("")
+    a('<details class="info"><summary>Ver o quadro de tarefas por integrante</summary>')
+    a(qd_quadro(issues))
+    a("</details>")
+    a("")
     a("## Alocado vs. realizado")
     a("")
-    a("Tarefas em que quem fez não foi exatamente quem estava alocado na issue. Nessas tarefas, as horas reais "
-      "contam para quem realizou o trabalho.")
+    a(f"Tarefas em que quem fez não foi quem estava alocado na issue ({len(divergentes)} até agora). Nessas tarefas, "
+      "as horas reais contam para quem realizou o trabalho. Fonte: [execucao.csv](gestao/dados/execucao.csv), "
+      "preenchido pela equipe, inclusive para tarefas feitas fora do repositório, como as seções do artigo.")
     a("")
     if divergentes:
-        a("| Issue | Alocada para | Realizada por | Horas reais |")
-        a("| :--- | :--- | :--- | :---: |")
-        for i in divergentes:
-            aloc = ", ".join(nome(x) for x in i["responsaveis"]) or "Ninguém"
-            real = ", ".join(nome(x) for x in i["realizado_por"])
-            a(f"| [#{i['numero']}]({i['url']}) {celula(i['titulo'])} | {aloc} | {real} | {fmt(i['horas_reais'])} |")
-        a("")
-        a("*Fonte: [execucao.csv](gestao/dados/execucao.csv), preenchido pela equipe com quem de fato realizou "
-          "cada tarefa, inclusive as feitas fora do repositório, como as seções do artigo.*")
+        a('<details class="info"><summary>Ver as tarefas trocadas</summary>')
+        a(qd_fluxos(divergentes))
+        a("</details>")
     else:
         a("Nenhuma divergência registrada.")
     a("")

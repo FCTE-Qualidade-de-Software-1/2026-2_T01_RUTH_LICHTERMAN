@@ -29,8 +29,12 @@ O uso acontece no celular, na rotina de deslocamento. Recargas, consultas de sal
 
 ## 5. ODS relacionados
 
-- **ODS 11 – Cidades e Comunidades Sustentáveis:** o aplicativo facilita o uso do transporte público coletivo, pois recargas e consultas deixam de exigir deslocamento até pontos de atendimento.
-- **ODS 10 – Redução das Desigualdades:** o serviço atende adolescentes, adultos e idosos com diferentes níveis de familiaridade digital, então a clareza e a acessibilidade do aplicativo influenciam quem consegue usá-lo.
+O projeto contribui de forma indireta para dois Objetivos de Desenvolvimento Sustentável, com metas e indicadores conforme o IPEA [10, 11]. A avaliação não calcula os indicadores oficiais, mas produz evidências sobre aspectos do aplicativo que influenciam o que eles medem.
+
+| ODS e meta | Indicador | Pertinência ao BRB Mobilidade |
+| :--- | :--- | :--- |
+| **ODS 11, meta 11.2:** acesso a sistemas de transporte seguros, acessíveis, sustentáveis e a preço acessível para todos, com atenção a idosos e pessoas com deficiência. | **11.2.1:** proporção da população com acesso adequado ao transporte público, por sexo, idade e pessoas com deficiência. | O aplicativo é parte do acesso ao transporte público no DF: permite recarregar, consultar saldo e linhas e acompanhar ônibus. Se o passageiro não consegue operá-lo sozinho, o acesso tarifário e à informação de viagem fica comprometido, em especial para quem tem menos familiaridade digital. A avaliação traz evidências de capacidade de interação, acessibilidade e recarga no prazo. |
+| **ODS 16, meta 16.6:** instituições eficazes, responsáveis e transparentes em todos os níveis. | **16.6.2:** proporção da população satisfeita com sua última experiência de serviços públicos. | O aplicativo é um canal de serviço público de bilhetagem. Saldos corretos, serviço disponível e comunicação clara de falhas determinam a confiança do passageiro e a necessidade de atendimento presencial. A avaliação traz evidências de corretude, disponibilidade, recuperação após falhas e percepção de uso. |
 
 ## 6. Referências
 
@@ -50,7 +54,11 @@ O uso acontece no celular, na rotina de deslocamento. Recargas, consultas de sal
 
 > [8] CONTROLADORIA-GERAL DO DISTRITO FEDERAL (CGDF). *Relatório de Auditoria nº 04/2022 – DIAPC/COATP/SUBCI/CGDF: Avaliação do Sistema de Bilhetagem Automática BRB/SEMOB*. Brasília: CGDF, 2023.
 
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. *Objetivos de Desenvolvimento Sustentável 10 e 11*. Disponível em: <https://brasil.un.org/pt-br/sdgs/10> e <https://brasil.un.org/pt-br/sdgs/11>.
+> [9] ORGANIZAÇÃO DAS NAÇÕES UNIDAS. *Objetivos de Desenvolvimento Sustentável 10 e 11*. Disponível em: <https://brasil.un.org/pt-br/sdgs/10> e <https://brasil.un.org/pt-br/sdgs/11>.
+
+> [10] INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). *ODS 11 – Cidades e Comunidades Sustentáveis*. Disponível em: <https://ipea.gov.br/ods/ods11.html>. Acesso em: 26 out. 2026.
+
+> [11] INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). *ODS 16 – Paz, Justiça e Instituições Eficazes*. Disponível em: <https://ipea.gov.br/ods/ods16.html>. Acesso em: 26 out. 2026.
 
 ---
 
@@ -59,3 +67,4 @@ O uso acontece no celular, na rotina de deslocamento. Recargas, consultas de sal
 | Versão | Data       | Descrição                | Autor       | Revisor     |
 | :----- | :--------- | :----------------------- | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.1    | 26/10/2026 | ODS 11 e 16 com metas, indicadores e justificativa de pertinência | [Daniel Sousa](https://github.com/daniel-de-sousa) | [revisor] |

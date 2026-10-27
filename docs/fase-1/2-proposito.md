@@ -26,14 +26,23 @@ Um exemplo de uso mostra o que está em jogo. O usuário recarrega o cartão por
 
 ## 3. Características avaliadas e uso dos resultados
 
-A avaliação se concentra em quatro características. A ênfase vai de 1 (nenhum interesse) a 5 (grande interesse) e foi definida pela equipe.
+A avaliação se concentra em quatro características, priorizadas por uma matriz ponderada: notas de 1 a 5 em impacto no passageiro (peso 4), relevância para o requisitante (peso 3) e viabilidade de medição como usuário final (peso 3), com pontuação máxima de 50. Pesos e notas foram definidos pela equipe; o detalhamento está no [modelo de qualidade](3-modelo.md).
 
-| Característica | Ênfase | Por que é relevante | Decisão que os resultados apoiam |
+| Característica | Pontuação | Por que é relevante | Decisão que os resultados apoiam |
 | :--- | :---: | :--- | :--- |
+<<<<<<< Updated upstream
 | Usabilidade | 5 | O público inclui adolescentes, adultos e idosos, o que torna importantes a clareza, a navegação, a legibilidade e a acessibilidade. | Melhorias de interface, navegação e prevenção de erros. |
 | Funcionalidade | 5 | Recarga, saldo, extrato e histórico precisam dar resultados corretos e coerentes entre si. | Correção de resultados incorretos e de divergências de informação. |
 | Confiabilidade | 4 | O usuário depende do aplicativo na rotina de deslocamento, então falhas e indisponibilidade impedem o uso. | Correção de falhas recorrentes e melhoria da recuperação após interrupções. |
 | Eficiência | 3 | O acesso aos serviços precisa ser ágil no carregamento de telas, nas consultas e nas recargas. | Priorização de otimizações nas operações mais lentas. |
+=======
+| Capacidade de interação (antiga usabilidade) | 47 | O público inclui adolescentes, adultos e idosos, o que torna importantes a clareza, a navegação, a legibilidade e a acessibilidade. | Melhorias de interface, navegação e prevenção de erros. |
+| Adequação funcional | 47 | Recarga, saldo, extrato e histórico precisam dar resultados corretos e coerentes entre si. | Correção de resultados incorretos e de divergências de informação. |
+| Confiabilidade | 43 | O usuário depende do aplicativo na rotina de deslocamento, então falhas e indisponibilidade impedem o uso. | Correção de falhas recorrentes e melhoria da recuperação após interrupções. |
+| Eficiência de desempenho | 36 | O acesso aos serviços precisa ser ágil no carregamento de telas, nas consultas e nas recargas. | Priorização de otimizações nas operações mais lentas. |
+
+**Trade-offs:** priorizar interação e funcionalidade favorece a visão do passageiro e a correção de operações com dinheiro, mas dá menos profundidade à confiabilidade e à eficiência. A eficiência tem o menor impacto, mas foi mantida por ser a mais barata de medir como usuário final.
+>>>>>>> Stashed changes
 
 Segurança, compatibilidade, portabilidade e manutenibilidade não são o foco desta avaliação.
 
@@ -54,4 +63,10 @@ O requisitante é hipotético: a área gestora do BRB Mobilidade no BRB, que tam
 | Versão | Data       | Descrição                                   | Autor       | Revisor     |
 | :----- | :--------- | :------------------------------------------ | :---------- | :---------- |
 | 1.0    | 20/10/2026 | Criação da descrição     | [Letícia Lopes](https://github.com/leticialopes20) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+<<<<<<< Updated upstream
 | 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) |  |
+=======
+| 1.1    | 25/10/2026 | Reestruturação das partes interessadas (requisitante, papéis, critérios de sucesso e influência) | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.2    | 25/10/2026 | Nomes da ISO/IEC 25010:2023 e limite de 60 s no aplicativo, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS)  |
+| 1.3    | 26/10/2026 | Priorização das características por matriz ponderada e trade-offs | [Daniel Sousa](https://github.com/daniel-de-sousa) | [revisor] |
+>>>>>>> Stashed changes

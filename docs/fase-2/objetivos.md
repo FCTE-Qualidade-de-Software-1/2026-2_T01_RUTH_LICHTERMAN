@@ -1,29 +1,38 @@
 # Objetivos de Medição
 
-*Nível conceitual.* Os objetivos seguem o modelo GQM [1]: **analisar** um objeto **com o propósito de** um propósito específico **com respeito a** um foco de qualidade **do ponto de vista de** uma parte interessada **no contexto de** uma situação de uso. Em todos os objetivos, o objeto é o **aplicativo BRB Mobilidade** e a ação é **avaliar**. Os nomes das características e subcaracterísticas seguem a ISO/IEC 25010:2023 [2].
+*Nível conceitual.* Os objetivos seguem o modelo GQM [1]: **analisar** um objeto, **com o propósito de** um único verbo, **com respeito a** um foco de qualidade, **do ponto de vista de** uma parte interessada, **no contexto de** uma situação de uso. Há um objetivo para cada característica priorizada na [Fase 1](../fase-1/3-modelo.md). Os nomes seguem a ISO/IEC 25010:2023 [2].
 
-| ID | Com o propósito de | Com respeito a | Do ponto de vista de | No contexto de |
-| :--- | :--- | :--- | :--- | :--- |
-| O1 | Identificar dificuldades de compreensão, aprendizagem e localização de funções | Usabilidade: reconhecibilidade de adequação, aprendibilidade e operabilidade | Passageiro, com e sem experiência prévia no aplicativo | Tarefas rotineiras em dispositivo móvel, por usuários de perfis variados |
-| O2 | Identificar barreiras de acesso para pessoas com diferentes necessidades e níveis de familiaridade digital | Usabilidade: acessibilidade | Passageiro com necessidades específicas ou pouca familiaridade digital | Acesso, navegação e uso das telas principais, inclusive com recursos de acessibilidade do sistema |
-| O3 | Identificar situações que favorecem erros e verificar se o aplicativo ajuda a reconhecê-los e corrigi-los | Usabilidade: proteção contra erros do usuário | Passageiro | Preenchimento de dados, recarga e tratamento de erros |
-| O4 | Identificar funções ausentes ou insuficientes e resultados incorretos | Adequação funcional: completude e correção funcional | Passageiro e gestor do serviço | Inventário de funções e casos de teste de recarga, consulta, extrato e bloqueio |
-| O5 | Identificar divergências entre as informações exibidas e as operações realizadas | Adequação funcional: correção funcional, com foco na consistência das informações | Passageiro e gestor do serviço | Conferência de saldo, histórico e extrato após recargas e usos do cartão |
-| O6 | Identificar lentidão que prejudique o uso | Eficiência de desempenho: comportamento temporal | Passageiro | Consultas e recarga, em Wi-Fi e em rede móvel limitada |
-| O7 | Identificar falhas recorrentes e dificuldades de recuperação | Confiabilidade: ausência de falhas (antiga maturidade), tolerância a falhas e recuperabilidade | Passageiro | Falhas provocadas e uso durante consulta e recarga |
-| O8 | Identificar indisponibilidades que impeçam o uso | Confiabilidade: disponibilidade | Passageiro e gestor do serviço | Acesso aos serviços em diferentes horários do período de testes |
+Os quatro objetivos têm em comum:
 
-*Tabela 1: Objetivos de medição no modelo GQM. Fonte: elaborado pela equipe.*
+| Elemento | Valor comum aos quatro objetivos |
+| :--- | :--- |
+| Analisar | O aplicativo BRB Mobilidade |
+| Com o propósito de | Avaliar |
+| Do ponto de vista de | Passageiro |
+| No contexto de | Uso do ônibus (inclusive em terminais) e do metrô (em estações) |
 
-**Exemplo de leitura (O6):** analisar o aplicativo BRB Mobilidade com o propósito de identificar lentidão que prejudique o uso, com respeito ao comportamento temporal, do ponto de vista do passageiro, no contexto de consultas e recarga em Wi-Fi e em rede móvel limitada.
+*Tabela 1: Elementos comuns aos objetivos de medição. Fonte: elaborado pela equipe.*
 
-A origem de cada objetivo na Fase 1 está na [visão geral da Fase 2](index.md#consistencia-com-a-fase-1). As questões que detalham cada objetivo estão em [Questões](questoes.md).
+O que distingue cada objetivo é o foco de qualidade:
+
+| ID | Com respeito a (foco de qualidade) | Subcaracterísticas |
+| :--- | :--- | :--- |
+| O1 | Capacidade de interação (*interaction capability*) | Reconhecibilidade de adequação, aprendibilidade, operabilidade, proteção contra erros do usuário, autodescritividade, inclusividade e assistência ao usuário |
+| O2 | Adequação funcional (*functional suitability*) | Completude funcional e correção funcional |
+| O3 | Eficiência de desempenho (*performance efficiency*) | Comportamento temporal |
+| O4 | Confiabilidade (*reliability*) | Ausência de falhas, disponibilidade, tolerância a falhas e recuperabilidade |
+
+*Tabela 2: Foco de qualidade de cada objetivo. Fonte: elaborado pela equipe.*
+
+**Exemplo de leitura (O3):** analisar o aplicativo BRB Mobilidade, com o propósito de avaliar, com respeito à eficiência de desempenho, do ponto de vista do passageiro, no contexto do uso do ônibus e do metrô.
+
+O que diferencia cada caso dentro de um objetivo (tipo de passageiro, cenário e subcaracterística) é detalhado nas [questões](questoes.md).
 
 ## Referências
 
 > [1] BASILI, V. R.; CALDIERA, G.; ROMBACH, H. D. The goal question metric approach. In: *Encyclopedia of Software Engineering*, v. 1. John Wiley & Sons, 1994. p. 528–532.
 
-> [2] ISO/IEC. *ISO/IEC 25010:2023 – SQuaRE – Product quality model*. Genebra: ISO, 2023.
+> [2] ISO/IEC. *ISO/IEC 25010:2023 – Systems and software engineering – SQuaRE – Product quality model*. Genebra: ISO, 2023.
 
 ---
 
@@ -31,4 +40,5 @@ A origem de cada objetivo na Fase 1 está na [visão geral da Fase 2](index.md#c
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21/10/2026 | Objetivos O1 a O8 a partir do artigo, com nomenclatura da ISO/IEC 25010:2023 | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.0 | 21/10/2026 | Objetivos O1 a O8 a partir do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 2.0 | 25/10/2026 | Quatro objetivos (O1 a O4), um por característica, conforme a versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |

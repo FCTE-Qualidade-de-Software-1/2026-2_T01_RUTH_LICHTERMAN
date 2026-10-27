@@ -1,0 +1,11 @@
+registro,participante,item,afirmacao_adaptada,resposta,polaridade,regra_ajuste,contribuicao_ajustada,origem
+SU01,P01,1,Eu acho que gostaria de usar este aplicativo com frequência.,5,positiva,resposta menos 1,4,resposta registrada na sessão
+SU01,P01,2,Eu achei o aplicativo desnecessariamente complexo.,2,negativa,5 menos resposta,3,resposta registrada na sessão
+SU01,P01,3,Eu achei o aplicativo fácil de usar.,4,positiva,resposta menos 1,3,resposta registrada na sessão
+SU01,P01,4,Eu acho que precisaria da ajuda de uma pessoa com conhecimentos técnicos para usar este aplicativo.,1,negativa,5 menos resposta,4,resposta registrada na sessão
+SU01,P01,5,Eu achei que as várias funções do aplicativo estão bem integradas.,5,positiva,resposta menos 1,4,resposta registrada na sessão
+SU01,P01,6,Eu achei que havia muita inconsistência no aplicativo.,1,negativa,5 menos resposta,4,resposta registrada na sessão
+SU01,P01,7,Eu imagino que a maioria das pessoas aprenderia a usar este aplicativo rapidamente.,5,positiva,resposta menos 1,4,resposta registrada na sessão
+SU01,P01,8,Eu achei o aplicativo muito complicado de usar.,1,negativa,5 menos resposta,4,resposta registrada na sessão
+SU01,P01,9,Eu me senti muito confiante ao usar o aplicativo.,5,positiva,resposta menos 1,4,resposta registrada na sessão
+SU01,P01,10,Eu precisei aprender muitas coisas antes de conseguir usar o aplicativo.,2,negativa,5 menos resposta,3,resposta registrada na sessão

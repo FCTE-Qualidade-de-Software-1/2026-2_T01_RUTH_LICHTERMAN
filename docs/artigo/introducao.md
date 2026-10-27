@@ -1,36 +1,27 @@
 # Introdução
 
----
-
 ## Contexto
 
-O BRB Mobilidade é uma plataforma voltada aos serviços de transporte público do Distrito Federal, oferecendo recursos que facilitam o acesso dos usuários a informações e serviços relacionados à mobilidade urbana. Por ser um sistema utilizado no cotidiano dos passageiros, é importante analisar suas funcionalidades e compreender como a qualidade do software pode influenciar a experiência dos usuários.
+Aplicativos que dão acesso a serviços públicos do cotidiano precisam ser avaliados com critérios objetivos, e não apenas pela percepção de quem os usa. No Distrito Federal, o aplicativo BRB Mobilidade permite recarregar o Cartão Mobilidade, consultar saldo e extrato, gerenciar o cartão e consultar linhas de ônibus, o que o torna parte da rotina de deslocamento de muitos passageiros.
 
-Nesse contexto, o trabalho tem como objeto de estudo o software BRB Mobilidade, considerando suas principais funcionalidades e características de qualidade. A análise busca compreender como o sistema atende às necessidades dos usuários e identificar aspectos relevantes para avaliar sua qualidade.
+Falhas nesse tipo de aplicativo têm consequências diretas: um saldo exibido de forma incorreta, uma recarga que não é concluída ou uma tela que o passageiro não consegue operar sozinho levam a deslocamentos presenciais e à perda de confiança no serviço. Além disso, o público é heterogêneo em idade e em familiaridade com tecnologia, o que torna a avaliação de qualidade mais exigente.
 
----
+## Objetivo e pergunta de pesquisa
 
-## Objetivo do trabalho
+O objetivo deste trabalho é avaliar a qualidade do BRB Mobilidade seguindo o processo de avaliação da família SQuaRE (ISO/IEC 25040), com o modelo de qualidade da ISO/IEC 25010:2023 e métricas definidas pelo método GQM. A pergunta que orienta o estudo é:
 
-O objetivo deste trabalho é analisar o software BRB Mobilidade sob a perspectiva da qualidade de software, considerando suas funcionalidades e características que influenciam a experiência dos usuários.
+> Em que medida o aplicativo atende a níveis aceitáveis de capacidade de interação, adequação funcional, eficiência de desempenho e confiabilidade nas operações que sustentam o uso do Cartão Mobilidade no ônibus e no metrô?
 
-Inicialmente, foram analisadas as principais funcionalidades da plataforma, buscando compreender os serviços oferecidos e sua importância para os passageiros. Em seguida, foram definidas quatro características de qualidade para orientar o estudo: **usabilidade, confiabilidade, eficiência e funcionalidade**.
+## Organização
 
-A partir dessa definição, iniciamos as pesquisas e o desenvolvimento do artigo, buscando compreender cada característica e sua relação com o funcionamento do sistema. Como esta etapa corresponde à primeira entrega do trabalho, o estudo ainda está em andamento e será aprofundado nas próximas etapas.
-
----
-
-## Estrutura do documento
-
-O artigo está organizado de forma a apresentar o contexto do software escolhido e os objetivos da análise. Em seguida, são abordadas as funcionalidades do BRB Mobilidade e as características de qualidade selecionadas para o estudo: usabilidade, confiabilidade, eficiência e funcionalidade.
-
-Nesta primeira entrega, o foco está na compreensão do sistema, na definição dos aspectos que serão avaliados e no início das pesquisas que fundamentam o trabalho. Nas próximas etapas, pretende-se aprofundar a análise das características selecionadas e desenvolver as demais partes do artigo, complementando o estudo sobre a qualidade do software.
+O trabalho apresenta o [referencial teórico](referencial-teorico.md), a [metodologia](metodologia.md), os requisitos da avaliação ([Fase 1](../fase-1/index.md)), a especificação com GQM ([Fase 2](../fase-2/index.md)), os procedimentos de coleta ([Fase 3](../fase-3/index.md)) e os resultados, a discussão e as limitações ([Fase 4](../fase-4/index.md)).
 
 ---
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição                                             | Autor(es)       | Revisor(es) |
-| :----: | :--------: | :---------------------------------------------------- | :-------------: | :---------: | 
-| 1.1    | 13/10/2026 | Criação da Pagina Introdução do Artigo               | Arthur Fernandes  | Giovana Fontes    | 
-| 1.2    | 17/10/2026 | Adição de Informações iniciais da introdução do artigo     |  Giovana Fontes  | Arthur Fernandes   | 
+| Versão | Data | Descrição | Autor(es) | Revisor(es) |
+| :----: | :--------: | :---------------------------------------------------- | :-------------: | :---------: |
+| 1.1 | 13/10/2026 | Criação da página Introdução do Artigo | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.2 | 17/10/2026 | Adição de informações iniciais da introdução do artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.3 | 25/10/2026 | Atualização conforme a Seção I da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |

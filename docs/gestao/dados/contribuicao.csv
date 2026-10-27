@@ -1,8 +1,7 @@
 login,nome,issues_atribuidas,issues_fechadas,issues_abertas,horas_estimadas,horas_reais,pct_horas_reais,pct_issues_fechadas
-arthurfernandesj,Arthur Fernandes,0,0,0,0.0,0.0,,
-daniel-de-sousa,Daniel Sousa,0,0,0,0.0,0.0,,
-giovanafontess,Giovana Fontes,0,0,0,0.0,0.0,,
-hauedyws,Hauedy Wegner,0,0,0,0.0,0.0,,
-leticialopes20,Letícia Maria,0,0,0,0.0,0.0,,
-lucasbbranco,Lucas Branco,0,0,0,0.0,0.0,,
-(sem responsável),(sem responsável),55,9,46,0.0,0.0,,
+arthurfernandesj,Arthur Fernandes,16,10,6,19.08,11.52,21.7,20.8
+daniel-de-sousa,Daniel Sousa,12,8,4,17.25,9.75,18.4,16.7
+giovanafontess,Giovana Fontes,15,12,3,20.58,10.02,18.9,25.0
+hauedyws,Hauedy Wegner,10,5,5,18.0,9.0,17.0,10.4
+leticialopes20,Letícia Lopes,10,5,5,10.75,1.75,3.3,10.4
+lucasbbranco,Lucas Branco,10,8,2,15.08,11.02,20.8,16.7

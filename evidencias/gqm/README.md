@@ -8,6 +8,7 @@ O material é uma consolidação retrospectiva dos registros, não uma transcri�
 
 | Arquivo | Conteúdo |
 | --- | --- |
+| [Guia de leitura](guia_de_leitura.md) | Explicação dos arquivos, códigos, colunas dos CSV e exemplos de conferência dos resultados. |
 | [Ambiente e participantes](ambiente_e_participantes.md) | Dispositivo, aplicativo, redes, perfis e limitações do ambiente. |
 | [Registro dos testes](registro_dos_testes.md) | Procedimentos e resultados por identificador de teste. |
 | [Resultados por métrica](resultados_por_metrica.md) | Rastreabilidade de M1–M15, cálculos, classificações e cobertura. |

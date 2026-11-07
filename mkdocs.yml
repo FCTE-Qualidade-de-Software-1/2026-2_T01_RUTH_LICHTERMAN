@@ -9,6 +9,8 @@ copyright: "Versão E1 · atualizado em 25/10/2026 · Equipe Ruth Lichterman · 
 theme:
   name: material
   language: pt-BR
+  logo: images/logo.svg
+  favicon: images/favicon.svg
   icon:
     logo: material/chart-box-outline
     repo: fontawesome/brands/github

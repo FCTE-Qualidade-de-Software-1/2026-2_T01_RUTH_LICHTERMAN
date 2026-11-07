@@ -1,87 +1,46 @@
 ---
+title: Início
 hide:
   - navigation
   - toc
 ---
 
-<div class="project-hero">
-  <span class="eyebrow">Qualidade de Software · 2026/2 · FCTE/UnB</span>
-
-  <h1>Documentação do Projeto</h1>
-
-  <p>
-    Avaliação da qualidade do aplicativo BRB Mobilidade com base na ISO/IEC 25010:2023
-    e no método GQM, seguindo o processo de avaliação da ISO/IEC 25040.
-  </p>
-
-  <div class="hero-actions">
-    <a href="artigo/introducao/" class="md-button md-button--primary">
-      Conhecer o artigo
-    </a>
-    <a href="fase-2/" class="md-button">
-      Explorar a especificação GQM
-    </a>
-    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases" class="md-button">
-      Releases e PDF do artigo
-    </a>
-  </div>
+<section class="brb-hero" aria-labelledby="titulo-home">
+<div class="brb-hero-txt">
+<span class="brb-eyebrow">Qualidade de Software · 2026/2 · FCTE/UnB</span>
+<h1 id="titulo-home">Documentação do Projeto</h1>
+<p>Avaliação da qualidade do aplicativo BRB Mobilidade com base na ISO/IEC 25010:2023 e no método GQM, seguindo o processo de avaliação da ISO/IEC 25040.</p>
+<div class="brb-btns">
+<a class="brb-btn brb-btn--p" href="artigo/introducao/">Conhecer o artigo</a>
+<a class="brb-btn brb-btn--s" href="fase-2/">Explorar a especificação GQM</a>
+<a class="brb-btn brb-btn--s" href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases">Releases e PDF do artigo</a>
 </div>
-
-## Conteúdo do projeto
-
-<div class="project-cards">
-  <a class="project-card" href="artigo/introducao/">
-    <span class="project-card-icon">01</span>
-    <h3>Artigo</h3>
-    <p>Introdução, referencial teórico e metodologia do trabalho.</p>
-    <span class="project-card-link">Acessar artigo</span>
-  </a>
-  <a class="project-card" href="fase-1/">
-    <span class="project-card-icon">02</span>
-    <h3>Fase 1 — Requisitos</h3>
-    <p>Produto, propósito, partes interessadas, características priorizadas e escopo.</p>
-    <span class="project-card-link">Acessar Fase 1</span>
-  </a>
-  <a class="project-card" href="fase-2/">
-    <span class="project-card-icon">03</span>
-    <h3>Fase 2 — GQM</h3>
-    <p>Objetivos de medição, questões, hipóteses, métricas e critérios de julgamento.</p>
-    <span class="project-card-link">Acessar Fase 2</span>
-  </a>
-  <a class="project-card" href="fase-3/">
-    <span class="project-card-icon">04</span>
-    <h3>Fase 3 — Projeto</h3>
-    <p>Ambiente, participantes, tarefas e procedimentos de coleta.</p>
-    <span class="project-card-link">Acessar Fase 3</span>
-  </a>
-  <a class="project-card" href="fase-4/">
-    <span class="project-card-icon">05</span>
-    <h3>Fase 4 — Resultados</h3>
-    <p>Resultados das métricas, respostas GQM, melhorias e limitações.</p>
-    <span class="project-card-link">Acessar Fase 4</span>
-  </a>
-  <a class="project-card" href="gestao/psm/">
-    <span class="project-card-icon">06</span>
-    <h3>Gestão (PSM/CID)</h3>
-    <p>Acompanhamento do projeto com métricas de gestão.</p>
-    <span class="project-card-link">Acessar Gestão</span>
-  </a>
 </div>
+<svg class="brb-route" aria-hidden="true" viewBox="0 0 440 220"><path d="M20 180 H120 L180 110 H300 L360 50 H420" fill="none" stroke="#00AEEF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><g fill="#003E7E" stroke="#fff" stroke-width="6"><circle cx="20" cy="180" r="14"/><circle cx="120" cy="180" r="14"/><circle cx="180" cy="110" r="14"/><circle cx="300" cy="110" r="14"/><circle cx="360" cy="50" r="14"/><circle cx="420" cy="50" r="14"/></g></svg>
+</section>
 
-## Equipe
-
-<div class="team-list">
-  <a class="team-chip" href="https://github.com/arthurfernandesj" target="_blank" rel="noopener noreferrer">Arthur Fernandes</a>
-  <a class="team-chip" href="https://github.com/daniel-de-sousa" target="_blank" rel="noopener noreferrer">Daniel Sousa</a>
-  <a class="team-chip" href="https://github.com/GiovanaFontesS" target="_blank" rel="noopener noreferrer">Giovana Fontes</a>
-  <a class="team-chip" href="https://github.com/HauedyWS" target="_blank" rel="noopener noreferrer">Hauedy Wegner</a>
-  <a class="team-chip" href="https://github.com/leticialopes20" target="_blank" rel="noopener noreferrer">Letícia Lopes</a>
-  <a class="team-chip" href="https://github.com/lucasbbranco" target="_blank" rel="noopener noreferrer">Lucas Branco</a>
+<section class="brb-sec" aria-labelledby="conteudo">
+<h2 id="conteudo">Conteúdo do projeto</h2>
+<p>Cada etapa da avaliação é uma linha. Escolha uma para embarcar.</p>
+<div class="brb-grid">
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 01</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg></span></div><h3>Artigo</h3><p>Introdução, referencial teórico e metodologia do trabalho.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="c"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span><span class="brb-et">Etapa 1 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="artigo/introducao/">Acessar artigo<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 02</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11h6M9 15h4"/></svg></span></div><h3>Fase 1 — Requisitos</h3><p>Produto, propósito, partes interessadas, características priorizadas e escopo.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="d"></i><i class="c"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span><span class="brb-et">Etapa 2 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="fase-1/">Acessar Fase 1<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 03</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></div><h3>Fase 2 — GQM</h3><p>Objetivos de medição, questões, hipóteses, métricas e critérios de julgamento.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="c"></i><i class=""></i><i class=""></i><i class=""></i></span><span class="brb-et">Etapa 3 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="fase-2/">Acessar Fase 2<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 04</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9.5A2 2 0 0 0 6.3 21h11.4a2 2 0 0 0 1.8-2.5L14 9V3"/></svg></span></div><h3>Fase 3 — Projeto</h3><p>Ambiente, participantes, tarefas e procedimentos de coleta.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="c"></i><i class=""></i><i class=""></i></span><span class="brb-et">Etapa 4 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="fase-3/">Acessar Fase 3<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 05</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-5M13 17V8M18 17v-9"/></svg></span></div><h3>Fase 4 — Resultados</h3><p>Resultados das métricas, respostas GQM, melhorias e limitações.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="c"></i><i class=""></i></span><span class="brb-et">Etapa 5 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="fase-4/">Acessar Fase 4<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
+<article class="brb-card"><div class="brb-ct"><div class="brb-top"><span class="brb-line">LINHA 06</span><span class="brb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 18l4-6"/></svg></span></div><h3>Gestão (PSM/CID)</h3><p>Acompanhamento do projeto com métricas de gestão.</p><div class="brb-tw"><span class="brb-trk" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="c"></i></span><span class="brb-et">Etapa 6 de 6</span></div></div><div class="brb-cta"><a class="brb-go" href="gestao/psm/">Acessar Gestão<span class="brb-ar" aria-hidden="true">→</span></a></div></article>
 </div>
+</section>
 
-[Consultar a contribuição individual](contribuicao.md)
-
-<div class="project-footer">
-  <strong>Qualidade de Software I · 2026/2</strong>
-  <p>Faculdade de Ciências e Tecnologias em Engenharia — Universidade de Brasília.</p>
+<section class="brb-sec brb-team" aria-labelledby="equipe">
+<h2 id="equipe">Equipe</h2>
+<p>Estudantes responsáveis pela avaliação do BRB Mobilidade.</p>
+<div class="brb-grid">
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">AF</span><img src="https://github.com/arthurfernandesj.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Arthur Fernandes</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@arthurfernandesj</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/arthurfernandesj">Ver GitHub<span class="sr-only"> de Arthur Fernandes</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Arthur Fernandes</span></a></div></article>
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">DS</span><img src="https://github.com/daniel-de-sousa.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Daniel Sousa</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@daniel-de-sousa</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/daniel-de-sousa">Ver GitHub<span class="sr-only"> de Daniel Sousa</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Daniel Sousa</span></a></div></article>
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">GF</span><img src="https://github.com/GiovanaFontesS.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Giovana Fontes</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@GiovanaFontesS</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/GiovanaFontesS">Ver GitHub<span class="sr-only"> de Giovana Fontes</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Giovana Fontes</span></a></div></article>
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">HW</span><img src="https://github.com/HauedyWS.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Hauedy Wegner</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@HauedyWS</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/HauedyWS">Ver GitHub<span class="sr-only"> de Hauedy Wegner</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Hauedy Wegner</span></a></div></article>
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">LL</span><img src="https://github.com/leticialopes20.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Letícia Lopes</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@leticialopes20</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/leticialopes20">Ver GitHub<span class="sr-only"> de Letícia Lopes</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Letícia Lopes</span></a></div></article>
+<article class="brb-pass"><div class="brb-pt"><span class="brb-tag">Cartão da equipe</span><span class="brb-photo"><span aria-hidden="true">LB</span><img src="https://github.com/lucasbbranco.png?size=208" alt="" width="104" height="104" loading="lazy" decoding="async"></span></div><div class="brb-pb"><h3>Lucas Branco</h3><p class="brb-role">Equipe T01 · QSW1 2026/2</p><p class="brb-gh">@lucasbbranco</p></div><div class="brb-ps"><a class="brb-b1" href="https://github.com/lucasbbranco">Ver GitHub<span class="sr-only"> de Lucas Branco</span></a><a class="brb-b2" href="contribuicao/">Contribuição<span class="sr-only"> de Lucas Branco</span></a></div></article>
 </div>
+</section>

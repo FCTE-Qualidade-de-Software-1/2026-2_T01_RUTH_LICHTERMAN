@@ -31,7 +31,7 @@ As definições formais estão na [especificação das métricas](../../docs/fas
 
 ### `README.md` — índice e origem das evidências
 
-Apresenta o conjunto de arquivos, a data de organização da documentação, a política de não publicar gravações e uma tabela de rastreabilidade. Nessa tabela, procure a métrica desejada e veja quais testes ou linhas de CSV a sustentam.
+Apresenta o conjunto de arquivos, a data de organização da documentação, a disponibilidade das evidências e uma tabela de rastreabilidade. Nessa tabela, procure a métrica desejada e veja quais testes ou linhas de CSV a sustentam.
 
 A organização dos registros em **25/10/2026** não significa que os testes foram repetidos nessa data. A sessão principal é registrada em **23/10/2026**. A criação deste guia também não altera essas datas históricas.
 
@@ -171,8 +171,10 @@ Esse resultado não significa que foi impossível recuperar a consulta. A recupe
 - **Dados móveis não equivalem a rede limitada controlada.** Os quocientes de M12 são exploratórios, sem nota para o cenário original de rede limitada.
 - **Classificações são locais.** Os níveis do plano são aplicados descritivamente à amostra; não foi calculada uma média global de O1–O4.
 
-## Por que não há vídeos nem imagens
+## Vídeos disponíveis
 
-A documentação pública preserva os registros textuais e os cálculos, sem publicar gravações, capturas ou links para os arquivos privados. As telas gravadas continham outras informações do celular. Assim, é possível conferir os cálculos e a ligação entre os registros, mas não reinspecionar os vídeos a partir desta pasta.
+A subpasta [videos/](videos/) contém quatro gravações disponibilizadas pelo responsável pela coleta: [video_evidencia1.mp4](videos/video_evidencia1.mp4), [video_evidencia2.mp4](videos/video_evidencia2.mp4), [video_evidencia3.mp4](videos/video_evidencia3.mp4) e [video_evidencia4.mp4](videos/video_evidencia4.mp4). Os arquivos podem ser acessados publicamente pelo repositório.
+
+As menções a gravações privadas nos registros descrevem sua origem na sessão de coleta, anterior à publicação desses arquivos. Não se presume que os quatro vídeos cubram todos os testes ou que sua numeração corresponda à dos registros TE, CF ou de outras categorias. A publicação dos vídeos não altera os valores medidos nem transforma relatos em observações independentes.
 
 Ao usar estas evidências no artigo ou em uma apresentação, mantenha a identificação P01/P02 e a distinção entre dado relatado, medido e observado em gravação privada. Não atribua uma verificação independente a um registro que só está disponível por relato.

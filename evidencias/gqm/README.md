@@ -14,19 +14,20 @@ O material é uma consolidação retrospectiva dos registros, não uma transcri�
 | [Resultados por métrica](resultados_por_metrica.md) | Rastreabilidade de M1–M15, cálculos, classificações e cobertura. |
 | [Respostas SUS](respostas_sus.csv) | As dez respostas de P01 e suas contribuições ajustadas. |
 | [Tempos de resposta e de tarefa](tempos_de_resposta.csv) | Tempos de tarefa, de resposta por operação e de atualização da recarga, separados por tipo. |
+| [Vídeos de evidência](videos/) | Quatro arquivos MP4 disponibilizados pelo responsável pela coleta como material complementar. |
 
 Os CSV usam UTF-8, vírgula como separador de campos e ponto como separador decimal. Valores vazios significam informação não registrada ou não aplicável, conforme as observações; não significam zero. Os cálculos estão explicados nos arquivos Markdown, e os CSV contêm valores numéricos estáticos.
 
 ## Origem e disponibilidade das evidências
 
 - **Relato/autorrelato:** informação fornecida pelo avaliador após executar ou acompanhar o teste. Não equivale a observação independente.
-- **Inspeção de gravação privada:** resultado transcrito após inspeção visual de quadros da gravação durante a avaliação. O arquivo audiovisual não integra este conjunto público.
+- **Inspeção de gravação privada:** resultado transcrito após inspeção visual de quadros da gravação durante a avaliação. Essa descrição registra a origem do dado na sessão original; não identifica automaticamente quais gravações correspondem aos vídeos posteriormente publicados.
 - **Medição documentada pelo avaliador:** valor que o avaliador afirmou ter medido e documentado; em M10, o registro original não foi disponibilizado para análise durante a sessão.
 - **Cálculo derivado:** transformação explícita dos dados anteriores, como pontuação SUS e razão de tempos.
 
-Por decisão do responsável pela coleta, **não há imagens, vídeos ou links para gravações nesta pasta**. Não são publicados nomes dos participantes, identificadores de conta/cartão, contatos, códigos de pagamento, linha consultada ou localização pessoal. As pessoas são identificadas somente por P01 e P02. Os valores monetários necessários à conferência aritmética são mantidos.
+Por autorização do responsável pela coleta, a subpasta [videos/](videos/) reúne os arquivos [video_evidencia1.mp4](videos/video_evidencia1.mp4), [video_evidencia2.mp4](videos/video_evidencia2.mp4), [video_evidencia3.mp4](videos/video_evidencia3.mp4) e [video_evidencia4.mp4](videos/video_evidencia4.mp4). Esses arquivos são públicos, assim como o repositório.
 
-Um leitor pode conferir os cálculos e o encadeamento dos registros textuais; não pode reproduzir a inspeção audiovisual a partir destes arquivos. Não se afirma verificação independente de todos os relatos ou disponibilidade pública dos registros originais.
+Nos registros textuais, as pessoas são identificadas somente por P01 e P02, sem identificadores de conta/cartão, contatos, códigos de pagamento ou localização pessoal. Os valores monetários necessários à conferência aritmética são mantidos. Um leitor pode conferir os cálculos, o encadeamento dos registros textuais e os vídeos publicados. A inclusão dos quatro vídeos não estabelece, por si só, correspondência com todos os testes nem verificação independente de todos os relatos. Os dados e a descrição da coleta original foram preservados.
 
 ## Índice de rastreabilidade
 

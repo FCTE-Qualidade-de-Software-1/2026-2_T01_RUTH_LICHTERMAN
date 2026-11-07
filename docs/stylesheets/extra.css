@@ -273,7 +273,6 @@
 .psm-card .psm-id::after{content:"";position:absolute;right:1.3rem;top:1.2rem;width:44px;height:44px;border-radius:12px;background:var(--soft) center/26px no-repeat}
 .psm-card .psm-cat{margin-top:.1rem}
 .psm-card .psm-tipo{position:absolute;left:1.3rem;bottom:calc((var(--tk-pad) - 1.9rem)/2);margin:0;border-width:2px}
-.psm-card .psm-tipo::after{content:"→";margin-left:.4rem}
 .psm-card:hover .psm-tipo{background:var(--cat);color:#fff}
 [data-md-color-scheme="slate"] .psm-card:hover .psm-tipo{color:#00213F}
 .psm-card.cat-cp .psm-id::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23003E7E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='2'/%3E%3Cpath d='M3 10h18M8 3v4M16 3v4'/%3E%3C/svg%3E")}

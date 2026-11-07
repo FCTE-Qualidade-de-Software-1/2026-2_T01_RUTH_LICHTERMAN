@@ -97,6 +97,8 @@ Para M10, P01 posteriormente esclareceu que **mediu e documentou 1 s**, com grav
 
 ## TE01–TE08 — Tempos de resposta (M11, M12)
 
+Os arquivos publicados correspondentes a TE01–TE04 foram conferidos visualmente: [video_evidencia1.mp4](videos/video_evidencia1.mp4) → TE01 (extrato/Wi-Fi); [video_evidencia2.mp4](videos/video_evidencia2.mp4) → TE02 (Pix/Wi-Fi); [video_evidencia3.mp4](videos/video_evidencia3.mp4) → TE03 (extrato/dados móveis); [video_evidencia4.mp4](videos/video_evidencia4.mp4) → TE04 (Pix/dados móveis). A descrição “gravação privada” na origem dos dados registra sua condição durante a coleta original, anterior à publicação. Essa vinculação não acrescenta execuções nem altera os tempos. O [índice de evidências](README.md) detalha o alcance de cada vídeo.
+
 | ID | Operação | Rede | Tempo (s) | Origem |
 | --- | --- | --- | ---: | --- |
 | TE01 | Abrir extrato | Wi-Fi | 3,1 | Inspeção de gravação privada; início estimado pela transição visual, sem indicador de toque. |

@@ -175,6 +175,8 @@ Esse resultado não significa que foi impossível recuperar a consulta. A recupe
 
 A subpasta [videos/](videos/) contém quatro gravações disponibilizadas pelo responsável pela coleta: [video_evidencia1.mp4](videos/video_evidencia1.mp4), [video_evidencia2.mp4](videos/video_evidencia2.mp4), [video_evidencia3.mp4](videos/video_evidencia3.mp4) e [video_evidencia4.mp4](videos/video_evidencia4.mp4). Os arquivos podem ser acessados publicamente pelo repositório.
 
-As menções a gravações privadas nos registros descrevem sua origem na sessão de coleta, anterior à publicação desses arquivos. Não se presume que os quatro vídeos cubram todos os testes ou que sua numeração corresponda à dos registros TE, CF ou de outras categorias. A publicação dos vídeos não altera os valores medidos nem transforma relatos em observações independentes.
+As menções a gravações privadas nos registros descrevem sua origem na sessão de coleta, anterior à publicação desses arquivos. A inspeção visual confirmou esta correspondência: vídeo 1 → TE01 (extrato/Wi-Fi); vídeo 2 → TE02 (geração Pix/Wi-Fi); vídeo 3 → TE03 (extrato/dados móveis); vídeo 4 → TE04 (geração Pix/dados móveis). Esses registros sustentam M11 e os pares extrato e Pix da comparação exploratória M12. O [README](README.md) apresenta o índice com links e o alcance de cada evidência.
+
+Os vídeos não cobrem todos os testes: não mostram pagamento/atualização de crédito de M10, execução de P02 ou recuperação após perda de rede. Sua publicação e vinculação não alteram os valores medidos nem acrescentam observações ao conjunto da coleta.
 
 Ao usar estas evidências no artigo ou em uma apresentação, mantenha a identificação P01/P02 e a distinção entre dado relatado, medido e observado em gravação privada. Não atribua uma verificação independente a um registro que só está disponível por relato.

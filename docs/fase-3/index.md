@@ -42,7 +42,7 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 
 **Termo de Consentimento Livre e Esclarecido (TCLE):**
 
-[Baixar em PDF](../arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [Baixar em Word](../arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
+[Baixar em PDF](./arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [Baixar em Word](./arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
 
 
 ## Tarefas e procedimentos de coleta

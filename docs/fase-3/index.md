@@ -14,6 +14,12 @@ Nesta fase, a equipe define **como** as métricas da [Fase 2](../fase-2/index.md
 
 *Tabela 1: Ambiente da avaliação. Fonte: elaborado pela equipe.*
 
+### Requisitos de Hardware e Software
+
+- **Requisitos Mínimos do Produto:** Smartphone com tela sensível ao toque, acesso à internet (Wi-Fi ou dados móveis 3G/4G/5G) e sistema operacional Android (v8.0 ou superior) ou iOS (v12.0 ou superior).
+- **Ambiente Efetivo de Execução:** Dispositivo Redmi Note 10S sob sistema operacional Android 13 (compilação TP1A.220624.014), executando a versão 1.0.60 do aplicativo BRB Mobilidade.
+- **Ferramentas de Suporte:** Softwares de gravação de tela para registro das sessões de uso, formulários eletrônicos para o questionário SUS adaptado e planilhas eletrônicas para tabulação de tempos e erros.
+
 ## Participantes
 
 A amostra de conveniência teve dois participantes, identificados por códigos:
@@ -24,6 +30,13 @@ A amostra de conveniência teve dois participantes, identificados por códigos:
 | P02 | 55 anos, sem experiência prévia | Somente a consulta de linha |
 
 *Tabela 2: Participantes da avaliação. Fonte: elaborado pela equipe.*
+
+### Conhecimento dos Avaliadores e Participantes
+
+- **Equipe Avaliadora:** Alunos de Engenharia de Software responsáveis pela elaboração do protocolo, condução dos testes e registro de evidências.
+- **Nível de Conhecimento dos Participantes:**
+  - **P01 (Perfil Experiente):** Possui alto conhecimento técnico em informática/tecnologia e experiência prévia com o aplicativo BRB Mobilidade, atuando como referência de tempo de execução.
+  - **P02 (Perfil Leigo):** Usuária de 55 anos, com conhecimento básico de informática e sem experiência prévia no aplicativo, representando a parcela de usuários que necessita de maior acessibilidade e facilidade de aprendizagem.
 
 As sessões só são gravadas com consentimento registrado, o acesso às gravações e aos dados pessoais é restrito à equipe e à professora, e os dados seguem a Lei Geral de Proteção de Dados.
 
@@ -45,6 +58,14 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 
 *Tabela 3: Procedimentos de coleta por métrica. Fonte: elaborado pela equipe.*
 
+### Massa de Dados Definida e Justificada
+
+- **Massa de Dados Definida:** 
+  - **Recarga Financeira:** Operação padronizada via Pix no valor fixo de R$ 2,70 (valor de tarifa de transporte público).
+  - **Entradas Inválidas:** Conjunto padronizado de 5 cenários de erro (valor vazio, R$ 2,69, R$ 350,01, número de cartão vazio e incompatibilidade entre CPF e cartão).
+  - **Escopo de Funcionalidades:** Inventário delimitado a 14 funções mapeadas no aplicativo e 1 linha de ônibus de referência para testes de consulta e navegação.
+- **Justificativa da Massa de Dados:** A definição prévia dos dados-exemplo e cenários de teste controlados é indispensável para agilizar a execução das sessões de medição, evitar custos financeiros desnecessários com múltiplas transações bancárias reais e garantir que as comparações temporais e de taxa de erro entre diferentes perfis de participantes ocorram em condições idênticas de contorno.
+
 ## Adaptações em relação à especificação
 
 - O checklist de acessibilidade ficou incompleto: área de toque e leitor de tela não foram avaliados.
@@ -54,6 +75,7 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 - Não foram fixados mínimos de observação antes da coleta.
 
 Por isso, na [Fase 4](../fase-4/index.md), as faixas de pontuação são aplicadas apenas de forma descritiva, restrita às amostras observadas.
+```
 
 ---
 
@@ -62,3 +84,4 @@ Por isso, na [Fase 4](../fase-4/index.md), as faixas de pontuação são aplicad
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 25/10/2026 | Ambiente, participantes, procedimentos e adaptações, a partir da Seção VI do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
+| 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | |

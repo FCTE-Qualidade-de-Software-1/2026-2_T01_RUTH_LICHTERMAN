@@ -40,6 +40,8 @@ A amostra de conveniência teve dois participantes, identificados por códigos:
 
 As sessões só são gravadas com consentimento registrado, o acesso às gravações e aos dados pessoais é restrito à equipe e à professora, e os dados seguem a Lei Geral de Proteção de Dados.
 
+**Termo de Consentimento Livre e Esclarecido (TCLE):** [baixar em PDF](arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [baixar em Word](arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
+
 ## Tarefas e procedimentos de coleta
 
 | Métricas | Procedimento executado |
@@ -84,4 +86,5 @@ Por isso, na [Fase 4](../fase-4/index.md), as faixas de pontuação são aplicad
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 25/10/2026 | Ambiente, participantes, procedimentos e adaptações, a partir da Seção VI do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
-| 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | |
+| 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
+| 1.2 | 12/11/2026 | Adicionando pasta do arquivos e o termo TCLE em PDF e Word | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Hauedy Wegner](https://github.com/HauedyWS) |

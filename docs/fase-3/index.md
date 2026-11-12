@@ -40,7 +40,10 @@ A amostra de conveniência teve dois participantes, identificados por códigos:
 
 As sessões só são gravadas com consentimento registrado, o acesso às gravações e aos dados pessoais é restrito à equipe e à professora, e os dados seguem a Lei Geral de Proteção de Dados.
 
-**Termo de Consentimento Livre e Esclarecido (TCLE):** [baixar em PDF](arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [baixar em Word](arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
+**Termo de Consentimento Livre e Esclarecido (TCLE):**
+
+[Baixar em PDF](../arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [Baixar em Word](../arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
+
 
 ## Tarefas e procedimentos de coleta
 

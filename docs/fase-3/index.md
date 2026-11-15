@@ -2,6 +2,8 @@
 
 Nesta fase, a equipe define **como** as métricas da [Fase 2](../fase-2/index.md) foram coletadas: ambiente, participantes, tarefas e procedimentos. A coleta teve caráter exploratório, e as diferenças entre o que foi especificado e o que foi executado estão registradas abaixo.
 
+O método é de caixa-preta, executado como usuário final, porque a equipe não tem acesso ao código-fonte, a registros internos nem a ambiente de homologação. Os procedimentos e sua origem estão documentados nos [registros da coleta](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/evidencias/gqm/registro_dos_testes.md).
+
 ## Ambiente
 
 | Item | Valor |
@@ -38,7 +40,7 @@ A amostra de conveniência teve dois participantes, identificados por códigos:
   - **P01 (Perfil Experiente):** Possui alto conhecimento técnico em informática/tecnologia e experiência prévia com o aplicativo BRB Mobilidade, atuando como referência de tempo de execução.
   - **P02 (Perfil Leigo):** Usuária de 55 anos, com conhecimento básico de informática e sem experiência prévia no aplicativo, representando a parcela de usuários que necessita de maior acessibilidade e facilidade de aprendizagem.
 
-As sessões só são gravadas com consentimento registrado, o acesso às gravações e aos dados pessoais é restrito à equipe e à professora, e os dados seguem a Lei Geral de Proteção de Dados.
+As sessões só são gravadas com consentimento registrado. Os registros textuais identificam os participantes por códigos. As evidências, incluindo quatro vídeos, estão disponíveis no [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/gqm). O tratamento e a divulgação dos dados devem observar a proteção das informações pessoais, conforme a Lei Geral de Proteção de Dados.
 
 **Termo de Consentimento Livre e Esclarecido (TCLE):**
 
@@ -55,7 +57,7 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 | M4 | Inspeção da ampliação de fonte do sistema e triagem de contraste em vídeo |
 | M6 | Cinco casos de entradas inválidas: valor vazio, R$ 2,69, R$ 350,01, cartão vazio e par cartão/CPF incompatível |
 | M7, M8 | Inventário de 14 funções e treze verificações funcionais de consultas, geração e cópia do código Pix, estados de recarga, acesso a formulários e preservação das informações após reabertura |
-| M9, M10 | Uma recarga real de R$ 2,70, com conferência de saldo, histórico, extrato e de uma viagem conhecida |
+| M9, M10 | Uma recarga real de R$ 2,70, com conferência do total e do estado da solicitação; uma viagem conhecida conferida no extrato. Para M10, medição de 1 s documentada segundo P01, sem análise independente do registro original |
 | M11, M12 | Uma observação por operação e por rede (Wi-Fi e dados móveis), separando a espera pelo resultado da digitação e da escolha de opções |
 | M13 | Perda de conexão com retorno da rede; reabertura após encerramento como evidência complementar |
 | M14 | Rodada normal de extrato, histórico e itinerário, com limite de observação de 30 s |
@@ -63,13 +65,15 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 
 *Tabela 3: Procedimentos de coleta por métrica. Fonte: elaborado pela equipe.*
 
+Os quatro vídeos publicados correspondem a TE01–TE04, de extrato e geração Pix em Wi-Fi e dados móveis. Os tempos de mapa e linha em dados móveis (TE07 e TE08) foram informados por P01 como iguais aos de Wi-Fi, sem nova gravação analisada. O [índice das evidências](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/evidencias/gqm/README.md) apresenta a ligação entre os registros e M1–M15.
+
 ### Massa de Dados Definida e Justificada
 
 - **Massa de Dados Definida:** 
   - **Recarga Financeira:** Operação padronizada via Pix no valor fixo de R$ 2,70 (valor de tarifa de transporte público).
   - **Entradas Inválidas:** Conjunto padronizado de 5 cenários de erro (valor vazio, R$ 2,69, R$ 350,01, número de cartão vazio e incompatibilidade entre CPF e cartão).
   - **Escopo de Funcionalidades:** Inventário delimitado a 14 funções mapeadas no aplicativo e 1 linha de ônibus de referência para testes de consulta e navegação.
-- **Justificativa da Massa de Dados:** A definição prévia dos dados-exemplo e cenários de teste controlados é indispensável para agilizar a execução das sessões de medição, evitar custos financeiros desnecessários com múltiplas transações bancárias reais e garantir que as comparações temporais e de taxa de erro entre diferentes perfis de participantes ocorram em condições idênticas de contorno.
+- **Justificativa da Massa de Dados:** A seleção delimita os casos avaliados e evita custos com múltiplas recargas. Na comparação de consulta de linha, foram mantidos os mesmos marcos de início e fim, sem dicas de navegação; as condições ambientais não foram integralmente controladas.
 
 ## Adaptações em relação à especificação
 
@@ -80,7 +84,8 @@ As sessões só são gravadas com consentimento registrado, o acesso às gravaç
 - Não foram fixados mínimos de observação antes da coleta.
 
 Por isso, na [Fase 4](../fase-4/index.md), as faixas de pontuação são aplicadas apenas de forma descritiva, restrita às amostras observadas.
-```
+
+O protocolo ampliado apresentado no artigo é uma proposta para eventual extensão da avaliação, formalizada após a coleta exploratória. Seus mínimos de participantes, repetições e janelas não são apresentados como já executados nesta coleta.
 
 ---
 
@@ -91,3 +96,4 @@ Por isso, na [Fase 4](../fase-4/index.md), as faixas de pontuação são aplicad
 | 1.0 | 25/10/2026 | Ambiente, participantes, procedimentos e adaptações, a partir da Seção VI do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 12/11/2026 | Adicionando pasta do arquivos e o termo TCLE em PDF e Word | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Hauedy Wegner](https://github.com/HauedyWS) |
+| 1.3 | 15/11/2026 | Alinhamento dos procedimentos e da origem das evidências GQM com o artigo | [Lucas Branco](https://github.com/lucasbbranco) | — |

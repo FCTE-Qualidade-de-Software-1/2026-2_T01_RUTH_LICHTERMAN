@@ -43,7 +43,7 @@ A equipe de seis integrantes trabalha no [repositório Git da disciplina](https:
 
 ## Rastreabilidade, participantes e proteção de dados
 
-Todo resultado apresentado deve poder ser reconstruído a partir dos dados brutos e dos procedimentos de cálculo versionados no repositório. As sessões com participantes só são gravadas com consentimento registrado. Os participantes são identificados por códigos (P01, P02, ...), e o acesso às gravações e aos dados pessoais é restrito à equipe e à professora, em conformidade com a Lei Geral de Proteção de Dados. Participantes menores de 18 anos só podem ser incluídos com consentimento do responsável.
+Os registros da coleta, os dados das medições, os cálculos e quatro vídeos estão disponíveis nas [evidências GQM](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/gqm). Os arquivos distinguem relatos, medições informadas pelo avaliador e inspeção de gravações; os vídeos não cobrem todos os testes. As sessões com participantes só são gravadas com consentimento registrado. Os participantes são identificados por códigos (P01, P02, ...) nos registros textuais, e o tratamento e a divulgação dos dados devem observar a proteção das informações pessoais, em conformidade com a Lei Geral de Proteção de Dados. Participantes menores de 18 anos só podem ser incluídos com consentimento do responsável.
 
 ## Ferramentas utilizadas
 
@@ -63,3 +63,4 @@ Todo resultado apresentado deve poder ser reconstruído a partir dos dados bruto
 | 1.1 | 17/10/2026 | Adição de Metodologia Artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 25/10/2026 | Atualização conforme a Seção III da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 | 1.3 | 26/10/2026 | Adiciona texto alternativo ao diagrama e faz pequenos ajustes | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
+| 1.4 | 15/11/2026 | Alinhamento da descrição e do acesso às evidências GQM com o artigo e o repositório | [Lucas Branco](https://github.com/lucasbbranco) | — |

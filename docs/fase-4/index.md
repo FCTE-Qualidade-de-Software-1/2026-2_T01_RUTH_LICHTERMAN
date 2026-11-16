@@ -83,12 +83,30 @@ O propósito da avaliação é apoiar a priorização de correções e melhorias
 
 A perda de conexão mostrou ao mesmo tempo um problema de confiabilidade e de comunicação com o usuário: o aplicativo continuou carregando sem informar o problema, e foi preciso atualizar a tela manualmente. Não houve evidência pareada suficiente para relacionar maior latência a mais erros ou falhas; a abertura do mapa, embora mais lenta, terminou sem falha.
 
-Melhorias propostas a partir dos achados (ainda sem implementação):
+Melhorias propostas a partir dos achados, sem implementação no aplicativo real. A1 e A2 foram desenvolvidas em protótipo, conforme a seção seguinte:
 
 1. **Informar a indisponibilidade de rede** e oferecer nova tentativa ou retomada da consulta (M13, Q10).
 2. **Respeitar a preferência de tamanho de fonte do sistema** (M4, Q3).
 3. **Investigar o tempo de abertura do mapa e das paradas**, de cerca de 5,3 s (M11).
 4. **Ampliar a avaliação em estudo futuro**, conforme as limitações da coleta: acessibilidade, fluxos funcionais, conciliação após uso na catraca, janelas de disponibilidade, condições de rede e participantes.
+
+## Ação de melhoria executada
+
+Em 15/11/2026, foi concluído um protótipo de alta fidelidade para **A1 e A2**, justificado pelos achados de comunicação da perda de conexão (M13) e ampliação de fonte (M4). A entrega reúne telas editáveis e fluxos navegáveis no Figma, com dados fictícios.
+
+**[Abrir o protótipo navegável de A1 e A2](https://www.figma.com/proto/imCHuQ8h2wmrkuvHPtCjcE?node-id=6-143&starting-point-node-id=6%3A143)**
+
+- **A1:** aviso de conexão após 8 s nos percursos simulados de consulta e recarga, botão “Tentar novamente” e retomada dos dados representados. Foram conferidos os quatro percursos: consulta interrompida, recarga interrompida, reabertura e retorno após bloqueio.
+- **A2:** telas com fonte de 100% e 200%, conteúdo com rolagem e botão principal com contraste de **5,66:1**, para texto branco sobre #006CA8. Na tela inicial, **A+ Fonte** abre a versão ampliada e **A− Fonte** retorna ao início de A1. Os controles são recursos da apresentação; a recomendação para o aplicativo continua sendo acompanhar a preferência de fonte do sistema.
+
+![A1: aviso de conexão e nova tentativa](https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/main/evidencias/prototipo/imagens/prototipo_sem_conexao.png){ width="220" }
+![A2: fonte ampliada e contraste proposto](https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/main/evidencias/prototipo/imagens/prototipo_fonte_200.png){ width="220" }
+
+*Figura 1: Telas do protótipo de A1 e A2, com dados fictícios. A tela ampliada possui conteúdo com rolagem. Fonte: elaborado pela equipe.*
+
+A [documentação da entrega](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/prototipo) reúne as instruções e as figuras. O [registro de verificação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/evidencias/prototipo/verificacao.md) detalha os percursos conferidos, o cálculo de contraste e os limites da simulação.
+
+O protótipo não foi implementado no aplicativo e não comprova persistência, prevenção de duplicidade ou detecção real de rede. Não houve nova coleta GQM nem validação com participantes; **os resultados originais de M4 e M13 permanecem inalterados**. A3 e A4 continuam como propostas futuras.
 
 ## Limitações
 
@@ -102,3 +120,4 @@ A amostra de conveniência, o acúmulo dos papéis de usuário e avaliador por P
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 25/10/2026 | Resultados, interpretação GQM, melhorias e limitações, a partir da Seção VII do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.1 | 15/11/2026 | Alinhamento da análise GQM e da rastreabilidade das métricas com o artigo e as evidências | [Lucas Branco](https://github.com/lucasbbranco) | — |
+| 1.2 | 16/11/2026 | Registro da ação de melhoria executada em protótipo para A1 e A2, com link, figuras e verificação | [Lucas Branco](https://github.com/lucasbbranco) | — |

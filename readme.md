@@ -23,6 +23,7 @@ Trabalho final de Qualidade de Software 1 (FCTE/UnB, 2026/2, turma T01). A equip
 | :--- | :--- |
 | `docs/` | Páginas do GitPage (MkDocs) |
 | `docs/gestao/` | Gestão com PSM/CID, painel gerado automaticamente e dados brutos |
+| [`evidencias/prototipo/`](evidencias/prototipo/README.md) | Protótipo navegável de A1 e A2, figuras e registro de verificação |
 | `scripts/` | Coleta das métricas PSM e scripts de criação e atribuição de issues |
 | `.github/` | Template de issue e publicação automática do site |
 

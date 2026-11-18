@@ -42,9 +42,15 @@ A amostra de conveniência teve dois participantes, identificados por códigos:
 
 As sessões só são gravadas com consentimento registrado. Os registros textuais identificam os participantes por códigos. As evidências, incluindo quatro vídeos, estão disponíveis no [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/gqm). O tratamento e a divulgação dos dados devem observar a proteção das informações pessoais, conforme a Lei Geral de Proteção de Dados.
 
-**Termo de Consentimento Livre e Esclarecido (TCLE):**
+### Termo de Consentimento Livre e Esclarecido (TCLE):
 
 [Baixar em PDF](./arquivos/TCLE_padrao_BRB_Mobilidade.pdf){ download } · [Baixar em Word](./arquivos/TCLE_padrao_BRB_Mobilidade.docx){ download }
+
+<object data="arquivos/TCLE_padrao_BRB_Mobilidade.pdf#view=FitH" type="application/pdf" width="100%" height="700" aria-label="Termo de Consentimento Livre e Esclarecido (TCLE) em PDF">
+  <p>Seu navegador não conseguiu exibir o PDF. Use o link acima para baixá-lo.</p>
+</object>
+
+*Fonte: elaborado pela equipe.*
 
 
 ## Tarefas e procedimentos de coleta
@@ -97,3 +103,4 @@ O protocolo ampliado apresentado no artigo é uma proposta para eventual extens�
 | 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 12/11/2026 | Adicionando pasta do arquivos e o termo TCLE em PDF e Word | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Hauedy Wegner](https://github.com/HauedyWS) |
 | 1.3 | 15/11/2026 | Alinhamento dos procedimentos e da origem das evidências GQM com o artigo | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.4 | 17/11/2026 | Adiciona a exibição do TCLE em PDF diretamente na página, mantendo os links de download | [Letícia Lopes](https://github.com/leticialopes20) | [Hauedy Wegner](https://github.com/HauedyWS) |

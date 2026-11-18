@@ -96,4 +96,4 @@ O protocolo ampliado apresentado no artigo é uma proposta para eventual extens�
 | 1.0 | 25/10/2026 | Ambiente, participantes, procedimentos e adaptações, a partir da Seção VI do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.1 | 11/11/2026 | Recurso, Ambiente e Massa de Dados a partir do artigo  | [Daniel Sousa](https://github.com/daniel-de-sousa) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 12/11/2026 | Adicionando pasta do arquivos e o termo TCLE em PDF e Word | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Hauedy Wegner](https://github.com/HauedyWS) |
-| 1.3 | 15/11/2026 | Alinhamento dos procedimentos e da origem das evidências GQM com o artigo | [Lucas Branco](https://github.com/lucasbbranco) | — |
+| 1.3 | 15/11/2026 | Alinhamento dos procedimentos e da origem das evidências GQM com o artigo | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |

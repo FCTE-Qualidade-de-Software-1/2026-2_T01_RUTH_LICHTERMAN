@@ -63,4 +63,4 @@ Os registros da coleta, os dados das medições, os cálculos e quatro vídeos e
 | 1.1 | 17/10/2026 | Adição de Metodologia Artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.2 | 25/10/2026 | Atualização conforme a Seção III da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 | 1.3 | 26/10/2026 | Adiciona texto alternativo ao diagrama e faz pequenos ajustes | [Letícia Lopes](https://github.com/leticialopes20) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
-| 1.4 | 15/11/2026 | Alinhamento da descrição e do acesso às evidências GQM com o artigo e o repositório | [Lucas Branco](https://github.com/lucasbbranco) | — |
+| 1.4 | 15/11/2026 | Alinhamento da descrição e do acesso às evidências GQM com o artigo e o repositório | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |

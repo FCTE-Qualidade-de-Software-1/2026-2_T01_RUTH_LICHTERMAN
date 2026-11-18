@@ -41,4 +41,4 @@ A numeração segue a do artigo. Clique no número de uma citação no texto par
 | 1.1 | 13/10/2026 | Criação da página Introdução do Artigo | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
 | 1.2 | 17/10/2026 | Adição de informações iniciais da introdução do artigo | [Giovana Fontes](https://github.com/GiovanaFontesS) | [Arthur Fernandes](https://github.com/arthurfernandesj) |
 | 1.3 | 25/10/2026 | Atualização conforme a Seção I da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Giovana Fontes](https://github.com/GiovanaFontesS) |
-| 1.4 | 17/11/2026 | Alinhamento com a versão atual do artigo (Ponto de Controle 2): citações e lista de referências, termos em inglês na pergunta de pesquisa e endereço do repositório | [Letícia Lopes](https://github.com/leticialopes20) | [Hauedy Wegner](https://github.com/HauedyWS) |
+| 1.4 | 17/11/2026 |Atualização conforme a Seção I da versão atual(PC2) do artigo  | [Letícia Lopes](https://github.com/leticialopes20) | [Hauedy Wegner](https://github.com/HauedyWS) |

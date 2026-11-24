@@ -16,6 +16,10 @@ Referências usadas no artigo e nesta página do projeto, em ordem alfabética.
 
 > COHN, M. *Agile Estimating and Planning*. Upper Saddle River: Prentice Hall, 2005.
 
+> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). *ODS 11 – Cidades e Comunidades Sustentáveis*. Disponível em: <https://ipea.gov.br/ods/ods11.html>. Acesso em: 26 out. 2026.
+
+> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). *ODS 16 – Paz, Justiça e Instituições Eficazes*. Disponível em: <https://ipea.gov.br/ods/ods16.html>. Acesso em: 26 out. 2026.
+
 > ISO/IEC. *ISO/IEC 25000:2014 – Systems and software engineering – SQuaRE – Guide to SQuaRE*. Geneva: International Organization for Standardization, 2014.
 
 > ISO/IEC. *ISO/IEC 25010:2023 – Systems and software engineering – SQuaRE – Product quality model*. Geneva: International Organization for Standardization, 2023.
@@ -23,6 +27,8 @@ Referências usadas no artigo e nesta página do projeto, em ordem alfabética.
 > ISO/IEC. *ISO/IEC 25040:2011 – Systems and software engineering – SQuaRE – Evaluation process*. Geneva: International Organization for Standardization, 2011.
 
 > ISO/IEC. *ISO/IEC 25040:2024 – Systems and software engineering – SQuaRE – Quality evaluation framework*. Geneva: International Organization for Standardization, 2024.
+
+> JAYASRI, K.; SEETHARAMAIAH, P. A GQM based approach towards the development of metrics for software safety. *Journal of Computer Science*, v. 11, n. 6, p. 813–820, 2015. DOI: <https://doi.org/10.3844/jcssp.2015.813.820>.
 
 > McGARRY, J. et al. *Practical Software Measurement: Objective Information for Decision Makers*. Boston: Addison-Wesley, 2002.
 
@@ -51,3 +57,4 @@ As páginas da [Fase 1](fase-1/1-descricao.md) trazem também as fontes usadas n
 | Versão | Data | Descrição | Autor | Revisor |
 | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | 25/10/2026 | Referências consolidadas a partir da versão atual do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |
+| 1.1 | 24/11/2026 | Inclusão de Jayasri e Seetharamaiah (2015) e das páginas do IPEA sobre os ODS 11 e 16, citadas na versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |

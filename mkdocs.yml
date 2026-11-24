@@ -90,7 +90,7 @@ nav:
       - Descrição do Produto: fase-1/1-descricao.md
       - Propósito, Justificativa e Objetivos: fase-1/2-proposito.md
       - Modelo de Qualidade: fase-1/3-modelo.md
-  - Fase 2 — GQM:
+  - Fase 2 - GQM:
       - Visão geral: fase-2/index.md
       - Objetivos de Medição: fase-2/objetivos.md
       - Questões: fase-2/questoes.md
@@ -98,13 +98,18 @@ nav:
       - Métricas: fase-2/metricas.md
       - Níveis de Pontuação: fase-2/niveis-pontuacao.md
       - Gráfico GQM: fase-2/grafico-gqm.md
-  - Fase 3 — Projeto: fase-3/index.md
-  - Fase 4 — Resultados: fase-4/index.md
+  - Fase 3 - Projeto: fase-3/index.md
+  - Fase 4 - Resultados: 
+      - Resultados: fase-4/index.md
+      - Protótipo: prototipo/index.md
+      - Versão 1 - Protótipo: prototipo/v1.md
+      - Verificação da v1: prototipo/v1-verificacao.md
+      - Versão 2 - Protótipo: prototipo/v2.md
   - Gestão:
       - PSM/CID: gestao/psm.md
       - Painel PSM (automático): gestao/painel.md
   - Uso de IA: uso-de-ia.md
-  - Equipe:
+  - Equipe/Atas:
       - Contribuição: contribuicao.md
       - Atas: 
           - 11/10/2026: atas/2026-10-11.md

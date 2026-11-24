@@ -66,6 +66,29 @@ Os quatro vídeos correspondem a TE01–TE04 e sustentam os tempos de extrato e 
 
 A cobertura incompleta e a ausência de mínimos de observação fixados antes da coleta impedem um julgamento global dos objetivos O1 a O4.
 
+### Situação de resposta das questões
+
+Além do julgamento das hipóteses, cada questão foi classificada pela situação de resposta, isto é, se o conteúdo coletado permite respondê-la. Uma questão é **respondida completamente** quando todas as suas métricas foram calculadas pelo procedimento previsto, com a cobertura mínima proposta; **respondida parcialmente** quando há evidência para ao menos uma métrica, mas procedimento, cobertura ou perfis ficaram aquém do previsto, e a hipótese só pode ser julgada no escopo observado; e **não respondida** quando nenhuma métrica tem evidência utilizável. Esse critério foi formalizado na consolidação, após a coleta.
+
+| Q | Situação | Evidência e hipótese no escopo observado | O que falta para a resposta integral |
+| :-: | :--- | :--- | :--- |
+| Q1 | Respondida parcialmente | M1: P01 3/3, P02 1/1; M2: 71/30 ≈ 2,37 (uma tarefa). Compatível (M1 Excelente; M2 Bom), só na consulta de linha | Cinco tarefas nos dois perfis, referência por mediana de três repetições, três participantes por perfil |
+| Q2 | Respondida parcialmente | M3: SUS de P01 = 92,5. Compatível (≥ 68) só no perfil experiente | SUS do perfil sem experiência e respostas por item de P01 |
+| Q3 | Respondida parcialmente | M4 não calculada: fonte não acompanhou o sistema; contraste de 11:1, 14:1 e 3,7:1; leitor de tela e área de toque não avaliados; inconclusiva | Checklist completo, contraste sem compressão, leitor de tela e área de toque |
+| Q4 | Respondida parcialmente | M5: 0/3 (autorrelato de P01); M6: 5/5. Compatível (ambas Excelente); M5 com três tarefas | M5 pelas gravações, com dois avaliadores; perfil sem experiência |
+| Q5 | Respondida parcialmente | M7: 12 de 14 funções verificadas (85,7%). Inconclusiva: só seria refutada se as duas pendentes estivessem ausentes | Verificar pré-cadastro e solicitação efetiva de segunda via |
+| Q6 | Respondida parcialmente | M8: 13/13 verificações aprovadas (abertura, apresentação ou execução), para 14 funções. Compatível nos casos executados | Um caso por função, com execução (por exemplo, salvar alterações) |
+| Q7 | Respondida parcialmente | M9: sem divergência na recarga (10,70 + 2,70 = 13,40) e em uma viagem conhecida; sem uso na catraca | Três conferências, ao menos uma após uso na catraca |
+| Q8 | Respondida parcialmente | M10: 1/1 recarga em 1 s (medição documentada pelo avaliador). Compatível em uma recarga | Três recargas, com comprovante e gravação |
+| Q9 | Respondida parcialmente | M11 (Wi-Fi): 2,9 a 5,3 s; M12: 0,97 a 1,00, sem banda limitada. Não atendida na abertura do mapa (observação única); rede limitada inconclusiva | Cinco repetições, percentil 90 e banda limitada por ferramenta |
+| Q10 | Respondida parcialmente | M13: 0/1 (perda de conexão, retomada manual e sem aviso). Não atendida no único cenário provocado | Perda na recarga, fechamento forçado e bloqueio de tela, com repetições |
+| Q11 | Respondida parcialmente | M14: 0/3 falhas. Compatível (Excelente), com três operações | Vinte operações normais |
+| Q12 | Respondida parcialmente | M15: 3/3 em uma janela (cerca de 13h30 de 23/10/2026). Compatível nessa janela | Janelas de manhã, pico da tarde e noite |
+
+*Tabela 5: Situação de resposta das questões GQM. Nenhuma questão foi respondida completamente ou ficou sem resposta. Fonte: elaborado pela equipe.*
+
+As pendências se agrupam em cinco frentes: o segundo perfil de passageiro (Q1, Q2 e Q4); a cobertura de funções e conferências (Q5 a Q7); repetições e condições controladas (Q8, Q9 e Q11); cenários e janelas adicionais (Q10 e Q12); e o checklist de acessibilidade (Q3).
+
 ## Julgamento por objetivo
 
 | Objetivo | Síntese da interpretação |
@@ -75,7 +98,7 @@ A cobertura incompleta e a ausência de mínimos de observação fixados antes d
 | O3 Eficiência de desempenho | Tempos Wi-Fi entre cerca de 2,9 s e 5,3 s; nem toda operação atendeu ao limite de 3 s. Execuções únicas e ausência de rede limitada controlada restringem a comparação |
 | O4 Confiabilidade | Um cenário sem aviso de perda de conexão, com retomada manual; três operações normais sem falha e três acessos bem-sucedidos na janela. Esses dados não demonstram confiabilidade ou disponibilidade contínuas |
 
-*Tabela 5: Síntese qualitativa por objetivo, restrita à coleta exploratória. Fonte: elaborado pela equipe.*
+*Tabela 6: Síntese qualitativa por objetivo, restrita à coleta exploratória. Fonte: elaborado pela equipe.*
 
 O propósito da avaliação é apoiar a priorização de correções e melhorias. Os resultados orientam esse trabalho, sem aprovar, reprovar ou certificar o aplicativo como um todo.
 
@@ -112,6 +135,15 @@ O protótipo não foi implementado no aplicativo e não comprova persistência, 
 
 A amostra de conveniência, o acúmulo dos papéis de usuário e avaliador por P01 e o uso de autorrelato limitam os resultados. P02 participou de apenas uma tarefa, e o SUS usou redação adaptada, sem tradução previamente validada. Acessibilidade, pré-cadastro, segunda via, alteração cadastral e o ciclo de recarga seguido de uso na catraca não foram integralmente testados, e a disponibilidade representa uma única janela de sondagem.
 
+
+## Conclusão
+
+A avaliação do BRB Mobilidade em capacidade de interação, adequação funcional, eficiência de desempenho e confiabilidade, com base na ISO/IEC 25010:2023 e no GQM, indica resultados favoráveis nas tarefas observadas de capacidade de interação (conclusão sem ajuda, razão de tempo de 2,37 e SUS de 92,5, só de P01) e coerência do saldo após a recarga. Três pontos ficaram abaixo da hipótese: a abertura do mapa acima de 3 s (O3), a perda de conexão sem aviso (O4) e a fonte que não acompanha o sistema (O1).
+
+As doze questões GQM foram respondidas apenas parcialmente ([Tabela 5](#situacao-de-resposta-das-questoes)); por isso não se atribuiu julgamento global a O1–O4. Os resultados atendem ao propósito da [Fase 1](../fase-1/2-proposito.md) ao indicar onde priorizar correções: aviso de perda de conexão (A1), texto que respeita a fonte do sistema (A2) e abertura do mapa (A3). A ação executada foi o protótipo de alta fidelidade de A1 e A2.
+
+Como trabalhos futuros, propõe-se ampliar os participantes por perfil (incluindo a SUS para passageiros sem experiência), as janelas de disponibilidade, a rede limitada controlada e a conciliação após uso na catraca, além de completar o checklist de acessibilidade, conforme o protocolo ampliado do artigo.
+
 ---
 
 ### Histórico de Versão
@@ -121,3 +153,4 @@ A amostra de conveniência, o acúmulo dos papéis de usuário e avaliador por P
 | 1.0 | 25/10/2026 | Resultados, interpretação GQM, melhorias e limitações, a partir da Seção VII do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.1 | 15/11/2026 | Alinhamento da análise GQM e da rastreabilidade das métricas com o artigo e as evidências | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.2 | 16/11/2026 | Registro da ação de melhoria executada em protótipo para A1 e A2, com link, figuras e verificação | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.3 | 24/11/2026 | Situação de resposta das questões GQM e conclusão, a partir das Seções VII-G e VIII da versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |

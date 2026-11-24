@@ -2,19 +2,19 @@
 
 Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/scripts/coleta_psm.py) a partir das issues, eventos e commits do [repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN). Ela é atualizada a cada publicação do site. A definição dos indicadores, os limites e o registro das decisões de gestão estão em [Gestão do projeto com PSM/CID](psm.md).
 
-**Última coleta:** 12/11/2026 às 15:29 (horário de Brasília). **Issues analisadas:** 62.
+**Última coleta:** 24/11/2026 às 10:51 (horário de Brasília). **Issues analisadas:** 72.
 
 ## Indicadores
 
-<div class="psm-kpis"><div class="psm-kpi warn"><span>CP-1 · Planejado vs. concluído</span><strong>93,3%</strong><em class="flat">concluído em E1: Fases 1 e 2 · esperado 100,0% · desvio 6,7 p.p.</em><span class="psm-badge warn">Investigar</span></div><div class="psm-kpi ok"><span>RC-1 · Estimado vs. real</span><strong>1,07</strong><em class="flat">79,0 h reais ÷ 73,8 h estimadas</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi ok"><span>RC-2 · Esforço por integrante</span><strong>12% a 30%</strong><em class="flat">menor e maior participação nas horas reais</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi warn"><span>DP-1 · Tempo de ciclo</span><strong>4,2 dias</strong><em class="flat">média em 40 issues · 3 paradas</em><span class="psm-badge warn">Investigar 37 issues a mais de 10% da média; Alerta: 3 issues com responsável há mais de 3 dias</span></div></div>
+<div class="psm-kpis"><div class="psm-kpi ok"><span>CP-1 · Planejado vs. concluído</span><strong>100,0%</strong><em class="flat">concluído em E1: Fases 1 e 2 · esperado 100,0% · desvio 0,0 p.p.</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi ok"><span>RC-1 · Estimado vs. real</span><strong>1,03</strong><em class="flat">133,6 h reais ÷ 130,2 h estimadas</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi ok"><span>RC-2 · Esforço por integrante</span><strong>14% a 19%</strong><em class="flat">menor e maior participação nas horas reais</em><span class="psm-badge ok">Dentro do esperado</span></div><div class="psm-kpi warn"><span>DP-1 · Tempo de ciclo</span><strong>7,4 dias</strong><em class="flat">média em 51 issues · 0 paradas</em><span class="psm-badge warn">Investigar 51 issues a mais de 10% da média</span></div></div>
 
 ??? info "Valores e limites de todos os indicadores (tabela)"
     | ID | Categoria | Indicador | Valor atual | Situação | Limite de alerta |
     |---|---|---|---|---|---|
-    | CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 42/45 concluídas (93,3%); esperado 100,0%; desvio 6,7 p.p. | Investigar | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
-    | RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,07 (79,0 h / 73,8 h, 49 issues) | Dentro do esperado | Fora da faixa 0,8 a 1,2 |
-    | RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 30%, Daniel 16%, Giovana 13%, Hauedy 13%, Letícia 12%, Lucas 16% | Dentro do esperado | Integrante abaixo de 10% ou acima de 30% |
-    | DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 4,2 dias (40 issues) | Investigar 37 issues a mais de 10% da média; Alerta: 3 issues com responsável há mais de 3 dias | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
+    | CP-1 | Calendário e Progresso | Planejado vs. concluído (E1: Fases 1 e 2) | 45/45 concluídas (100,0%); esperado 100,0%; desvio 0,0 p.p. | Dentro do esperado | Desvio acima de 5 p.p.: investigar; acima de 10 p.p.: ação corretiva |
+    | RC-1 | Recursos e Custos | Estimado vs. realizado (horas reais / estimadas) | 1,03 (133,6 h / 130,2 h, 68 issues) | Dentro do esperado | Fora da faixa 0,8 a 1,2 |
+    | RC-2 | Recursos e Custos | Esforço por integrante (% das horas reais) | Arthur 19%, Daniel 14%, Giovana 16%, Hauedy 15%, Letícia 17%, Lucas 18% | Dentro do esperado | Integrante abaixo de 10% ou acima de 30% |
+    | DP-1 | Desempenho dos Processos | Tempo de ciclo (atribuição até fechamento) | média 7,4 dias (51 issues) | Investigar 51 issues a mais de 10% da média | Issue a mais de 10% da média (mínimo 1 dia): investigar; aberta com responsável há mais de 3 dias: cobrar ou dividir |
 
     *Tabela 1: Valores atuais dos indicadores PSM/CID. Fonte: [indicadores.csv](dados/indicadores.csv).*
 
@@ -26,8 +26,8 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 | Milestone | Prazo | Issues | Fechadas | Abertas | Concluído | Esperado | Desvio | Situação |
 |---|---|---|---|---|---|---|---|---|
-| E1: Fases 1 e 2 | 26/10/2026 | 45 | 42 | 3 | 93,3% | 100,0% | 6,7 p.p. | Investigar |
-| E2: Fases 3 e 4 | - | 17 | 8 | 9 | 47,1% | - | - | Sem prazo definido |
+| E1: Fases 1 e 2 | 26/10/2026 | 45 | 45 | 0 | 100,0% | 100,0% | 0,0 p.p. | Dentro do esperado |
+| E2: Fases 3 e 4 | - | 27 | 24 | 3 | 88,9% | - | - | Sem prazo definido |
 
 *Tabela 2: Planejado vs. concluído por milestone. Esperado = fração do prazo do milestone já decorrida; desvio = esperado - concluído. Fonte: issues do GitHub.*
 
@@ -39,12 +39,12 @@ Esta página é gerada automaticamente pelo script [`scripts/coleta_psm.py`](htt
 
 | Integrante | Issues atribuídas | Fechadas | Abertas | Horas estimadas | Horas reais | % das horas reais | % das issues fechadas | Commits |
 |---|---|---|---|---|---|---|---|---|
-| Arthur Fernandes | 16 | 15 | 1 | 19,1 | 23,5 | 29,7% | 23,8% | 5 |
-| Daniel Sousa | 12 | 11 | 1 | 17,2 | 12,8 | 16,1% | 17,5% | 8 |
-| Giovana Fontes | 16 | 12 | 4 | 23,1 | 10,0 | 12,7% | 19,0% | 6 |
-| Hauedy Wegner | 10 | 7 | 3 | 19,5 | 10,0 | 12,7% | 11,1% | 15 |
-| Letícia Lopes | 15 | 9 | 6 | 18,2 | 9,8 | 12,3% | 14,3% | 17 |
-| Lucas Branco | 10 | 9 | 1 | 15,1 | 13,0 | 16,5% | 14,3% | 4 |
+| Arthur Fernandes | 21 | 20 | 1 | 25,6 | 25,6 | 19,2% | 20,6% | 11 |
+| Daniel Sousa | 15 | 14 | 1 | 20,8 | 19,2 | 14,4% | 14,4% | 8 |
+| Giovana Fontes | 21 | 20 | 1 | 25,6 | 21,1 | 15,8% | 20,6% | 6 |
+| Hauedy Wegner | 14 | 12 | 2 | 23,0 | 19,6 | 14,7% | 12,4% | 15 |
+| Letícia Lopes | 19 | 17 | 2 | 20,3 | 23,4 | 17,5% | 17,5% | 22 |
+| Lucas Branco | 15 | 14 | 1 | 26,6 | 24,6 | 18,4% | 14,4% | 6 |
 
 *Tabela 3: Contribuição por integrante. Horas estimadas ficam com quem foi alocado; horas reais, com quem realizou a tarefa. Quando há mais de uma pessoa, as horas são divididas igualmente. Fonte: [contribuicao.csv](dados/contribuicao.csv).*
 
@@ -58,12 +58,12 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
 
 | Integrante | Horas estimadas (alocadas) | Horas reais (realizadas) | Diferença |
 |---|---|---|---|
-| Arthur Fernandes | 18,1 | 23,5 | 5,4 |
-| Daniel Sousa | 14,8 | 12,8 | -2,0 |
-| Giovana Fontes | 12,6 | 10,0 | -2,6 |
-| Hauedy Wegner | 11,5 | 10,0 | -1,5 |
-| Letícia Lopes | 7,2 | 9,8 | 2,5 |
-| Lucas Branco | 12,6 | 13,0 | 0,4 |
+| Arthur Fernandes | 24,8 | 25,6 | 0,9 |
+| Daniel Sousa | 19,9 | 19,2 | -0,7 |
+| Giovana Fontes | 24,8 | 21,1 | -3,6 |
+| Hauedy Wegner | 19,2 | 19,6 | 0,4 |
+| Letícia Lopes | 18,9 | 23,4 | 4,4 |
+| Lucas Branco | 25,8 | 24,6 | -1,1 |
 
 *Tabela 4: Horas estimadas vs. reais por integrante. Diferença positiva: a pessoa trabalhou mais do que o alocado; negativa: menos. Fonte: issues do GitHub.*
 
@@ -91,11 +91,12 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
     | [#19](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/19) Fase 2: hipóteses para todas as questões | 1,0 | 1,0 | 1,00 |
     | [#20](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/20) Fase 2: métricas com definição, cálculo, fonte, coleta e interpretação | 2,0 | 4,0 | 2,00 |
     | [#21](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/21) Fase 2: níveis de pontuação e critérios de julgamento | 2,0 | 2,0 | 1,00 |
-    | [#22](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/22) Fase 2: diagrama GQM completo | 1,0 | 1,0 | 1,00 |
+    | [#22](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/22) Fase 2: diagrama GQM completo | 2,5 | 3,0 | 1,20 |
     | [#23](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/23) Fase 2: consistência entre as Fases 1 e 2 | 1,0 | 1,0 | 1,00 |
     | [#24](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/24) Artigo: migrar para template SBC/ACM/IEEE em LaTeX | 3,0 | 3,0 | 1,00 |
     | [#25](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/25) Artigo: referencial teórico | 0,5 | 0,3 | 0,60 |
     | [#26](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/26) Artigo: seções da Fase 1 e da Fase 2 | 4,0 | 4,0 | 1,00 |
+    | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/27) Artigo: link do repositório e tabela de contribuição no apêndice | 1,0 | 1,0 | 1,00 |
     | [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) Artigo: revisão final da E1 | 2,0 | 1,5 | 0,75 |
     | [#29](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/29) GitPage: versão e data no rodapé, sumário e links entre páginas | 1,0 | 1,0 | 1,00 |
     | [#30](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/30) GitPage: links para repositório, release e evidências | 0,5 | 0,5 | 1,00 |
@@ -107,22 +108,40 @@ Paralelo entre o esforço planejado e o realizado (medida *Estimate vs. Actual E
     | [#36](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/36) Template de issue e milestones | 1,0 | 1,0 | 1,00 |
     | [#37](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/37) Release E1 | 2,0 | 1,0 | 0,50 |
     | [#38](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/38) Página PSM/CID com as três categorias | 3,0 | 4,0 | 1,33 |
+    | [#39](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/39) Medição PSM nº 1 | 1,0 | 1,0 | 1,00 |
+    | [#40](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/40) Medição PSM nº 2 | 1,0 | 1,0 | 1,00 |
     | [#41](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/41) Tabela de contribuição com percentual de esforço | 1,5 | 1,0 | 0,67 |
     | [#42](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/42) Atas das reuniões | 1,0 | 1,0 | 1,00 |
     | [#43](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/43) Correções do Ponto de Controle 1 | 2,0 | 2,0 | 1,00 |
     | [#44](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/44) Fase 3: método de avaliação e instruções repetíveis | 3,0 | 4,0 | 1,33 |
-    | [#45](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/45) Fase 3: recursos, ambiente e massa de dados | 2,0 | 1,0 | 0,50 |
+    | [#45](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/45) Fase 3: recursos, ambiente e massa de dados | 2,0 | 2,0 | 1,00 |
     | [#46](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/46) Fase 3: cronograma da avaliação | 2,0 | 1,0 | 0,50 |
+    | [#47](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/47) Termo de consentimento dos participantes | 2,0 | 1,0 | 0,50 |
+    | [#48](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/48) Fase 4: coleta das medidas com evidências | 5,0 | 4,0 | 0,80 |
     | [#49](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/49) Fase 4: dados brutos organizados e rastreáveis | 2,0 | 2,0 | 1,00 |
     | [#50](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/50) Fase 4: análise e respostas às questões GQM | 2,0 | 2,0 | 1,00 |
     | [#51](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/51) Fase 4: julgamento, conclusões e coerência com o propósito | 3,0 | 4,0 | 1,33 |
+    | [#52](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/52) Discussão das relações entre as características | 2,0 | 1,5 | 0,75 |
+    | [#53](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/53) Ação de melhoria obrigatória | 8,0 | 6,0 | 0,75 |
     | [#57](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/57) Padronizar nomenclatura da ISO/IEC 25010 (2011 x 2023) no artigo e no GitPage | 2,0 | 3,0 | 1,50 |
-    | [#61](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/61) GitPage: páginas da Fase 1 | 1,0 | 4,5 | 4,50 |
+    | [#60](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/60) GitPage: Fases 3 e 4 conforme a versão final do artigo | 3,0 | 4,0 | 1,33 |
+    | [#61](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/61) GitPage: páginas da Fase 1 | 1,0 | 2,0 | 2,00 |
     | [#63](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/63) Artigo: substituir tabela de características por parágrafo e corrigir erros de digitação | 1,0 | 2,0 | 2,00 |
+    | [#64](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/64) Realizar melhoria de aparência do gitpages | 2,0 | 3,0 | 1,50 |
+    | [#65](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/65) Realizar as atas das reuniões da entrega 2 | 5,0 | 5,0 | 1,00 |
+    | [#71](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/71) Revisão e complementação do artigo científico e da GitHub Pages | 4,0 | 1,0 | 0,25 |
+    | [#72](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/72) Retrospectiva da Entrega 1 | 2,5 | 3,0 | 1,20 |
+    | [#73](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/73) Slides da apresentação das métricas de gestão (PSM) | 1,5 | 2,0 | 1,33 |
+    | [#74](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/74) Slides do Ponto de Controle 2 | 4,0 | 6,0 | 1,50 |
+    | [#75](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/75) Ensaio da apresentação do Ponto de Controle 2 | 5,0 | 5,5 | 1,10 |
+    | [#76](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/76) GitPage: alinhar com a versão do artigo do Ponto de Controle 2 | 2,0 | 2,0 | 1,00 |
+    | [#77](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/77) GitPage Fases 3 e 4: análise e rastreabilidade GQM | 1,0 | 1,5 | 1,50 |
+    | [#78](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/78) Medição PSM da Entrega 2 e atualização do painel | 2,0 | 2,5 | 1,25 |
+    | [#79](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/79) Gestão: criação, atribuição e registro retroativo das issues | 3,0 | 3,0 | 1,00 |
 
 ## Desempenho dos Processos: tempo de ciclo
 
-Média: **4,2 dias** em 40 issues. Faixa sem investigação: 3,2 a 5,2 dias (média ± o maior valor entre 10% da média e 1 dia).
+Média: **7,4 dias** em 51 issues. Faixa sem investigação: 6,4 a 8,4 dias (média ± o maior valor entre 10% da média e 1 dia).
 
 ??? note "Tempo de ciclo por issue"
     | Issue | Responsável | Atribuída em | Fechada em | Tempo de ciclo (dias) | Situação |
@@ -134,7 +153,7 @@ Média: **4,2 dias** em 40 issues. Faixa sem investigação: 3,2 a 5,2 dias (mé
     | [#50](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/50) Fase 4: análise e respostas às questões GQM | Lucas Branco | 23/10/2026 | 23/10/2026 | 1 | Investigar |
     | [#25](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/25) Artigo: referencial teórico | Arthur Fernandes, Giovana Fontes, Lucas Branco | 23/10/2026 | 23/10/2026 | 1 | Investigar |
     | [#11](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/11) Fase 1: requisitante e partes interessadas | Daniel Sousa | 25/10/2026 | 25/10/2026 | 1 | Investigar |
-    | [#10](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/10) Fase 1: propósito da avaliação, decisões apoiadas e quem as toma | Giovana Fontes | 23/10/2026 | 26/10/2026 | 4 | Dentro da faixa |
+    | [#10](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/10) Fase 1: propósito da avaliação, decisões apoiadas e quem as toma | Giovana Fontes | 23/10/2026 | 26/10/2026 | 4 | Investigar |
     | [#17](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/17) Fase 2: objetivos de medição no template GQM | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#18](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/18) Fase 2: questões de avaliação | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#19](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/19) Fase 2: hipóteses para todas as questões | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Investigar |
@@ -142,14 +161,14 @@ Média: **4,2 dias** em 40 issues. Faixa sem investigação: 3,2 a 5,2 dias (mé
     | [#22](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/22) Fase 2: diagrama GQM completo | Daniel Sousa, Giovana Fontes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#23](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/23) Fase 2: consistência entre as Fases 1 e 2 | Daniel Sousa | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#24](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/24) Artigo: migrar para template SBC/ACM/IEEE em LaTeX | Giovana Fontes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
-    | [#26](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/26) Artigo: seções da Fase 1 e da Fase 2 | Lucas Branco | 23/10/2026 | 26/10/2026 | 4 | Dentro da faixa |
+    | [#26](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/26) Artigo: seções da Fase 1 e da Fase 2 | Lucas Branco | 23/10/2026 | 26/10/2026 | 4 | Investigar |
     | [#34](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/34) Página de referências | Lucas Branco | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#29](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/29) GitPage: versão e data no rodapé, sumário e links entre páginas | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#30](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/30) GitPage: links para repositório, release e evidências | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#33](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/33) Página de uso de IA | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#35](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/35) README enxuto e remoção do .venv do repositório | Hauedy Wegner | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#36](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/36) Template de issue e milestones | Hauedy Wegner | 25/10/2026 | 26/10/2026 | 2 | Investigar |
-    | [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) Artigo: revisão final da E1 | Giovana Fontes | 23/10/2026 | 26/10/2026 | 4 | Dentro da faixa |
+    | [#28](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/28) Artigo: revisão final da E1 | Giovana Fontes | 23/10/2026 | 26/10/2026 | 4 | Investigar |
     | [#13](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/13) Fase 1: modelo de qualidade adaptado com diagrama | Giovana Fontes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#38](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/38) Página PSM/CID com as três categorias | Hauedy Wegner | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#41](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/41) Tabela de contribuição com percentual de esforço | Letícia Lopes | 25/10/2026 | 26/10/2026 | 2 | Investigar |
@@ -161,16 +180,27 @@ Média: **4,2 dias** em 40 issues. Faixa sem investigação: 3,2 a 5,2 dias (mé
     | [#60](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/60) GitPage: Fases 3 e 4 conforme a versão final do artigo | Hauedy Wegner | 26/10/2026 | 26/10/2026 | 1 | Investigar |
     | [#37](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/37) Release E1 | Hauedy Wegner | 25/10/2026 | 26/10/2026 | 2 | Investigar |
     | [#12](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/12) Fase 1: tipo de produto e descrição estruturada com diagrama de contexto | Arthur Fernandes | 25/10/2026 | 04/11/2026 | 11 | Investigar |
-    | [#43](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/43) Correções do Ponto de Controle 1 | Arthur Fernandes | 25/10/2026 | 06/11/2026 | 13 | Investigar |
+    | [#43](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/43) Correções do Ponto de Controle 1 | Arthur Fernandes, Giovana Fontes | 25/10/2026 | 06/11/2026 | 13 | Investigar |
     | [#44](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/44) Fase 3: método de avaliação e instruções repetíveis | Arthur Fernandes | 25/10/2026 | 07/11/2026 | 14 | Investigar |
     | [#46](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/46) Fase 3: cronograma da avaliação | Arthur Fernandes | 25/10/2026 | 07/11/2026 | 14 | Investigar |
     | [#51](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/51) Fase 4: julgamento, conclusões e coerência com o propósito | Arthur Fernandes | 23/10/2026 | 07/11/2026 | 16 | Investigar |
     | [#49](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/49) Fase 4: dados brutos organizados e rastreáveis | Lucas Branco | 23/10/2026 | 07/11/2026 | 16 | Investigar |
     | [#45](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/45) Fase 3: recursos, ambiente e massa de dados | Daniel Sousa | 25/10/2026 | 11/11/2026 | 18 | Investigar |
+    | [#47](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/47) Termo de consentimento dos participantes | Arthur Fernandes, Letícia Lopes | 25/10/2026 | 12/11/2026 | 19 | Investigar |
+    | [#48](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/48) Fase 4: coleta das medidas com evidências | Daniel Sousa, Lucas Branco | 23/10/2026 | 15/11/2026 | 24 | Investigar |
+    | [#52](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/52) Discussão das relações entre as características | Giovana Fontes | 23/10/2026 | 15/11/2026 | 24 | Investigar |
+    | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/27) Artigo: link do repositório e tabela de contribuição no apêndice | Giovana Fontes | 25/10/2026 | 15/11/2026 | 22 | Investigar |
+    | [#64](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/64) Realizar melhoria de aparência do gitpages | Letícia Lopes | 05/11/2026 | 15/11/2026 | 11 | Investigar |
+    | [#39](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/39) Medição PSM nº 1 | Letícia Lopes | 25/10/2026 | 21/11/2026 | 28 | Investigar |
+    | [#65](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/65) Realizar as atas das reuniões da entrega 2 | Giovana Fontes, Letícia Lopes | 06/11/2026 | 21/11/2026 | 16 | Investigar |
+    | [#70](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/70) [Tarefa] Revisão e complementação do artigo científico e da GitHub Pages | Arthur Fernandes | 22/11/2026 | 22/11/2026 | 1 | Investigar |
+    | [#71](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/71) Revisão e complementação do artigo científico e da GitHub Pages | Arthur Fernandes, Giovana Fontes | 22/11/2026 | 23/11/2026 | 2 | Investigar |
+    | [#40](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/40) Medição PSM nº 2 | Hauedy Wegner | 25/10/2026 | 24/11/2026 | 31 | Investigar |
+    | [#53](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/53) Ação de melhoria obrigatória | Lucas Branco | 25/10/2026 | 24/11/2026 | 31 | Investigar |
 
     *Tabela 5: Tempo de ciclo das issues concluídas, de (data de fechamento - data da primeira atribuição) + 1, como no PSM/CID Parte 2, seção 8.5. Issues retroativas ficam de fora. Fonte: issues e eventos do GitHub.*
 
-**Issues do milestone ativo com responsável há mais de 3 dias sem fechar:** [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/27) (19 dias), [#39](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/39) (19 dias), [#40](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues/40) (19 dias)
+**Issues do milestone ativo com responsável há mais de 3 dias sem fechar:** nenhuma.
 
 A lista de atividades de cada integrante está em [Contribuição da Equipe](../contribuicao.md), e as issues, no [GitHub](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/issues?q=is%3Aissue).
 
@@ -190,6 +220,10 @@ A lista de atividades de cada integrante está em [Contribuição da Equipe](../
 | 26/10/2026 23:10 | RC-1 | Estimado vs. realizado (horas reais / estimadas) | 1,13 (63,0 h / 55,8 h, 41 issues) | Dentro do esperado |
 | 26/10/2026 23:10 | RC-2 | Esforço por integrante (% das horas reais) | Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17% | Dentro do esperado |
 | 26/10/2026 23:10 | DP-1 | Tempo de ciclo (atribuição até fechamento) | média 2,0 dias (32 issues) | Investigar 10 issues a mais de 10% da média |
+| 24/11/2026 10:51 | CP-1 | Planejado vs. concluído (E1: Fases 1 e 2) | 45/45 concluídas (100,0%); esperado 100,0%; desvio 0,0 p.p. | Dentro do esperado |
+| 24/11/2026 10:51 | RC-1 | Estimado vs. realizado (horas reais / estimadas) | 1,03 (133,6 h / 130,2 h, 68 issues) | Dentro do esperado |
+| 24/11/2026 10:51 | RC-2 | Esforço por integrante (% das horas reais) | Arthur 19%, Daniel 14%, Giovana 16%, Hauedy 15%, Letícia 17%, Lucas 18% | Dentro do esperado |
+| 24/11/2026 10:51 | DP-1 | Tempo de ciclo (atribuição até fechamento) | média 7,4 dias (51 issues) | Investigar 51 issues a mais de 10% da média |
 
 *Tabela 6: Medições registradas com `python scripts/coleta_psm.py --registrar`. Fonte: [medicoes.csv](dados/medicoes.csv). A interpretação e a decisão de cada medição ficam na [Tabela 3 da página PSM/CID](psm.md#medicoes-e-decisoes).*
 

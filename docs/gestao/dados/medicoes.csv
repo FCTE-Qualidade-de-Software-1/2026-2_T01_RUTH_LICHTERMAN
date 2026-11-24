@@ -11,3 +11,7 @@ data,id,indicador,valor,situacao
 26/10/2026 23:10,RC-1,Estimado vs. realizado (horas reais / estimadas),"1,13 (63,0 h / 55,8 h, 41 issues)",Dentro do esperado
 26/10/2026 23:10,RC-2,Esforço por integrante (% das horas reais),"Arthur 18%, Daniel 19%, Giovana 16%, Hauedy 14%, Letícia 15%, Lucas 17%",Dentro do esperado
 26/10/2026 23:10,DP-1,Tempo de ciclo (atribuição até fechamento),"média 2,0 dias (32 issues)",Investigar 10 issues a mais de 10% da média
+24/11/2026 10:51,CP-1,Planejado vs. concluído (E1: Fases 1 e 2),"45/45 concluídas (100,0%); esperado 100,0%; desvio 0,0 p.p.",Dentro do esperado
+24/11/2026 10:51,RC-1,Estimado vs. realizado (horas reais / estimadas),"1,03 (133,6 h / 130,2 h, 68 issues)",Dentro do esperado
+24/11/2026 10:51,RC-2,Esforço por integrante (% das horas reais),"Arthur 19%, Daniel 14%, Giovana 16%, Hauedy 15%, Letícia 17%, Lucas 18%",Dentro do esperado
+24/11/2026 10:51,DP-1,Tempo de ciclo (atribuição até fechamento),"média 7,4 dias (51 issues)",Investigar 51 issues a mais de 10% da média

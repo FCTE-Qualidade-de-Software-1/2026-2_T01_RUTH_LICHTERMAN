@@ -232,8 +232,7 @@ flowchart LR
 <div class="psm-timeline">
   <div class="psm-step done"><strong>Medição 1</strong><span>26/10, 00h10</span><em>Início do dia da E1</em></div>
   <div class="psm-step done"><strong>Medição 2</strong><span>26/10, 00h48</span><em>Efeito das decisões da Medição 1</em></div>
-  <div class="psm-step"><strong>Medição 3</strong><span>A definir</span><em>Metade do prazo da E2</em></div>
-  <div class="psm-step"><strong>Medição 4</strong><span>A definir</span><em>Véspera da E2</em></div>
+  <div class="psm-step done"><strong>Medição 3</strong><span>24/11, 10h51</span><em>Fechamento da E2</em></div>
 </div>
 
 Efeito das decisões da Medição 1, medido na Medição 2:
@@ -263,6 +262,21 @@ Efeito das decisões da Medição 1, medido na Medição 2:
     | **RC-2**<br><span class="psm-badge bad">Fora da faixa</span> | Lucas 24%, Giovana 23%, Daniel 21%, Arthur 19%, Hauedy 8%, Letícia 5% | O rebalanceamento resolveu a sobrecarga de Arthur e a baixa participação de Daniel. Hauedy e Letícia continuam abaixo de 10% porque #38 a #41 e o trabalho de repositório ainda não têm horas reais registradas | Fechar #38 a #41 e abrir issues com as horas reais do trabalho de repositório e GitPage ainda não registrado. Responsáveis: Hauedy e Letícia. Prazo: 26/10 |
     | **DP-1**<br><span class="psm-badge warn">Investigar e alerta</span> | Média de 2,0 dias (22 issues); #10 e #26 com 4 dias; 5 issues com responsável há mais de 3 dias (#28, #48, #49, #51 e #52) | #10 e #26 já estavam feitas e só foram fechadas agora, então o tempo de ciclo delas mede o atraso de registro. #28 está prevista para o dia da entrega. #48 a #52 são da E2, que ainda não começou | Revisão do critério da equipe: a partir desta medição, só contam como paradas as issues do milestone ativo. Fechar cada issue no mesmo dia em que for concluída. Responsáveis: todos. Prazo: E2 |
 
+=== "Medição 3 (24/11, 10h51)"
+
+    Medição de fechamento da E2, organizada nas mesmas métricas da Tabela IX do artigo. As medições previstas para a metade do prazo e a véspera da E2 não foram realizadas; os valores abaixo consolidam a entrega. O tempo de ciclo (DP-1) continua no [painel](painel.md).
+
+    | Categoria | Métrica | Valor medido | Interpretação | Decisão de gestão |
+    | :--- | :--- | :--- | :--- | :--- |
+    | Calendário e progresso | Marcos concluídos no prazo / planejados | E1 no prazo (release v1.0 em 26/10, 23h30); release E2 ainda não publicada | A E1 cumpriu o marco. O marco da E2 depende da release, que segue aberta na issue #55 | Publicar a release E2 e registrar a data de conclusão |
+    | Calendário e progresso | Atividades concluídas / planejadas | E1: 35/35 (31 no prazo); E2: 16/19 (14 no prazo). Abertas: #54, #55 e #59 | Todas as atividades planejadas da E1 foram concluídas; as atrasadas (#12, #27, #39 e #40) eram tarefas já feitas e fechadas depois. Na E2, restam o artigo final, a release e a página das Fases 3 e 4 | Fechar #54, #55 e #59 junto com a entrega final. Issues retroativas não entram nesta contagem |
+    | Calendário e progresso | Desvio de prazo por entrega | E1: 0 dias; E2: release pendente em 24/11 | O prazo da E1 foi cumprido. Na E2, o desvio só pode ser fechado após a publicação da release | Registrar a data efetiva da release E2 e calcular o desvio |
+    | Recursos e custos | Esforço real / esforço estimado | 133,6 h / 130,2 h (1,03) | Esforço real cerca de 3% acima do estimado, dentro da faixa de 0,8 a 1,2. Na E1 a razão era 1,07 | Manter a reestimativa por Planning Poker como referência para próximos projetos |
+    | Recursos e custos | Custos de recargas e testes | R$ 2,70 | Uma recarga real de teste, custeada pela equipe | Considerar os gastos reais no planejamento de novas coletas |
+    | Recursos e custos | Distribuição do esforço entre integrantes | Arthur 19%; Lucas 18%; Letícia 17%; Giovana 16%; Hauedy 15%; Daniel 14% | A participação variou de 14% a 19%, dentro da faixa de 10% a 30%. Na E1 variava de 12% a 30% | Manter o registro de quem realizou cada tarefa em [execucao.csv](dados/execucao.csv) e as issues retroativas para o trabalho feito sem issue |
+    | Desempenho dos processos | Retrabalho após revisão | 1 de 69 issues fechadas foi reaberta (#65); #43 com 2 h de correções do Ponto de Controle 1 | Retrabalho baixo nas issues, mas não há contagem de itens revisados e corrigidos no artigo | Registrar os itens apontados e corrigidos nas próximas revisões |
+    | Desempenho dos processos | Correções do Ponto de Controle 1 | Issue #43 concluída em 06/11/2026 (2 h, Arthur e Giovana) | As correções foram registradas como atividade concluída | Manter o vínculo entre apontamentos, issues e evidências das correções |
+
 *Tabela 3: Registro das medições, interpretações e decisões de gestão. Fonte: [medicoes.csv](dados/medicoes.csv) e decisões da equipe.*
 
 !!! note "Decisões de planejamento da E2 (26/10)"
@@ -282,3 +296,4 @@ Efeito das decisões da Medição 1, medido na Medição 2:
 | 1.3 | 26/10/2026 | Métricas implementadas, horas estimadas vs. reais, alocado vs. realizado e processo de medição (McGarry et al., 2002) | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
 | 1.4 | 26/10/2026 | Planning Poker nas estimativas e decisões de planejamento da E2 | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
 | 1.5 | 26/10/2026 | Página reorganizada de forma visual: visão geral em cartões, diagramas, fichas em abas e medições por aba | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
+| 1.6 | 24/11/2026 | Registro da Medição 3 (fechamento da E2) nas métricas da Tabela IX do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |

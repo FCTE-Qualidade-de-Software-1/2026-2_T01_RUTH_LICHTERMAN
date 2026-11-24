@@ -9,7 +9,7 @@ Trabalho final de Qualidade de Software 1 (FCTE/UnB, 2026/2, turma T01). A equip
 | Entrega | Conteúdo | Prazo | Release |
 | :--- | :--- | :--- | :--- |
 | E1 | Fases 1 e 2 e [primeira versão do artigo](https://www.overleaf.com/project/6ac3b3985adcbcca9197389d) | 26/10/2026 | [v1.0](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases/tag/v1.0) |
-| E2 | Fases 3 e 4 e versão final do artigo | A definir | - |
+| E2 | Fases 3 e 4, ação de melhoria e [versão final do artigo](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/artigo/Artigo_versao_final_E2.pdf) | 24/11/2026 | [v2.0](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/releases/tag/v2.0) |
 
 ## Equipe
 
@@ -23,7 +23,8 @@ Trabalho final de Qualidade de Software 1 (FCTE/UnB, 2026/2, turma T01). A equip
 | :--- | :--- |
 | `docs/` | Páginas do GitPage (MkDocs) |
 | `docs/gestao/` | Gestão com PSM/CID, painel gerado automaticamente e dados brutos |
-| [`evidencias/prototipo/`](evidencias/prototipo/README.md) | Protótipo navegável de A1 e A2, figuras e registro de verificação |
+| `evidencias/gqm/` | Registros, dados, cálculos e vídeos da coleta das métricas GQM |
+| [`evidencias/prototipo/`](evidencias/prototipo/README.md) | Protótipo navegável de A1 e A2 (v1), figuras e registro de verificação; a v2 está no [GitPage](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_RUTH_LICHTERMAN/prototipo/) |
 | `scripts/` | Coleta das métricas PSM e scripts de criação e atribuição de issues |
 | `.github/` | Template de issue e publicação automática do site |
 

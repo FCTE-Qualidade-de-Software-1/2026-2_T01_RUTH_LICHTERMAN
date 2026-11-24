@@ -296,4 +296,4 @@ Efeito das decisões da Medição 1, medido na Medição 2:
 | 1.3 | 26/10/2026 | Métricas implementadas, horas estimadas vs. reais, alocado vs. realizado e processo de medição (McGarry et al., 2002) | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
 | 1.4 | 26/10/2026 | Planning Poker nas estimativas e decisões de planejamento da E2 | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
 | 1.5 | 26/10/2026 | Página reorganizada de forma visual: visão geral em cartões, diagramas, fichas em abas e medições por aba | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20) |
-| 1.6 | 24/11/2026 | Registro da Medição 3 (fechamento da E2) nas métricas da Tabela IX do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.6 | 24/11/2026 | Registro da Medição 3 (fechamento da E2) nas métricas da Tabela IX do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |

@@ -149,4 +149,4 @@ O protocolo ampliado apresentado no artigo é uma proposta para eventual extens�
 | 1.2 | 12/11/2026 | Adicionando pasta do arquivos e o termo TCLE em PDF e Word | [Arthur Fernandes](https://github.com/arthurfernandesj) | [Hauedy Wegner](https://github.com/HauedyWS) |
 | 1.3 | 15/11/2026 | Alinhamento dos procedimentos e da origem das evidências GQM com o artigo | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |
 | 1.4 | 17/11/2026 | Adiciona a exibição do TCLE em PDF diretamente na página, mantendo os links de download | [Letícia Lopes](https://github.com/leticialopes20) | [Hauedy Wegner](https://github.com/HauedyWS) |
-| 1.4 | 24/11/2026 | Aplicação da SUS e cronograma, a partir das Seções VI-D e VI-I da versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.5 | 24/11/2026 | Aplicação da SUS e cronograma, a partir das Seções VI-D e VI-I da versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20)  |

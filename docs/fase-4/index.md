@@ -113,6 +113,7 @@ Melhorias propostas a partir dos achados, sem implementação no aplicativo real
 3. **Investigar o tempo de abertura do mapa e das paradas**, de cerca de 5,3 s (M11).
 4. **Ampliar a avaliação em estudo futuro**, conforme as limitações da coleta: acessibilidade, fluxos funcionais, conciliação após uso na catraca, janelas de disponibilidade, condições de rede e participantes.
 
+
 ## Ação de melhoria executada
 
 Em 15/11/2026, foi concluído um protótipo de alta fidelidade para **A1 e A2**, justificado pelos achados de comunicação da perda de conexão (M13) e ampliação de fonte (M4). A entrega reúne telas editáveis e fluxos navegáveis no Figma, com dados fictícios.
@@ -127,9 +128,30 @@ Em 15/11/2026, foi concluído um protótipo de alta fidelidade para **A1 e A2**,
 
 *Figura 1: Telas do protótipo de A1 e A2, com dados fictícios. A tela ampliada possui conteúdo com rolagem. Fonte: elaborado pela equipe.*
 
-A [documentação da entrega](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/prototipo) reúne as instruções e as figuras. O [registro de verificação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/blob/main/evidencias/prototipo/verificacao.md) detalha os percursos conferidos, o cálculo de contraste e os limites da simulação.
+As páginas [Versão 1](../prototipo/v1.md) e [Verificação da v1](../prototipo/v1-verificacao.md) reúnem as instruções, as figuras e a conferência dos percursos; os arquivos originais estão na [pasta de evidências](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_RUTH_LICHTERMAN/tree/main/evidencias/prototipo). A verificação detalha os percursos conferidos, o cálculo de contraste e os limites da simulação.
 
 O protótipo não foi implementado no aplicativo e não comprova persistência, prevenção de duplicidade ou detecção real de rede. Não houve nova coleta GQM nem validação com participantes; **os resultados originais de M4 e M13 permanecem inalterados**. A3 e A4 continuam como propostas futuras.
+
+
+### Protótipo v2
+ 
+Em 24/11/2026, o protótipo foi evoluído para uma segunda versão (v2), com base em melhorias identificadas ao navegar pela v1 e em melhorias propostas pela equipe para o aplicativo. A v1 e a sua documentação foram mantidas. A v2 amplia a cobertura para as telas do aplicativo de ponta a ponta e acrescenta:
+ 
+- **Conexão normal, lenta e sem internet** em Início, Pix, Extrato, Mapa e Linha, com mensagem e nova tentativa (continuação de A1; M13, Q10). O estado de carregamento do mapa representa o achado de M11, sem medir nem reduzir o tempo real.
+- **Texto ampliado** na tela de Perfil, em 125% e 150% (M4, Q3). A ampliação de 200% da v1 continua sendo a referência de A2.
+- **Saldo e recarga coerentes:** o valor escolhido segue do Pix até o Início e o Saldo, e a tela “Entenda seu saldo” mostra a composição do total (M9, M10, Q7).
+
+**[Abrir o protótipo navegável da v2](https://www.figma.com/proto/cKG7Stdd8v0K7UFOhxd02t/BRB-MOBILIDADE--PROTOTIPA%C3%87%C3%83O--Copy-?node-id=3174-357&p=f&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3174%3A357)**
+ 
+![Início com atalhos e ônibus favorito, e Perfil e configurações da v2](../prototipo/img/v2/inicio_perfil.png){ width="480" }
+ 
+*Figura 2: Tela inicial e perfil da v2, com os atalhos e o ônibus favorito em tempo real. Fonte: elaborado pela equipe.*
+ 
+![Conexão lenta e sem internet em Início, Pix e Extrato na v2](../prototipo/img/v2/conexao.png){ width="560" }
+ 
+*Figura 3: Estados de conexão lenta e sem internet na v2, com mensagem e nova tentativa. Fonte: elaborado pela equipe.*
+ 
+A [página da v2](../prototipo/v2.md) explica o que mudou no visual, nos botões, nos fluxos e nos estados de conexão, com imagens, a tabela que liga cada achado à mudança correspondente e as melhorias no aplicativo que não vêm da avaliação (atalhos de Extrato de uso, Bloquear cartão e Fale conosco no Início, ônibus favorito em tempo real e perfil com poucas opções). A [Protótipos](../prototipo/index.md) reúne as duas versões. A v2 também não foi implementada no aplicativo, não houve nova coleta GQM nem validação com participantes, e **os resultados originais permanecem inalterados**.
 
 ## Limitações
 
@@ -153,4 +175,5 @@ Como trabalhos futuros, propõe-se ampliar os participantes por perfil (incluind
 | 1.0 | 25/10/2026 | Resultados, interpretação GQM, melhorias e limitações, a partir da Seção VII do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.1 | 15/11/2026 | Alinhamento da análise GQM e da rastreabilidade das métricas com o artigo e as evidências | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20)|
 | 1.2 | 16/11/2026 | Registro da ação de melhoria executada em protótipo para A1 e A2, com link, figuras e verificação | [Lucas Branco](https://github.com/lucasbbranco) | [Letícia Lopes](https://github.com/leticialopes20) |
-| 1.3 | 24/11/2026 | Situação de resposta das questões GQM e conclusão, a partir das Seções VII-G e VIII da versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) | |
+| 1.3 | 24/11/2026 | Situação de resposta das questões GQM e conclusão, a partir das Seções VII-G e VIII da versão final do artigo | [Hauedy Wegner](https://github.com/HauedyWS) |[Letícia Lopes](https://github.com/leticialopes20) |
+| 1.4 | 24/11/2026 | Adiciona informações sobre a versão 2 do prototipo | [Letícia Lopes](https://github.com/leticialopes20) | [Lucas Branco](https://github.com/lucasbbranco)|
